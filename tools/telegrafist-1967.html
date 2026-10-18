@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Телеграфист 1967 · ИТЭФ ↔ MacHack</title>
+<style>
+  html,body{margin:0;padding:0;background:#f3efe6;color:#2b2520;font-family:-apple-system,"Helvetica Neue",Arial,sans-serif;}
+  body{padding:14px;}
+  h1{font-family:Georgia,"Times New Roman",serif;font-weight:normal;font-size:26px;margin:0 0 4px 0;}
+  .sub{color:#7a6e63;font-size:14px;margin-bottom:12px;}
+  .row{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-flex-wrap:wrap;flex-wrap:wrap;}
+  .left{width:430px;margin-right:22px;}
+  .right{-webkit-box-flex:1;-webkit-flex:1;flex:1;min-width:360px;}
+  .board{width:416px;border:3px solid #6f6358;}
+  .rank{display:-webkit-box;display:-webkit-flex;display:flex;}
+  .sq{width:52px;height:52px;line-height:52px;text-align:center;font-size:38px;position:relative;}
+  .sq.l{background:#e9e3d6;} .sq.d{background:#8f9a8c;}
+  .sq.from{box-shadow:inset 0 0 0 4px #d6a94a;} .sq.to{box-shadow:inset 0 0 0 4px #d6a94a;}
+  .w{color:#fffdf7;text-shadow:0 0 2px #000,0 0 2px #000,1px 1px 0 #333,-1px -1px 0 #333;}
+  .b{color:#15120f;text-shadow:0 0 1px #fff;}
+  .coord{position:absolute;font-size:10px;line-height:10px;color:#4b443d;opacity:.8;}
+  .coord.f{right:3px;bottom:2px;} .coord.r{left:3px;top:2px;}
+  .card{background:#fff;border:1px solid #d9d0c2;border-radius:12px;padding:14px 16px;margin-bottom:12px;}
+  .card.hot{border:2px solid #c9792e;background:#fff8f0;}
+  .card.dim{opacity:.55;}
+  .who{font-size:18px;margin-bottom:8px;}
+  label{display:block;font-size:13px;color:#7a6e63;margin:6px 0 4px;}
+  input[type=text]{width:100%;box-sizing:border-box;font-size:24px;padding:10px 12px;border:1px solid #bdb2a3;border-radius:8px;font-family:Menlo,Consolas,monospace;}
+  .out{font-family:Menlo,Consolas,monospace;font-size:34px;letter-spacing:1px;margin:10px 0;min-height:44px;}
+  .out small{font-size:14px;color:#7a6e63;font-family:-apple-system,Arial,sans-serif;letter-spacing:0;display:block;}
+  .alt{font-family:Menlo,Consolas,monospace;font-size:15px;color:#7a6e63;}
+  button{font-size:17px;padding:12px 18px;border-radius:10px;border:1px solid #bdb2a3;background:#faf7f1;color:#2b2520;margin:4px 6px 4px 0;cursor:pointer;}
+  button.main{background:#c9792e;border-color:#c9792e;color:#fff;font-size:19px;padding:14px 22px;}
+  button.pick{background:#fff3e0;border-color:#d6a94a;font-family:Menlo,Consolas,monospace;font-size:20px;}
+  button:disabled{opacity:.4;cursor:default;}
+  .err{color:#b23a1f;font-size:15px;margin-top:6px;}
+  .ok{color:#2e7d32;font-size:15px;margin-top:6px;}
+  .log{font-family:Menlo,Consolas,monospace;font-size:14px;line-height:1.55;max-height:260px;overflow:auto;white-space:pre;}
+  .foot{color:#7a6e63;font-size:12px;margin-top:10px;}
+  .inline{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:center;-webkit-align-items:center;align-items:center;}
+  select{font-size:16px;padding:6px;}
+</style>
+</head>
+<body>
+<h1>Телеграфист 1967</h1>
+<div class="sub">ИТЭФ М-20 говорит короткой нотацией, MacHack VI — дескриптивной. Ты переносишь ходы, доска следит за обеими.</div>
+
+<div class="row">
+  <div class="left">
+    <div class="board" id="board"></div>
+    <div class="card" style="margin-top:12px">
+      <div class="inline">
+        <span style="margin-right:8px">Белыми играет:</span>
+        <select id="whiteIs"><option value="itef">ИТЭФ М-20</option><option value="machack">MacHack VI</option></select>
+        <button id="newGame">Новая партия</button>
+        <button id="undo">Вернуть ход</button>
+        <button id="copyPgn">Копировать PGN</button>
+      </div>
+      <div id="savedNote" class="foot"></div>
+    </div>
+  </div>
+
+  <div class="right">
+    <div id="turnBanner" style="font-size:20px;margin:0 0 10px 2px;color:#c9792e"></div>
+    <div class="card" id="cardItef">
+      <div class="who">① Ход <b>ИТЭФ</b> → отнести МакХаку</div>
+      <label>Введи ход ИТЭФ так, как показала её доска (короткая нотация: Nf3, exd5, O-O, e8=Q)</label>
+      <input type="text" id="inItef" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Nc3">
+      <div class="out" id="outItef"><small>для MacHack</small>—</div>
+      <div class="alt" id="altItef"></div>
+      <div id="msgItef"></div>
+      <div><button class="main" id="okItef">Подтвердить ход ИТЭФ</button><button id="copyItef">Копировать для MacHack</button></div>
+    </div>
+
+    <div class="card" id="cardMh">
+      <div class="who">② Ответ <b>MacHack</b> → отнести ИТЭФ</div>
+      <label>Введи ответ МакХака так, как он напечатал (P-K4, N-KB3, BxP, O-O, QN-Q2, P-K8=Q)</label>
+      <input type="text" id="inMh" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="P-K4">
+      <div class="out" id="outMh"><small>для ИТЭФ</small>—</div>
+      <div id="pickMh"></div>
+      <div id="msgMh"></div>
+      <div><button class="main" id="okMh">Подтвердить ответ MacHack</button><button id="copyMh">Копировать для ИТЭФ</button></div>
+    </div>
+
+    <div class="card">
+      <div class="who">Журнал · короткая / дескриптивная</div>
+      <div class="log" id="log">—</div>
+    </div>
+    <div class="foot">Дескриптив: вертикали QR QN QB Q K KB KN KR, горизонтали считаются от ходящей стороны. Чёрные: K4 = e5. При двусмысленности программа спросит, какой именно фигурой пошёл МакХак. Ход не записывается, пока не нажата кнопка подтверждения.</div>
+  </div>
+</div>
+
+<script>
+(function(){
+'use strict';
+/* ───────────── шахматы: доска, генерация ходов, SAN ───────────── */
+var FILES='abcdefgh';
+function sqName(i){ return FILES.charAt(i%8)+(Math.floor(i/8)+1); }
+function sqIndex(name){ return FILES.indexOf(name.charAt(0))+(parseInt(name.charAt(1),10)-1)*8; }
+function isWhite(p){ return p===p.toUpperCase(); }
+function newBoard(){
+  var b=[]; for(var i=0;i<64;i++) b.push('');
+  var back='RNBQKBNR';
+  for(var f=0;f<8;f++){ b[f]=back.charAt(f); b[8+f]='P'; b[48+f]='p'; b[56+f]=back.charAt(f).toLowerCase(); }
+  return b;
+}
+function startPos(){ return {b:newBoard(),turn:'w',castle:{K:true,Q:true,k:true,q:true},ep:-1,hist:[]}; }
+function clonePos(p){ return {b:p.b.slice(),turn:p.turn,castle:{K:p.castle.K,Q:p.castle.Q,k:p.castle.k,q:p.castle.q},ep:p.ep,hist:p.hist.slice()}; }
+
+function attacked(b, sq, byWhite){
+  var f=sq%8, r=Math.floor(sq/8), i, df, dr, x, y, p;
+  var pawnDr = byWhite ? -1 : 1;   /* пешка атакующего стоит на ряд ниже (белая) или выше */
+  for(df=-1;df<=1;df+=2){ x=f+df; y=r+pawnDr; if(x>=0&&x<8&&y>=0&&y<8){ p=b[y*8+x]; if(p===(byWhite?'P':'p')) return true; } }
+  var kn=[[1,2],[2,1],[-1,2],[-2,1],[1,-2],[2,-1],[-1,-2],[-2,-1]];
+  for(i=0;i<8;i++){ x=f+kn[i][0]; y=r+kn[i][1]; if(x>=0&&x<8&&y>=0&&y<8){ p=b[y*8+x]; if(p===(byWhite?'N':'n')) return true; } }
+  var kg=[[1,0],[-1,0],[0,1],[0,-1],[1,1],[1,-1],[-1,1],[-1,-1]];
+  for(i=0;i<8;i++){ x=f+kg[i][0]; y=r+kg[i][1]; if(x>=0&&x<8&&y>=0&&y<8){ p=b[y*8+x]; if(p===(byWhite?'K':'k')) return true; } }
+  var dirs=[[1,0,'RQ'],[-1,0,'RQ'],[0,1,'RQ'],[0,-1,'RQ'],[1,1,'BQ'],[1,-1,'BQ'],[-1,1,'BQ'],[-1,-1,'BQ']];
+  for(i=0;i<8;i++){ x=f; y=r; while(true){ x+=dirs[i][0]; y+=dirs[i][1]; if(x<0||x>7||y<0||y>7) break; p=b[y*8+x]; if(!p) continue;
+      if(isWhite(p)===byWhite && dirs[i][2].indexOf(p.toUpperCase())>=0) return true; break; } }
+  return false;
+}
+function kingSq(b, white){ var k=white?'K':'k'; for(var i=0;i<64;i++) if(b[i]===k) return i; return -1; }
+function inCheck(pos, white){ return attacked(pos.b, kingSq(pos.b, white), !white); }
+
+function pseudoMoves(pos){
+  var b=pos.b, white=(pos.turn==='w'), out=[], i, p, f, r, x, y, d, t;
+  function add(from,to,flags){ out.push({from:from,to:to,piece:b[from].toUpperCase(),capt:flags&&flags.capt||'',promo:flags&&flags.promo||'',castle:flags&&flags.castle||'',ep:!!(flags&&flags.ep)}); }
+  for(i=0;i<64;i++){ p=b[i]; if(!p||isWhite(p)!==white) continue; f=i%8; r=Math.floor(i/8); var P=p.toUpperCase();
+    if(P==='P'){ var dr=white?1:-1, start=white?1:6, last=white?7:0; y=r+dr;
+      if(y>=0&&y<8&&!b[y*8+f]){ if(y===last){ ['Q','R','B','N'].forEach(function(q){ add(i,y*8+f,{promo:q}); }); } else add(i,y*8+f);
+        if(r===start && !b[(r+2*dr)*8+f]) add(i,(r+2*dr)*8+f); }
+      for(d=-1;d<=1;d+=2){ x=f+d; if(x<0||x>7||y<0||y>7) continue; t=y*8+x;
+        if(b[t]&&isWhite(b[t])!==white){ if(y===last){ ['Q','R','B','N'].forEach(function(q){ add(i,t,{capt:b[t].toUpperCase(),promo:q}); }); } else add(i,t,{capt:b[t].toUpperCase()}); }
+        else if(t===pos.ep) add(i,t,{capt:'P',ep:true}); }
+    } else if(P==='N'||P==='K'){
+      var st = P==='N'?[[1,2],[2,1],[-1,2],[-2,1],[1,-2],[2,-1],[-1,-2],[-2,-1]]:[[1,0],[-1,0],[0,1],[0,-1],[1,1],[1,-1],[-1,1],[-1,-1]];
+      st.forEach(function(s){ x=f+s[0]; y=r+s[1]; if(x<0||x>7||y<0||y>7) return; t=y*8+x; if(!b[t]) add(i,t); else if(isWhite(b[t])!==white) add(i,t,{capt:b[t].toUpperCase()}); });
+      if(P==='K'){ var home=white?4:60, rank0=white?0:56;
+        if(i===home && !inCheck(pos,white)){
+          if(pos.castle[white?'K':'k'] && !b[rank0+5] && !b[rank0+6] && b[rank0+7]===(white?'R':'r') && !attacked(b,rank0+5,!white) && !attacked(b,rank0+6,!white)) add(i,rank0+6,{castle:'K'});
+          if(pos.castle[white?'Q':'q'] && !b[rank0+3] && !b[rank0+2] && !b[rank0+1] && b[rank0]===(white?'R':'r') && !attacked(b,rank0+3,!white) && !attacked(b,rank0+2,!white)) add(i,rank0+2,{castle:'Q'}); } }
+    } else {
+      var dirs = P==='R'?[[1,0],[-1,0],[0,1],[0,-1]] : P==='B'?[[1,1],[1,-1],[-1,1],[-1,-1]] : [[1,0],[-1,0],[0,1],[0,-1],[1,1],[1,-1],[-1,1],[-1,-1]];
+      dirs.forEach(function(s){ x=f; y=r; while(true){ x+=s[0]; y+=s[1]; if(x<0||x>7||y<0||y>7) break; t=y*8+x; if(!b[t]){ add(i,t); continue; } if(isWhite(b[t])!==white) add(i,t,{capt:b[t].toUpperCase()}); break; } });
+    }
+  }
+  return out;
+}
+function makeMove(pos, m){
+  var n=clonePos(pos), b=n.b, white=(pos.turn==='w'), p=b[m.from];
+  b[m.to]=p; b[m.from]='';
+  if(m.ep){ b[m.to+(white?-8:8)]=''; }
+  if(m.promo){ b[m.to]= white? m.promo : m.promo.toLowerCase(); }
+  if(m.castle==='K'){ var r0=white?0:56; b[r0+5]=b[r0+7]; b[r0+7]=''; }
+  if(m.castle==='Q'){ var q0=white?0:56; b[q0+3]=b[q0]; b[q0]=''; }
+  if(p.toUpperCase()==='K'){ if(white){ n.castle.K=false; n.castle.Q=false; } else { n.castle.k=false; n.castle.q=false; } }
+  if(m.from===0||m.to===0) n.castle.Q=false; if(m.from===7||m.to===7) n.castle.K=false;
+  if(m.from===56||m.to===56) n.castle.q=false; if(m.from===63||m.to===63) n.castle.k=false;
+  n.ep = (p.toUpperCase()==='P' && Math.abs(m.to-m.from)===16) ? (m.from+m.to)/2 : -1;
+  n.turn = white?'b':'w';
+  return n;
+}
+function legalMoves(pos){
+  var white=(pos.turn==='w');
+  return pseudoMoves(pos).filter(function(m){ var n=makeMove(pos,m); return !inCheck({b:n.b}, white); });
+}
+function san(pos, m, legal){
+  if(m.castle==='K') return 'O-O'+suffix(pos,m);
+  if(m.castle==='Q') return 'O-O-O'+suffix(pos,m);
+  var s='', others;
+  if(m.piece==='P'){ if(m.capt) s+=FILES.charAt(m.from%8)+'x'; }
+  else { s+=m.piece;
+    others=legal.filter(function(o){ return o!==m && o.piece===m.piece && o.to===m.to && o.from!==m.from; });
+    if(others.length){ var sameFile=others.some(function(o){ return o.from%8===m.from%8; }), sameRank=others.some(function(o){ return Math.floor(o.from/8)===Math.floor(m.from/8); });
+      if(!sameFile) s+=FILES.charAt(m.from%8); else if(!sameRank) s+=(Math.floor(m.from/8)+1); else s+=sqName(m.from); }
+    if(m.capt) s+='x'; }
+  s+=sqName(m.to); if(m.promo) s+='='+m.promo;
+  return s+suffix(pos,m);
+}
+function suffix(pos,m){ var n=makeMove(pos,m); var white=(n.turn==='w'); if(!inCheck({b:n.b},white)) return ''; return legalMoves(n).length? '+':'#'; }
+function normSan(s){ return s.replace(/[+#!?]/g,'').replace(/0/g,'O').replace(/[\u2013\u2014]/g,'-').replace(/\s+/g,'').replace(/^o-o-o$/i,'O-O-O').replace(/^o-o$/i,'O-O'); }
+function parseSan(pos, text){
+  var legal=legalMoves(pos), t=normSan(text), i, m, cand=[];
+  if(!t) return {err:'пусто'};
+  /* нижний регистр фигуры: nf3 → Nf3 (кроме b: bxc3 = пешка) */
+  if(/^[nrqk][a-h1-8x]/.test(t)) t=t.charAt(0).toUpperCase()+t.slice(1);
+  if(/^b[a-h][1-8]$/.test(t)||/^b[a-h]?x[a-h][1-8]/.test(t)&&t.indexOf('x')>1) t='B'+t.slice(1);
+  if(/^[a-h][1-8][a-h][1-8][qrbn]?$/.test(t)){ /* длинная форма e2e4 */
+    for(i=0;i<legal.length;i++){ m=legal[i]; if(sqName(m.from)===t.slice(0,2)&&sqName(m.to)===t.slice(2,4)&&(!m.promo||m.promo===(t.charAt(4)||'q').toUpperCase())) cand.push(m); }
+  } else {
+    for(i=0;i<legal.length;i++){ m=legal[i]; if(normSan(san(pos,m,legal))===t) cand.push(m); }
+    if(!cand.length){ /* без уточнения, напр. Nd2 при двух конях: соберём всех */
+      var pl = /^[NBRQK]/.test(t)? t.charAt(0):'P', dest=t.match(/([a-h][1-8])(=?[QRBN])?$/);
+      if(dest){ for(i=0;i<legal.length;i++){ m=legal[i]; if(m.piece===pl && sqName(m.to)===dest[1] && (!m.promo||m.promo===(dest[2]||'=Q').replace('=',''))) cand.push(m); } }
+    }
+  }
+  if(!cand.length) return {err:'такого хода нет в этой позиции'};
+  if(cand.length>1) return {amb:cand, legal:legal};
+  return {move:cand[0], legal:legal};
+}
+/* ───────────── дескриптивная нотация ───────────── */
+var DFILE=['QR','QN','QB','Q','K','KB','KN','KR'];
+function dsq(i, white){ var f=i%8, r=Math.floor(i/8); var rk = white? r+1 : 8-r; return DFILE[f]+rk; }
+function descr(pos, m, legal){
+  var white=(pos.turn==='w');
+  if(m.castle==='K') return {main:'O-O', alt:['Castles K']};
+  if(m.castle==='Q') return {main:'O-O-O', alt:['Castles Q']};
+  var p=m.piece, dest=dsq(m.to,white), from=dsq(m.from,white), s, full, alts=[];
+  var others=legal.filter(function(o){ return o!==m && o.piece===p && o.from!==m.from && (m.capt? (o.capt===m.capt && (p!=='P' || true)) : o.to===m.to); });
+  if(m.capt){ s=p+'x'+m.capt; full=p+'('+from+')x'+m.capt+'('+dest+')';
+    if(p==='P'){ /* пешечные взятия почти всегда двусмысленны по жертве — уточняем, если есть другая пешка, бьющая ту же жертву */
+      var pawnOthers=legal.filter(function(o){ return o!==m && o.piece==='P' && o.capt===m.capt; });
+      if(pawnOthers.length) s='P('+from+')x'+m.capt;
+    } else if(others.length){ s=p+'('+from+')x'+m.capt; }
+    if(m.ep) s+=' e.p.';
+    alts.push(full); if(others.length||p==='P') alts.push(p+'x'+m.capt+'('+dest+')');
+  } else { s=p+'-'+dest; full=p+'('+from+')-'+dest; if(others.length) s=full; else alts.push(full); }
+  if(m.promo){ s+='='+m.promo; full+='='+m.promo; alts.push(s.replace('='+m.promo,'('+m.promo+')')); }
+  var n=makeMove(pos,m); if(inCheck({b:n.b}, n.turn==='w')) { s+= legalMoves(n).length? ' ch':' mate'; }
+  return {main:s, alt:alts};
+}
+function parseDescr(pos, text){
+  var white=(pos.turn==='w'), legal=legalMoves(pos);
+  var t=text.toUpperCase().replace(/KT/g,'N').replace(/[\u2013\u2014]/g,'-').replace(/[:*]/g,'X').replace(/\s+/g,'').replace(/E\.?P\.?$/,'').replace(/\.$/,'');
+  t=t.replace(/(CH|DBLCH|DISCH|MATE|\+|#|E\.P\.|EP)$/g,'').replace(/(CH|MATE|\+|#)$/,'');
+  t=t.replace(/0/g,'O');
+  if(!t) return {err:'пусто'};
+  if(/^O-O-O|^CASTLESQ|^OOO/.test(t)){ var cq=legal.filter(function(m){return m.castle==='Q';}); return cq.length?{move:cq[0],legal:legal}:{err:'длинная рокировка сейчас невозможна'}; }
+  if(/^O-O|^CASTLES|^OO/.test(t)){ var ck=legal.filter(function(m){return m.castle==='K';}); return ck.length?{move:ck[0],legal:legal}:{err:'короткая рокировка сейчас невозможна'}; }
+  var promo=''; var pm=t.match(/[=(]([QRBN])\)?$/); if(pm){ promo=pm[1]; t=t.replace(/[=(]([QRBN])\)?$/,''); }
+  /* фигура с уточнением: QN, KB, KP, N(QB3), N/QB3, KN... */
+  var m=t.match(/^(?:([KQ])(?=[NBRP][-X]))?([KQRBNP])(?:\(([KQ]?[RNBQK]?[1-8])\)|\/([KQ]?[RNBQK]?[1-8]))?([-X])(.+)$/);
+  if(!m) return {err:'не разобрала запись — ожидаю вид P-K4, N-KB3, BxP, QN-Q2, N(QB3)-Q5'};
+  var side=m[1]||'', piece=m[2], fromSq=m[3]||m[4]||'', op=m[5], rest=m[6];
+  var destSq='', victim='';
+  if(op==='-'){ destSq=rest; }
+  else { var vm=rest.match(/^([KQRBNP])(?:\(([KQ]?[RNBQK]?[1-8])\))?$/); if(vm){ victim=vm[1]; destSq=vm[2]||''; } else destSq=rest; }
+  function sqOf(d){ /* дескриптивное поле → индекс для ходящей стороны */
+    var mm=d.match(/^(K|Q)?(R|N|B|Q|K)?([1-8])$/); if(!mm) return -1;
+    var file; if(mm[2]==='Q'&&!mm[1]) file=3; else if(mm[2]==='K'&&!mm[1]) file=4;
+    else if(!mm[2]&&mm[1]==='Q') file=3; else if(!mm[2]&&mm[1]==='K') file=4;
+    else { if(!mm[1]) return -1; var k=mm[1]==='K'; file= mm[2]==='R'?(k?7:0): mm[2]==='N'?(k?6:1): mm[2]==='B'?(k?5:2): -1; }
+    if(file<0) return -1; var rk=parseInt(mm[3],10); var r= white? rk-1 : 8-rk; return r*8+file;
+  }
+  var cand=legal.filter(function(mv){
+    if(mv.piece!==piece) return false;
+    if(promo && mv.promo!==promo) return false;
+    if(!promo && mv.promo && mv.promo!=='Q') return false;
+    if(op==='-'){ if(mv.capt) return false; var di=sqOf(destSq); return di>=0 && mv.to===di; }
+    if(!mv.capt) return false;
+    if(victim && mv.capt!==victim) return false;
+    if(destSq){ var d2=sqOf(destSq); if(d2<0||mv.to!==d2) return false; }
+    return true;
+  });
+  if(fromSq){ var fi=sqOf(fromSq); cand=cand.filter(function(mv){ return mv.from===fi; }); }
+  else if(side){ cand=cand.filter(function(mv){ var f=mv.from%8; return side==='K'? f>=4 : f<=3; }); }
+  if(!cand.length) return {err:'такого хода нет в позиции (проверь: у чёрных горизонтали считаются от них)'};
+  if(cand.length>1) return {amb:cand, legal:legal};
+  return {move:cand[0], legal:legal};
+}
+if(typeof window!=='undefined') window.TG={startPos:startPos,legalMoves:legalMoves,makeMove:makeMove,san:san,parseSan:parseSan,descr:descr,parseDescr:parseDescr,sqName:sqName,sqIndex:sqIndex,inCheck:inCheck};
+/* ───────────── состояние и интерфейс ───────────── */
+var pos=startPos(), journal=[], whiteIs='itef', lastFrom=-1, lastTo=-1, pending=null;
+var GLYPH={K:'\u2654',Q:'\u2655',R:'\u2656',B:'\u2657',N:'\u2658',P:'\u2659',k:'\u265A',q:'\u265B',r:'\u265C',b:'\u265D',n:'\u265E',p:'\u265F'};
+function $(id){ return document.getElementById(id); }
+function showErr(e){ try{ $('savedNote').innerHTML='<span class="err">Ошибка скрипта: '+String(e&&e.message||e)+'</span>'; }catch(x){} }
+window.onerror=function(m){ showErr(m); };
+function drawBoard(){
+  var h='', r, f, i, p, cls;
+  for(r=7;r>=0;r--){ h+='<div class="rank">';
+    for(f=0;f<8;f++){ i=r*8+f; p=pos.b[i]; cls='sq '+(((r+f)%2)?'l':'d'); if(i===lastFrom) cls+=' from'; if(i===lastTo) cls+=' to';
+      h+='<div class="'+cls+'">'+(p?('<span class="'+(isWhite(p)?'w':'b')+'">'+GLYPH[p]+'</span>'):'')+
+         (f===0?'<span class="coord r">'+(r+1)+'</span>':'')+(r===0?'<span class="coord f">'+FILES.charAt(f)+'</span>':'')+'</div>'; }
+    h+='</div>'; }
+  $('board').innerHTML=h;
+}
+function itefToMove(){ return (pos.turn==='w')===(whiteIs==='itef'); }
+function refresh(){ try{ refreshInner(); }catch(e){ showErr(e); } }
+function refreshInner(){
+  drawBoard();
+  var it=itefToMove();
+  $('cardItef').className='card '+(it?'hot':'dim'); $('cardMh').className='card '+(it?'dim':'hot');
+  $('inItef').disabled=!it; $('okItef').disabled=!it; $('inMh').disabled=it; $('okMh').disabled=it;
+  var who=(pos.turn==='w'?'белые':'чёрные'); $('turnBanner').textContent='Сейчас ходит: '+(it?'ИТЭФ М-20':'MacHack VI')+' ('+who+'), ход '+(Math.floor(journal.length/2)+1);
+  $('cardItef').querySelector('.who').innerHTML='① Ход <b>ИТЭФ</b> → отнести МакХаку'+(it?' &nbsp;<span style="color:#c9792e">· сейчас ходит ИТЭФ ('+who+')</span>':'');
+  $('cardMh').querySelector('.who').innerHTML='② Ответ <b>MacHack</b> → отнести ИТЭФ'+(!it?' &nbsp;<span style="color:#c9792e">· сейчас ходит MacHack ('+who+')</span>':'');
+  var lines='', k;
+  for(k=0;k<journal.length;k+=2){ var w=journal[k], b=journal[k+1];
+    lines+=pad((k/2+1)+'.',4)+pad(w.san,8)+pad(w.desc,22)+(b?(pad(b.san,8)+b.desc):'')+'\n'; }
+  $('log').textContent=lines||'—';
+  var legal=legalMoves(pos); var note='';
+  if(!legal.length) note = inCheck(pos,pos.turn==='w')? 'МАТ. Партия окончена.':'ПАТ. Ничья.';
+  if(note) $('savedNote').textContent=note; save();
+  if(it){ setTimeout(function(){ $('inItef').focus(); },50); } else { setTimeout(function(){ $('inMh').focus(); },50); }
+}
+function pad(s,n){ s=String(s); while(s.length<n) s+=' '; return s; }
+function previewItef(){
+  pending=null; $('pickMh').innerHTML='';
+  var r=parseSan(pos,$('inItef').value);
+  if(r.err){ $('outItef').innerHTML='<small>для MacHack</small>—'; $('altItef').textContent=''; $('msgItef').innerHTML=$('inItef').value?'<div class="err">'+r.err+'</div>':''; return; }
+  if(r.amb){ $('msgItef').innerHTML='<div class="err">Неоднозначно: уточни фигуру (Nbd2, R1e1)</div>'; return; }
+  var d=descr(pos,r.move,r.legal); pending={move:r.move,san:san(pos,r.move,r.legal),desc:d.main};
+  $('outItef').innerHTML='<small>для MacHack</small>'+d.main; $('altItef').textContent=d.alt.length?('другие формы: '+d.alt.join('  ·  ')):''; $('msgItef').innerHTML='';
+}
+function previewMh(){
+  pending=null; $('pickMh').innerHTML='';
+  var r=parseDescr(pos,$('inMh').value);
+  if(r.err){ $('outMh').innerHTML='<small>для ИТЭФ</small>—'; $('msgMh').innerHTML=$('inMh').value?'<div class="err">'+r.err+'</div>':''; return; }
+  if(r.amb){ $('outMh').innerHTML='<small>для ИТЭФ</small>?'; $('msgMh').innerHTML='<div class="err">Под эту запись подходят несколько ходов — какой сделал MacHack?</div>';
+    var h=''; r.amb.forEach(function(mv,ix){ h+='<button class="pick" data-ix="'+ix+'">'+san(pos,mv,r.legal)+'  ('+descr(pos,mv,r.legal).main+')</button>'; });
+    $('pickMh').innerHTML=h;
+    Array.prototype.forEach.call($('pickMh').querySelectorAll('button'),function(btn){ btn.onclick=function(){ var mv=r.amb[parseInt(btn.getAttribute('data-ix'),10)];
+      pending={move:mv,san:san(pos,mv,r.legal),desc:descr(pos,mv,r.legal).main}; $('outMh').innerHTML='<small>для ИТЭФ</small>'+pending.san; $('msgMh').innerHTML='<div class="ok">Выбрано: '+pending.san+'. Теперь подтверди.</div>'; }; });
+    return; }
+  pending={move:r.move,san:san(pos,r.move,r.legal),desc:descr(pos,r.move,r.legal).main};
+  $('outMh').innerHTML='<small>для ИТЭФ</small>'+pending.san; $('msgMh').innerHTML='';
+}
+function commit(){
+  if(!pending) return;
+  var p=pending; journal.push({san:p.san,desc:p.desc}); lastFrom=p.move.from; lastTo=p.move.to; pos=makeMove(pos,p.move); pos.hist.push(p.san);
+  pending=null; $('inItef').value=''; $('inMh').value=''; $('outItef').innerHTML='<small>для MacHack</small>—'; $('outMh').innerHTML='<small>для ИТЭФ</small>—'; $('altItef').textContent=''; $('msgItef').innerHTML=''; $('msgMh').innerHTML=''; $('pickMh').innerHTML='';
+  refresh();
+}
+function copyText(t, where){
+  function done(ok){ where.innerHTML=ok?'<div class="ok">Скопировано: '+t+'</div>':'<div class="err">Не удалось скопировать — выдели и скопируй руками: '+t+'</div>'; }
+  try{ if(navigator.clipboard&&navigator.clipboard.writeText){ navigator.clipboard.writeText(t).then(function(){done(true);},function(){ fallback(); }); return; } }catch(e){}
+  fallback();
+  function fallback(){ try{ var ta=document.createElement('textarea'); ta.value=t; document.body.appendChild(ta); ta.select(); var ok=document.execCommand('copy'); document.body.removeChild(ta); done(ok); }catch(e){ done(false); } }
+}
+function pgn(){
+  var w = whiteIs==='itef'?'ИТЭФ М-20 (1966)':'MacHack VI (1967)', b = whiteIs==='itef'?'MacHack VI (1967)':'ИТЭФ М-20 (1966)';
+  var s='[Event "ИТЭФ — MacHack, телеграфный матч"]\n[White "'+w+'"]\n[Black "'+b+'"]\n[Result "*"]\n\n', k;
+  for(k=0;k<journal.length;k++){ if(k%2===0) s+=(k/2+1)+'. '; s+=journal[k].san+' '; }
+  return s+'*';
+}
+function save(){ try{ localStorage.setItem('telegrafist1967', JSON.stringify({pos:pos,journal:journal,whiteIs:whiteIs,lastFrom:lastFrom,lastTo:lastTo})); }catch(e){} }
+function load(){ try{ var s=localStorage.getItem('telegrafist1967'); if(!s) return false; var o=JSON.parse(s); pos=o.pos; journal=o.journal; whiteIs=o.whiteIs; lastFrom=o.lastFrom; lastTo=o.lastTo; $('whiteIs').value=whiteIs; return true; }catch(e){ return false; } }
+function replayTo(n){ var p=startPos(), i, r; var sans=journal.slice(0,n).map(function(j){return j.san;}); journal=[]; lastFrom=-1; lastTo=-1;
+  for(i=0;i<sans.length;i++){ r=parseSan(p,sans[i]); if(!r.move) break; var legal=r.legal; journal.push({san:san(p,r.move,legal),desc:descr(p,r.move,legal).main}); lastFrom=r.move.from; lastTo=r.move.to; p=makeMove(p,r.move); }
+  pos=p; }
+
+$('inItef').addEventListener('input',previewItef); $('inMh').addEventListener('input',previewMh);
+$('inItef').addEventListener('keydown',function(e){ if(e.keyCode===13){ previewItef(); if(pending) commit(); } });
+$('inMh').addEventListener('keydown',function(e){ if(e.keyCode===13){ previewMh(); if(pending) commit(); } });
+$('okItef').onclick=function(){ previewItef(); if(pending) commit(); else if(!$('msgItef').innerHTML) $('msgItef').innerHTML='<div class="err">Сначала введи ход</div>'; };
+$('okMh').onclick=function(){ if(!pending) previewMh(); if(pending) commit(); else if(!$('msgMh').innerHTML) $('msgMh').innerHTML='<div class="err">Сначала введи ответ МакХака</div>'; };
+$('copyItef').onclick=function(){ if(!pending) previewItef(); if(pending) copyText(pending.desc,$('msgItef')); };
+$('copyMh').onclick=function(){ if(!pending) previewMh(); if(pending) copyText(pending.san,$('msgMh')); };
+$('copyPgn').onclick=function(){ copyText(pgn(),$('savedNote')); };
+$('undo').onclick=function(){ if(!journal.length) return; replayTo(journal.length-1); refresh(); };
+var newArmed=false;
+function startNew(){ whiteIs=$('whiteIs').value; pos=startPos(); journal=[]; lastFrom=-1; lastTo=-1; pending=null; newArmed=false; $('newGame').textContent='Новая партия';
+  refresh(); $('savedNote').innerHTML='<span class="ok">Новая партия. Белыми играет '+(whiteIs==='itef'?'ИТЭФ':'MacHack')+' — введи первый ход в карточку '+(whiteIs==='itef'?'①':'②')+'.</span>'; }
+$('newGame').onclick=function(){ try{
+  if(journal.length && !newArmed){ newArmed=true; $('newGame').textContent='Точно начать заново? Нажми ещё раз'; $('savedNote').innerHTML='<span class="err">Текущая запись будет стёрта — скопируй PGN, если нужен.</span>'; return; }
+  startNew(); }catch(e){ showErr(e); } };
+$('whiteIs').onchange=function(){ if(!journal.length){ startNew(); } else { $('whiteIs').value=whiteIs; $('savedNote').innerHTML='<span class="err">Сторону можно менять только перед новой партией: сначала «Новая партия».</span>'; } };
+load(); refresh();
+})();
+</script>
+</body>
+</html>

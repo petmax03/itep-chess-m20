@@ -1,0 +1,31 @@
+{
+  "version": "v19",
+  "kind": "native correction, not a recovered original word",
+  "source": "https://greko.su/m20-itef.pdf",
+  "pdf_page": 79,
+  "printed_page": 88,
+  "original_address": "1604",
+  "original_word": "375000030203022",
+  "new_words": {
+    "1604": "056000003000000",
+    "0300": "455302003040000",
+    "0301": "076000016050000",
+    "0302": "375000030203022",
+    "0303": "056000016050000",
+    "0304": "000400000000000"
+  },
+  "predicate": "primary queen existence/dead flag, bit 35 (zero based)",
+  "repair": "Do not overwrite the spare queen with an absent primary queen",
+  "space": "0300..0304 are not loaded; the 0300 field in instruction 2117 is an immediate FK mode, not a memory reference",
+  "scratch": "No live scratch cell is overwritten; 0010 is preserved for 1657",
+  "command_cost": {
+    "live_primary_added": 4,
+    "absent_primary_added": 2
+  },
+  "control": "Machine(promotion_repair=False)",
+  "limitations": "Does not add a third simultaneously live queen slot or claim recovery of the match binary.",
+  "source_sha256": {
+    "research-history/m20-itef.pdf": "a3cc104ca3ba7c3180fe83dffeb38f538beec458ff160adda0ca8a48a009bb70",
+    "research-history/mathnet-1970.pdf": "38b17cb90349fc4583bfc17c5395ce6ed85e0bfa691014a21a3c7242d6e3536a"
+  }
+}

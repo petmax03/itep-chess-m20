@@ -1,0 +1,3784 @@
+[
+  {
+    "ply": 1,
+    "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+    "move": "e2e4",
+    "san": "e4",
+    "nodes": 4003,
+    "steps": 9682460,
+    "seconds": 0.129,
+    "depth": 3,
+    "word": "043600100356024",
+    "search_mode": "original_window",
+    "lambda_final_1706": 4003,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 9682460,
+        "nodes": 4003,
+        "depth": 3,
+        "seconds": 0.129,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 9682460,
+    "m20_minutes": 8.068716666666667,
+    "m20_time": "8,07 \u043c\u0438\u043d",
+    "total_m20_minutes": 8.068716666666667,
+    "total_m20_time": "8,07 \u043c\u0438\u043d",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 2,
+    "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+    "move": "d7d5",
+    "san": "d5",
+    "nodes": 4496,
+    "steps": 10235276,
+    "seconds": 0.145,
+    "depth": 3,
+    "word": "034600100356024",
+    "search_mode": "original_window",
+    "lambda_final_1706": 4496,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 10235276,
+        "nodes": 4496,
+        "depth": 3,
+        "seconds": 0.145,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 10235276,
+    "m20_minutes": 8.529396666666667,
+    "m20_time": "8,53 \u043c\u0438\u043d",
+    "total_m20_minutes": 8.529396666666667,
+    "total_m20_time": "8,53 \u043c\u0438\u043d",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 3,
+    "fen": "rnbqkbnr/ppp1pppp/8/3p4/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+    "move": "e4d5",
+    "san": "exd5",
+    "nodes": 22158,
+    "steps": 42298604,
+    "seconds": 0.59,
+    "depth": 3,
+    "word": "034600700336037",
+    "search_mode": "original_window",
+    "lambda_final_1706": 22158,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 42298604,
+        "nodes": 22158,
+        "depth": 3,
+        "seconds": 0.59,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 42298604,
+    "m20_minutes": 35.24883666666667,
+    "m20_time": "35,25 \u043c\u0438\u043d",
+    "total_m20_minutes": 35.24883666666667,
+    "total_m20_time": "35,25 \u043c\u0438\u043d",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 4,
+    "fen": "rnbqkbnr/ppp1pppp/8/3P4/8/8/PPPP1PPP/RNBQKBNR b KQkq - 0 2",
+    "move": "d8d5",
+    "san": "Qxd5",
+    "nodes": 55359,
+    "steps": 82851739,
+    "seconds": 1.224,
+    "depth": 3,
+    "word": "034600100026034",
+    "search_mode": "original_window",
+    "lambda_final_1706": 55359,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 82851739,
+        "nodes": 55359,
+        "depth": 3,
+        "seconds": 1.224,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 82851739,
+    "m20_minutes": 69.04311583333333,
+    "m20_time": "69,04 \u043c\u0438\u043d",
+    "total_m20_minutes": 69.04311583333333,
+    "total_m20_time": "69,04 \u043c\u0438\u043d",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 5,
+    "fen": "rnb1kbnr/ppp1pppp/8/3q4/8/8/PPPP1PPP/RNBQKBNR w KQkq - 0 3",
+    "move": "b1c3",
+    "san": "Nc3",
+    "nodes": 105619,
+    "steps": 138261148,
+    "seconds": 1.908,
+    "depth": 3,
+    "word": "055600300106035",
+    "search_mode": "original_window",
+    "lambda_final_1706": 105619,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 138261148,
+        "nodes": 105619,
+        "depth": 3,
+        "seconds": 1.908,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 138261148,
+    "m20_minutes": 115.21762333333334,
+    "m20_time": "115,22 \u043c\u0438\u043d",
+    "total_m20_minutes": 115.21762333333334,
+    "total_m20_time": "115,22 \u043c\u0438\u043d",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 6,
+    "fen": "rnb1kbnr/ppp1pppp/8/3q4/8/2N5/PPPP1PPP/R1BQKBNR b KQkq - 1 3",
+    "move": "d5e5",
+    "san": "Qe5+",
+    "nodes": 11661,
+    "steps": 24762627,
+    "seconds": 0.417,
+    "depth": 3,
+    "word": "033601300026057",
+    "search_mode": "original_window",
+    "lambda_final_1706": 11661,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 24762627,
+        "nodes": 11661,
+        "depth": 3,
+        "seconds": 0.417,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 24762627,
+    "m20_minutes": 20.6355225,
+    "m20_time": "20,64 \u043c\u0438\u043d",
+    "total_m20_minutes": 20.6355225,
+    "total_m20_time": "20,64 \u043c\u0438\u043d",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 7,
+    "fen": "rnb1kbnr/ppp1pppp/8/4q3/8/2N5/PPPP1PPP/R1BQKBNR w KQkq - 2 4",
+    "move": "g1e2",
+    "san": "Nge2",
+    "nodes": 1583,
+    "steps": 3177041,
+    "seconds": 0.06,
+    "depth": 3,
+    "word": "063600100106040",
+    "search_mode": "original_window",
+    "lambda_final_1706": 1583,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 3177041,
+        "nodes": 1583,
+        "depth": 3,
+        "seconds": 0.06,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 3177041,
+    "m20_minutes": 2.6475341666666665,
+    "m20_time": "2,65 \u043c\u0438\u043d",
+    "total_m20_minutes": 2.6475341666666665,
+    "total_m20_time": "2,65 \u043c\u0438\u043d",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 8,
+    "fen": "rnb1kbnr/ppp1pppp/8/4q3/8/2N5/PPPPNPPP/R1BQKB1R b KQkq - 3 4",
+    "move": "e5a5",
+    "san": "Qa5",
+    "nodes": 12580,
+    "steps": 31064907,
+    "seconds": 0.402,
+    "depth": 3,
+    "word": "037603500026053",
+    "search_mode": "original_window",
+    "lambda_final_1706": 12580,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 31064907,
+        "nodes": 12580,
+        "depth": 3,
+        "seconds": 0.402,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 31064907,
+    "m20_minutes": 25.8874225,
+    "m20_time": "25,89 \u043c\u0438\u043d",
+    "total_m20_minutes": 25.8874225,
+    "total_m20_time": "25,89 \u043c\u0438\u043d",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 9,
+    "fen": "rnb1kbnr/ppp1pppp/8/q7/8/2N5/PPPPNPPP/R1BQKB1R w KQkq - 4 5",
+    "move": "d2d4",
+    "san": "d4",
+    "nodes": 21446,
+    "steps": 42565153,
+    "seconds": 0.562,
+    "depth": 3,
+    "word": "044600100356027",
+    "search_mode": "original_window",
+    "lambda_final_1706": 21446,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 42565153,
+        "nodes": 21446,
+        "depth": 3,
+        "seconds": 0.562,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 42565153,
+    "m20_minutes": 35.470960833333336,
+    "m20_time": "35,47 \u043c\u0438\u043d",
+    "total_m20_minutes": 35.470960833333336,
+    "total_m20_time": "35,47 \u043c\u0438\u043d",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 10,
+    "fen": "rnb1kbnr/ppp1pppp/8/q7/3P4/2N5/PPP1NPPP/R1BQKB1R b KQkq - 0 5",
+    "move": "c8f5",
+    "san": "Bf5",
+    "nodes": 8256,
+    "steps": 17695011,
+    "seconds": 0.225,
+    "depth": 3,
+    "word": "032600500066047",
+    "search_mode": "original_window",
+    "lambda_final_1706": 8256,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 17695011,
+        "nodes": 8256,
+        "depth": 3,
+        "seconds": 0.225,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 17695011,
+    "m20_minutes": 14.7458425,
+    "m20_time": "14,75 \u043c\u0438\u043d",
+    "total_m20_minutes": 14.7458425,
+    "total_m20_time": "14,75 \u043c\u0438\u043d",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 11,
+    "fen": "rn2kbnr/ppp1pppp/8/q4b2/3P4/2N5/PPP1NPPP/R1BQKB1R w KQkq - 1 6",
+    "move": "e2g3",
+    "san": "Ng3",
+    "nodes": 26721,
+    "steps": 51502975,
+    "seconds": 0.655,
+    "depth": 3,
+    "word": "051600500106035",
+    "search_mode": "original_window",
+    "lambda_final_1706": 26721,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 51502975,
+        "nodes": 26721,
+        "depth": 3,
+        "seconds": 0.655,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 51502975,
+    "m20_minutes": 42.91914583333333,
+    "m20_time": "42,92 \u043c\u0438\u043d",
+    "total_m20_minutes": 42.91914583333333,
+    "total_m20_time": "42,92 \u043c\u0438\u043d",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 12,
+    "fen": "rn2kbnr/ppp1pppp/8/q4b2/3P4/2N3N1/PPP2PPP/R1BQKB1R b KQkq - 2 6",
+    "move": "g8f6",
+    "san": "Nf6",
+    "nodes": 30045,
+    "steps": 55828664,
+    "seconds": 0.743,
+    "depth": 3,
+    "word": "022600300116047",
+    "search_mode": "original_window",
+    "lambda_final_1706": 30045,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 55828664,
+        "nodes": 30045,
+        "depth": 3,
+        "seconds": 0.743,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 55828664,
+    "m20_minutes": 46.52388666666667,
+    "m20_time": "46,52 \u043c\u0438\u043d",
+    "total_m20_minutes": 46.52388666666667,
+    "total_m20_time": "46,52 \u043c\u0438\u043d",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 13,
+    "fen": "rn2kb1r/ppp1pppp/5n2/q4b2/3P4/2N3N1/PPP2PPP/R1BQKB1R w KQkq - 3 7",
+    "move": "f1b5",
+    "san": "Bb5+",
+    "nodes": 26556,
+    "steps": 46636129,
+    "seconds": 0.625,
+    "depth": 3,
+    "word": "036601100076047",
+    "search_mode": "original_window",
+    "lambda_final_1706": 26556,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 46636129,
+        "nodes": 26556,
+        "depth": 3,
+        "seconds": 0.625,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 46636129,
+    "m20_minutes": 38.863440833333335,
+    "m20_time": "38,86 \u043c\u0438\u043d",
+    "total_m20_minutes": 38.863440833333335,
+    "total_m20_time": "38,86 \u043c\u0438\u043d",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 14,
+    "fen": "rn2kb1r/ppp1pppp/5n2/qB3b2/3P4/2N3N1/PPP2PPP/R1BQK2R b KQkq - 4 7",
+    "move": "f5d7",
+    "san": "Bd7",
+    "nodes": 5310,
+    "steps": 10669928,
+    "seconds": 0.144,
+    "depth": 3,
+    "word": "014600100066047",
+    "search_mode": "original_window",
+    "lambda_final_1706": 5310,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 10669928,
+        "nodes": 5310,
+        "depth": 3,
+        "seconds": 0.144,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 10669928,
+    "m20_minutes": 8.891606666666666,
+    "m20_time": "8,89 \u043c\u0438\u043d",
+    "total_m20_minutes": 8.891606666666666,
+    "total_m20_time": "8,89 \u043c\u0438\u043d",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 15,
+    "fen": "rn2kb1r/pppbpppp/5n2/qB6/3P4/2N3N1/PPP2PPP/R1BQK2R w KQkq - 5 8",
+    "move": "b5c4",
+    "san": "Bc4",
+    "nodes": 21377,
+    "steps": 43725831,
+    "seconds": 0.602,
+    "depth": 3,
+    "word": "045600100076055",
+    "search_mode": "original_window",
+    "lambda_final_1706": 21377,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 43725831,
+        "nodes": 21377,
+        "depth": 3,
+        "seconds": 0.602,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 43725831,
+    "m20_minutes": 36.4381925,
+    "m20_time": "36,44 \u043c\u0438\u043d",
+    "total_m20_minutes": 36.4381925,
+    "total_m20_time": "36,44 \u043c\u0438\u043d",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 16,
+    "fen": "rn2kb1r/pppbpppp/5n2/q7/2BP4/2N3N1/PPP2PPP/R1BQK2R b KQkq - 6 8",
+    "move": "b8c6",
+    "san": "Nc6",
+    "nodes": 7327,
+    "steps": 15546178,
+    "seconds": 0.21,
+    "depth": 3,
+    "word": "025600100116052",
+    "search_mode": "original_window",
+    "lambda_final_1706": 7327,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 15546178,
+        "nodes": 7327,
+        "depth": 3,
+        "seconds": 0.21,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 15546178,
+    "m20_minutes": 12.955148333333334,
+    "m20_time": "12,96 \u043c\u0438\u043d",
+    "total_m20_minutes": 12.955148333333334,
+    "total_m20_time": "12,96 \u043c\u0438\u043d",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 17,
+    "fen": "r3kb1r/pppbpppp/2n2n2/q7/2BP4/2N3N1/PPP2PPP/R1BQK2R w KQkq - 7 9",
+    "move": "e1g1",
+    "san": "O-O",
+    "nodes": 64855,
+    "steps": 117493095,
+    "seconds": 1.679,
+    "depth": 3,
+    "word": "000600400366057",
+    "search_mode": "original_window",
+    "lambda_final_1706": 64855,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 117493095,
+        "nodes": 64855,
+        "depth": 3,
+        "seconds": 1.679,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 117493095,
+    "m20_minutes": 97.9109125,
+    "m20_time": "97,91 \u043c\u0438\u043d",
+    "total_m20_minutes": 97.9109125,
+    "total_m20_time": "97,91 \u043c\u0438\u043d",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 18,
+    "fen": "r3kb1r/pppbpppp/2n2n2/q7/2BP4/2N3N1/PPP2PPP/R1BQ1RK1 b kq - 8 9",
+    "move": "a5b6",
+    "san": "Qb6",
+    "nodes": 45275,
+    "steps": 85495658,
+    "seconds": 1.311,
+    "depth": 3,
+    "word": "026601500026054",
+    "search_mode": "original_window",
+    "lambda_final_1706": 45275,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 85495658,
+        "nodes": 45275,
+        "depth": 3,
+        "seconds": 1.311,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 85495658,
+    "m20_minutes": 71.24638166666666,
+    "m20_time": "71,25 \u043c\u0438\u043d",
+    "total_m20_minutes": 71.24638166666666,
+    "total_m20_time": "71,25 \u043c\u0438\u043d",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 19,
+    "fen": "r3kb1r/pppbpppp/1qn2n2/8/2BP4/2N3N1/PPP2PPP/R1BQ1RK1 w kq - 9 10",
+    "move": "g3e2",
+    "san": "Nge2",
+    "nodes": 192695,
+    "steps": 319649693,
+    "seconds": 4.647,
+    "depth": 3,
+    "word": "063600100116053",
+    "search_mode": "original_window",
+    "lambda_final_1706": 192695,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 319649693,
+        "nodes": 192695,
+        "depth": 3,
+        "seconds": 4.647,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 319649693,
+    "m20_minutes": 266.3747441666667,
+    "m20_time": "4,44 \u0447",
+    "total_m20_minutes": 266.3747441666667,
+    "total_m20_time": "4,44 \u0447",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 20,
+    "fen": "r3kb1r/pppbpppp/1qn2n2/8/2BP4/2N5/PPP1NPPP/R1BQ1RK1 b kq - 10 10",
+    "move": "e7e5",
+    "san": "e5",
+    "nodes": 13548,
+    "steps": 28004186,
+    "seconds": 0.395,
+    "depth": 3,
+    "word": "033600100356046",
+    "search_mode": "original_window",
+    "lambda_final_1706": 13548,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 28004186,
+        "nodes": 13548,
+        "depth": 3,
+        "seconds": 0.395,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 28004186,
+    "m20_minutes": 23.336821666666665,
+    "m20_time": "23,34 \u043c\u0438\u043d",
+    "total_m20_minutes": 23.336821666666665,
+    "total_m20_time": "23,34 \u043c\u0438\u043d",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 21,
+    "fen": "r3kb1r/pppb1ppp/1qn2n2/4p3/2BP4/2N5/PPP1NPPP/R1BQ1RK1 w kq - 0 11",
+    "move": "f1e1",
+    "san": "Re1",
+    "nodes": 155578,
+    "steps": 255367033,
+    "seconds": 3.384,
+    "depth": 3,
+    "word": "073600100046045",
+    "search_mode": "original_window",
+    "lambda_final_1706": 155578,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 255367033,
+        "nodes": 155578,
+        "depth": 3,
+        "seconds": 3.384,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 255367033,
+    "m20_minutes": 212.80586083333333,
+    "m20_time": "3,55 \u0447",
+    "total_m20_minutes": 212.80586083333333,
+    "total_m20_time": "3,55 \u0447",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 22,
+    "fen": "r3kb1r/pppb1ppp/1qn2n2/4p3/2BP4/2N5/PPP1NPPP/R1BQR1K1 b kq - 1 11",
+    "move": "e8c8",
+    "san": "O-O-O",
+    "nodes": 22511,
+    "steps": 40475223,
+    "seconds": 0.592,
+    "depth": 3,
+    "word": "000600300376054",
+    "search_mode": "original_window",
+    "lambda_final_1706": 22511,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 40475223,
+        "nodes": 22511,
+        "depth": 3,
+        "seconds": 0.592,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 40475223,
+    "m20_minutes": 33.7293525,
+    "m20_time": "33,73 \u043c\u0438\u043d",
+    "total_m20_minutes": 33.7293525,
+    "total_m20_time": "33,73 \u043c\u0438\u043d",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 23,
+    "fen": "2kr1b1r/pppb1ppp/1qn2n2/4p3/2BP4/2N5/PPP1NPPP/R1BQR1K1 w - - 2 12",
+    "move": "c4f7",
+    "san": "Bxf7",
+    "nodes": 103198,
+    "steps": 199476868,
+    "seconds": 2.911,
+    "depth": 3,
+    "word": "012600600076045",
+    "search_mode": "original_window",
+    "lambda_final_1706": 103198,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 199476868,
+        "nodes": 103198,
+        "depth": 3,
+        "seconds": 2.911,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 199476868,
+    "m20_minutes": 166.23072333333334,
+    "m20_time": "2,77 \u0447",
+    "total_m20_minutes": 166.23072333333334,
+    "total_m20_time": "2,77 \u0447",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 24,
+    "fen": "2kr1b1r/pppb1Bpp/1qn2n2/4p3/3P4/2N5/PPP1NPPP/R1BQR1K1 b - - 0 12",
+    "move": "e5d4",
+    "san": "exd4",
+    "nodes": 7282,
+    "steps": 14523961,
+    "seconds": 0.194,
+    "depth": 3,
+    "word": "044600100326050",
+    "search_mode": "original_window",
+    "lambda_final_1706": 7282,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 14523961,
+        "nodes": 7282,
+        "depth": 3,
+        "seconds": 0.194,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 14523961,
+    "m20_minutes": 12.103300833333334,
+    "m20_time": "12,10 \u043c\u0438\u043d",
+    "total_m20_minutes": 12.103300833333334,
+    "total_m20_time": "12,10 \u043c\u0438\u043d",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 25,
+    "fen": "2kr1b1r/pppb1Bpp/1qn2n2/8/3p4/2N5/PPP1NPPP/R1BQR1K1 w - - 0 13",
+    "move": "c3d5",
+    "san": "Nd5",
+    "nodes": 17320,
+    "steps": 32862025,
+    "seconds": 0.459,
+    "depth": 3,
+    "word": "034600100116046",
+    "search_mode": "original_window",
+    "lambda_final_1706": 17320,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 32862025,
+        "nodes": 17320,
+        "depth": 3,
+        "seconds": 0.459,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 32862025,
+    "m20_minutes": 27.385020833333332,
+    "m20_time": "27,39 \u043c\u0438\u043d",
+    "total_m20_minutes": 27.385020833333332,
+    "total_m20_time": "27,39 \u043c\u0438\u043d",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 26,
+    "fen": "2kr1b1r/pppb1Bpp/1qn2n2/3N4/3p4/8/PPP1NPPP/R1BQR1K1 b - - 1 13",
+    "move": "f6d5",
+    "san": "Nxd5",
+    "nodes": 26912,
+    "steps": 49881204,
+    "seconds": 0.681,
+    "depth": 3,
+    "word": "034600300116046",
+    "search_mode": "original_window",
+    "lambda_final_1706": 26912,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 49881204,
+        "nodes": 26912,
+        "depth": 3,
+        "seconds": 0.681,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 49881204,
+    "m20_minutes": 41.56767,
+    "m20_time": "41,57 \u043c\u0438\u043d",
+    "total_m20_minutes": 41.56767,
+    "total_m20_time": "41,57 \u043c\u0438\u043d",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 27,
+    "fen": "2kr1b1r/pppb1Bpp/1qn5/3n4/3p4/8/PPP1NPPP/R1BQR1K1 w - - 0 14",
+    "move": "f7d5",
+    "san": "Bxd5",
+    "nodes": 6852,
+    "steps": 12204749,
+    "seconds": 0.165,
+    "depth": 3,
+    "word": "034600100076042",
+    "search_mode": "original_window",
+    "lambda_final_1706": 6852,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 12204749,
+        "nodes": 6852,
+        "depth": 3,
+        "seconds": 0.165,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 12204749,
+    "m20_minutes": 10.170624166666666,
+    "m20_time": "10,17 \u043c\u0438\u043d",
+    "total_m20_minutes": 10.170624166666666,
+    "total_m20_time": "10,17 \u043c\u0438\u043d",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 28,
+    "fen": "2kr1b1r/pppb2pp/1qn5/3B4/3p4/8/PPP1NPPP/R1BQR1K1 b - - 0 14",
+    "move": "d7g4",
+    "san": "Bg4",
+    "nodes": 47650,
+    "steps": 81719132,
+    "seconds": 1.22,
+    "depth": 3,
+    "word": "041600400066040",
+    "search_mode": "original_window",
+    "lambda_final_1706": 47650,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 81719132,
+        "nodes": 47650,
+        "depth": 3,
+        "seconds": 1.22,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 81719132,
+    "m20_minutes": 68.09927666666667,
+    "m20_time": "68,10 \u043c\u0438\u043d",
+    "total_m20_minutes": 68.09927666666667,
+    "total_m20_time": "68,10 \u043c\u0438\u043d",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 29,
+    "fen": "2kr1b1r/ppp3pp/1qn5/3B4/3p2b1/8/PPP1NPPP/R1BQR1K1 w - - 1 15",
+    "move": "d5c6",
+    "san": "Bxc6",
+    "nodes": 35143,
+    "steps": 63683928,
+    "seconds": 0.942,
+    "depth": 3,
+    "word": "025600500076043",
+    "search_mode": "original_window",
+    "lambda_final_1706": 35143,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 63683928,
+        "nodes": 35143,
+        "depth": 3,
+        "seconds": 0.942,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 63683928,
+    "m20_minutes": 53.06994,
+    "m20_time": "53,07 \u043c\u0438\u043d",
+    "total_m20_minutes": 53.06994,
+    "total_m20_time": "53,07 \u043c\u0438\u043d",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 30,
+    "fen": "2kr1b1r/ppp3pp/1qB5/8/3p2b1/8/PPP1NPPP/R1BQR1K1 b - - 0 15",
+    "move": "b7c6",
+    "san": "bxc6",
+    "nodes": 14768,
+    "steps": 24410355,
+    "seconds": 0.453,
+    "depth": 3,
+    "word": "025600200336043",
+    "search_mode": "original_window",
+    "lambda_final_1706": 14768,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 24410355,
+        "nodes": 14768,
+        "depth": 3,
+        "seconds": 0.453,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 24410355,
+    "m20_minutes": 20.3419625,
+    "m20_time": "20,34 \u043c\u0438\u043d",
+    "total_m20_minutes": 20.3419625,
+    "total_m20_time": "20,34 \u043c\u0438\u043d",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 31,
+    "fen": "2kr1b1r/p1p3pp/1qp5/8/3p2b1/8/PPP1NPPP/R1BQR1K1 w - - 0 16",
+    "move": "h2h3",
+    "san": "h3",
+    "nodes": 34287,
+    "steps": 57543871,
+    "seconds": 0.939,
+    "depth": 3,
+    "word": "050601000346033",
+    "search_mode": "original_window",
+    "lambda_final_1706": 34287,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 57543871,
+        "nodes": 34287,
+        "depth": 3,
+        "seconds": 0.939,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 57543871,
+    "m20_minutes": 47.953225833333335,
+    "m20_time": "47,95 \u043c\u0438\u043d",
+    "total_m20_minutes": 47.953225833333335,
+    "total_m20_time": "47,95 \u043c\u0438\u043d",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 32,
+    "fen": "2kr1b1r/p1p3pp/1qp5/8/3p2b1/7P/PPP1NPP1/R1BQR1K1 b - - 0 16",
+    "move": "g4h5",
+    "san": "Bh5",
+    "nodes": 33566,
+    "steps": 59349622,
+    "seconds": 0.92,
+    "depth": 3,
+    "word": "030600300066045",
+    "search_mode": "original_window",
+    "lambda_final_1706": 33566,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 59349622,
+        "nodes": 33566,
+        "depth": 3,
+        "seconds": 0.92,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 59349622,
+    "m20_minutes": 49.458018333333335,
+    "m20_time": "49,46 \u043c\u0438\u043d",
+    "total_m20_minutes": 49.458018333333335,
+    "total_m20_time": "49,46 \u043c\u0438\u043d",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 33,
+    "fen": "2kr1b1r/p1p3pp/1qp5/7b/3p4/7P/PPP1NPP1/R1BQR1K1 w - - 1 17",
+    "move": "g2g4",
+    "san": "g4",
+    "nodes": 14029,
+    "steps": 24695781,
+    "seconds": 0.375,
+    "depth": 3,
+    "word": "041600300356034",
+    "search_mode": "original_window",
+    "lambda_final_1706": 14029,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 24695781,
+        "nodes": 14029,
+        "depth": 3,
+        "seconds": 0.375,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 24695781,
+    "m20_minutes": 20.5798175,
+    "m20_time": "20,58 \u043c\u0438\u043d",
+    "total_m20_minutes": 20.5798175,
+    "total_m20_time": "20,58 \u043c\u0438\u043d",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 34,
+    "fen": "2kr1b1r/p1p3pp/1qp5/7b/3p2P1/7P/PPP1NP2/R1BQR1K1 b - - 0 17",
+    "move": "h5g6",
+    "san": "Bg6",
+    "nodes": 27081,
+    "steps": 47675264,
+    "seconds": 0.75,
+    "depth": 3,
+    "word": "021600100066041",
+    "search_mode": "original_window",
+    "lambda_final_1706": 27081,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 47675264,
+        "nodes": 27081,
+        "depth": 3,
+        "seconds": 0.75,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 47675264,
+    "m20_minutes": 39.72938666666667,
+    "m20_time": "39,73 \u043c\u0438\u043d",
+    "total_m20_minutes": 39.72938666666667,
+    "total_m20_time": "39,73 \u043c\u0438\u043d",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 35,
+    "fen": "2kr1b1r/p1p3pp/1qp3b1/8/3p2P1/7P/PPP1NP2/R1BQR1K1 w - - 1 18",
+    "move": "e2f4",
+    "san": "Nf4",
+    "nodes": 17952,
+    "steps": 31198047,
+    "seconds": 0.504,
+    "depth": 3,
+    "word": "042600100106034",
+    "search_mode": "original_window",
+    "lambda_final_1706": 17952,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 31198047,
+        "nodes": 17952,
+        "depth": 3,
+        "seconds": 0.504,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 31198047,
+    "m20_minutes": 25.9983725,
+    "m20_time": "26,00 \u043c\u0438\u043d",
+    "total_m20_minutes": 25.9983725,
+    "total_m20_time": "26,00 \u043c\u0438\u043d",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 36,
+    "fen": "2kr1b1r/p1p3pp/1qp3b1/8/3p1NP1/7P/PPP2P2/R1BQR1K1 b - - 2 18",
+    "move": "f8b4",
+    "san": "Bb4",
+    "nodes": 17359,
+    "steps": 31183835,
+    "seconds": 0.454,
+    "depth": 3,
+    "word": "046600100076043",
+    "search_mode": "original_window",
+    "lambda_final_1706": 17359,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 31183835,
+        "nodes": 17359,
+        "depth": 3,
+        "seconds": 0.454,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 31183835,
+    "m20_minutes": 25.986529166666667,
+    "m20_time": "25,99 \u043c\u0438\u043d",
+    "total_m20_minutes": 25.986529166666667,
+    "total_m20_time": "25,99 \u043c\u0438\u043d",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 37,
+    "fen": "2kr3r/p1p3pp/1qp3b1/8/1b1p1NP1/7P/PPP2P2/R1BQR1K1 w - - 3 19",
+    "move": "e1e5",
+    "san": "Re5",
+    "nodes": 25309,
+    "steps": 37971313,
+    "seconds": 0.548,
+    "depth": 3,
+    "word": "033600100046043",
+    "search_mode": "original_window",
+    "lambda_final_1706": 25309,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 37971313,
+        "nodes": 25309,
+        "depth": 3,
+        "seconds": 0.548,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 37971313,
+    "m20_minutes": 31.642760833333334,
+    "m20_time": "31,64 \u043c\u0438\u043d",
+    "total_m20_minutes": 31.642760833333334,
+    "total_m20_time": "31,64 \u043c\u0438\u043d",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 38,
+    "fen": "2kr3r/p1p3pp/1qp3b1/4R3/1b1p1NP1/7P/PPP2P2/R1BQ2K1 b - - 4 19",
+    "move": "g6f7",
+    "san": "Bf7",
+    "nodes": 43450,
+    "steps": 78514080,
+    "seconds": 1.203,
+    "depth": 3,
+    "word": "012601700076050",
+    "search_mode": "original_window",
+    "lambda_final_1706": 43450,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 78514080,
+        "nodes": 43450,
+        "depth": 3,
+        "seconds": 1.203,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 78514080,
+    "m20_minutes": 65.4284,
+    "m20_time": "65,43 \u043c\u0438\u043d",
+    "total_m20_minutes": 65.4284,
+    "total_m20_time": "65,43 \u043c\u0438\u043d",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 39,
+    "fen": "2kr3r/p1p2bpp/1qp5/4R3/1b1p1NP1/7P/PPP2P2/R1BQ2K1 w - - 5 20",
+    "move": "f4d3",
+    "san": "Nd3",
+    "nodes": 34762,
+    "steps": 68228858,
+    "seconds": 0.937,
+    "depth": 3,
+    "word": "054601700106053",
+    "search_mode": "original_window",
+    "lambda_final_1706": 34762,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 68228858,
+        "nodes": 34762,
+        "depth": 3,
+        "seconds": 0.937,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 68228858,
+    "m20_minutes": 56.85738166666667,
+    "m20_time": "56,86 \u043c\u0438\u043d",
+    "total_m20_minutes": 56.85738166666667,
+    "total_m20_time": "56,86 \u043c\u0438\u043d",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 40,
+    "fen": "2kr3r/p1p2bpp/1qp5/4R3/1b1p2P1/3N3P/PPP2P2/R1BQ2K1 b - - 6 20",
+    "move": "b4d6",
+    "san": "Bd6",
+    "nodes": 27353,
+    "steps": 49707646,
+    "seconds": 0.675,
+    "depth": 3,
+    "word": "024601600066053",
+    "search_mode": "original_window",
+    "lambda_final_1706": 27353,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 49707646,
+        "nodes": 27353,
+        "depth": 3,
+        "seconds": 0.675,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 49707646,
+    "m20_minutes": 41.42303833333333,
+    "m20_time": "41,42 \u043c\u0438\u043d",
+    "total_m20_minutes": 41.42303833333333,
+    "total_m20_time": "41,42 \u043c\u0438\u043d",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 41,
+    "fen": "2kr3r/p1p2bpp/1qpb4/4R3/3p2P1/3N3P/PPP2P2/R1BQ2K1 w - - 7 21",
+    "move": "e5g5",
+    "san": "Rg5",
+    "nodes": 20450,
+    "steps": 37254318,
+    "seconds": 0.547,
+    "depth": 3,
+    "word": "031600500046053",
+    "search_mode": "original_window",
+    "lambda_final_1706": 20450,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 37254318,
+        "nodes": 20450,
+        "depth": 3,
+        "seconds": 0.547,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 37254318,
+    "m20_minutes": 31.045265,
+    "m20_time": "31,05 \u043c\u0438\u043d",
+    "total_m20_minutes": 31.045265,
+    "total_m20_time": "31,05 \u043c\u0438\u043d",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 42,
+    "fen": "2kr3r/p1p2bpp/1qpb4/6R1/3p2P1/3N3P/PPP2P2/R1BQ2K1 b - - 8 21",
+    "move": "f7g6",
+    "san": "Bg6",
+    "nodes": 22534,
+    "steps": 40765967,
+    "seconds": 0.566,
+    "depth": 3,
+    "word": "021600100076053",
+    "search_mode": "original_window",
+    "lambda_final_1706": 22534,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 40765967,
+        "nodes": 22534,
+        "depth": 3,
+        "seconds": 0.566,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 40765967,
+    "m20_minutes": 33.97163916666667,
+    "m20_time": "33,97 \u043c\u0438\u043d",
+    "total_m20_minutes": 33.97163916666667,
+    "total_m20_time": "33,97 \u043c\u0438\u043d",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 43,
+    "fen": "2kr3r/p1p3pp/1qpb2b1/6R1/3p2P1/3N3P/PPP2P2/R1BQ2K1 w - - 9 22",
+    "move": "f2f4",
+    "san": "f4",
+    "nodes": 28251,
+    "steps": 48297413,
+    "seconds": 0.724,
+    "depth": 3,
+    "word": "042600100356043",
+    "search_mode": "original_window",
+    "lambda_final_1706": 28251,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 48297413,
+        "nodes": 28251,
+        "depth": 3,
+        "seconds": 0.724,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 48297413,
+    "m20_minutes": 40.24784416666667,
+    "m20_time": "40,25 \u043c\u0438\u043d",
+    "total_m20_minutes": 40.24784416666667,
+    "total_m20_time": "40,25 \u043c\u0438\u043d",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 44,
+    "fen": "2kr3r/p1p3pp/1qpb2b1/6R1/3p1PP1/3N3P/PPP5/R1BQ2K1 b - - 0 22",
+    "move": "h8g8",
+    "san": "Rhg8",
+    "nodes": 59088,
+    "steps": 95932201,
+    "seconds": 1.306,
+    "depth": 3,
+    "word": "001602100046045",
+    "search_mode": "original_window",
+    "lambda_final_1706": 59088,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 95932201,
+        "nodes": 59088,
+        "depth": 3,
+        "seconds": 1.306,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 95932201,
+    "m20_minutes": 79.94350083333333,
+    "m20_time": "79,94 \u043c\u0438\u043d",
+    "total_m20_minutes": 79.94350083333333,
+    "total_m20_time": "79,94 \u043c\u0438\u043d",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 45,
+    "fen": "2kr2r1/p1p3pp/1qpb2b1/6R1/3p1PP1/3N3P/PPP5/R1BQ2K1 w - - 1 23",
+    "move": "b2b3",
+    "san": "b3",
+    "nodes": 86677,
+    "steps": 133604567,
+    "seconds": 1.869,
+    "depth": 3,
+    "word": "056602000346042",
+    "search_mode": "original_window",
+    "lambda_final_1706": 86677,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 133604567,
+        "nodes": 86677,
+        "depth": 3,
+        "seconds": 1.869,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 133604567,
+    "m20_minutes": 111.33713916666666,
+    "m20_time": "111,34 \u043c\u0438\u043d",
+    "total_m20_minutes": 111.33713916666666,
+    "total_m20_time": "111,34 \u043c\u0438\u043d",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 46,
+    "fen": "2kr2r1/p1p3pp/1qpb2b1/6R1/3p1PP1/1P1N3P/P1P5/R1BQ2K1 b - - 0 23",
+    "move": "g6d3",
+    "san": "Bxd3",
+    "nodes": 36287,
+    "steps": 61163027,
+    "seconds": 0.875,
+    "depth": 3,
+    "word": "054602300076043",
+    "search_mode": "original_window",
+    "lambda_final_1706": 36287,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 61163027,
+        "nodes": 36287,
+        "depth": 3,
+        "seconds": 0.875,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 61163027,
+    "m20_minutes": 50.969189166666666,
+    "m20_time": "50,97 \u043c\u0438\u043d",
+    "total_m20_minutes": 50.969189166666666,
+    "total_m20_time": "50,97 \u043c\u0438\u043d",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 47,
+    "fen": "2kr2r1/p1p3pp/1qpb4/6R1/3p1PP1/1P1b3P/P1P5/R1BQ2K1 w - - 0 24",
+    "move": "d1d3",
+    "san": "Qxd3",
+    "nodes": 9216,
+    "steps": 14275174,
+    "seconds": 0.209,
+    "depth": 3,
+    "word": "054600200026041",
+    "search_mode": "original_window",
+    "lambda_final_1706": 9216,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 14275174,
+        "nodes": 9216,
+        "depth": 3,
+        "seconds": 0.209,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 14275174,
+    "m20_minutes": 11.895978333333334,
+    "m20_time": "11,90 \u043c\u0438\u043d",
+    "total_m20_minutes": 11.895978333333334,
+    "total_m20_time": "11,90 \u043c\u0438\u043d",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 48,
+    "fen": "2kr2r1/p1p3pp/1qpb4/6R1/3p1PP1/1P1Q3P/P1P5/R1B3K1 b - - 0 24",
+    "move": "h7h6",
+    "san": "h6",
+    "nodes": 20228,
+    "steps": 30640800,
+    "seconds": 0.468,
+    "depth": 3,
+    "word": "020600300346036",
+    "search_mode": "original_window",
+    "lambda_final_1706": 20228,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 30640800,
+        "nodes": 20228,
+        "depth": 3,
+        "seconds": 0.468,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 30640800,
+    "m20_minutes": 25.534,
+    "m20_time": "25,53 \u043c\u0438\u043d",
+    "total_m20_minutes": 25.534,
+    "total_m20_time": "25,53 \u043c\u0438\u043d",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 49,
+    "fen": "2kr2r1/p1p3p1/1qpb3p/6R1/3p1PP1/1P1Q3P/P1P5/R1B3K1 w - - 0 25",
+    "move": "d3f5",
+    "san": "Qf5+",
+    "nodes": 88946,
+    "steps": 118182902,
+    "seconds": 1.505,
+    "depth": 3,
+    "word": "032600400026052",
+    "search_mode": "original_window",
+    "lambda_final_1706": 88946,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 118182902,
+        "nodes": 88946,
+        "depth": 3,
+        "seconds": 1.505,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 118182902,
+    "m20_minutes": 98.48575166666667,
+    "m20_time": "98,49 \u043c\u0438\u043d",
+    "total_m20_minutes": 98.48575166666667,
+    "total_m20_time": "98,49 \u043c\u0438\u043d",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 50,
+    "fen": "2kr2r1/p1p3p1/1qpb3p/5QR1/3p1PP1/1P5P/P1P5/R1B3K1 b - - 1 25",
+    "move": "c8b7",
+    "san": "Kb7",
+    "nodes": 5170,
+    "steps": 8289301,
+    "seconds": 0.139,
+    "depth": 3,
+    "word": "016600100016037",
+    "search_mode": "original_window",
+    "lambda_final_1706": 5170,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 8289301,
+        "nodes": 5170,
+        "depth": 3,
+        "seconds": 0.139,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 8289301,
+    "m20_minutes": 6.907750833333333,
+    "m20_time": "6,91 \u043c\u0438\u043d",
+    "total_m20_minutes": 6.907750833333333,
+    "total_m20_time": "6,91 \u043c\u0438\u043d",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 51,
+    "fen": "3r2r1/pkp3p1/1qpb3p/5QR1/3p1PP1/1P5P/P1P5/R1B3K1 w - - 2 26",
+    "move": "g5g6",
+    "san": "Rg6",
+    "nodes": 28439,
+    "steps": 44285128,
+    "seconds": 0.61,
+    "depth": 3,
+    "word": "021600100046042",
+    "search_mode": "original_window",
+    "lambda_final_1706": 28439,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 44285128,
+        "nodes": 28439,
+        "depth": 3,
+        "seconds": 0.61,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 44285128,
+    "m20_minutes": 36.904273333333336,
+    "m20_time": "36,90 \u043c\u0438\u043d",
+    "total_m20_minutes": 36.904273333333336,
+    "total_m20_time": "36,90 \u043c\u0438\u043d",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 52,
+    "fen": "3r2r1/pkp3p1/1qpb2Rp/5Q2/3p1PP1/1P5P/P1P5/R1B3K1 b - - 3 26",
+    "move": "g8f8",
+    "san": "Rgf8",
+    "nodes": 36940,
+    "steps": 52038637,
+    "seconds": 0.684,
+    "depth": 3,
+    "word": "002600500046037",
+    "search_mode": "original_window",
+    "lambda_final_1706": 36940,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 52038637,
+        "nodes": 36940,
+        "depth": 3,
+        "seconds": 0.684,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 52038637,
+    "m20_minutes": 43.36553083333333,
+    "m20_time": "43,37 \u043c\u0438\u043d",
+    "total_m20_minutes": 43.36553083333333,
+    "total_m20_time": "43,37 \u043c\u0438\u043d",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 53,
+    "fen": "3r1r2/pkp3p1/1qpb2Rp/5Q2/3p1PP1/1P5P/P1P5/R1B3K1 w - - 4 27",
+    "move": "f5d3",
+    "san": "Qd3",
+    "nodes": 122183,
+    "steps": 175958218,
+    "seconds": 2.415,
+    "depth": 3,
+    "word": "054600200026046",
+    "search_mode": "original_window",
+    "lambda_final_1706": 122183,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 175958218,
+        "nodes": 122183,
+        "depth": 3,
+        "seconds": 2.415,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 175958218,
+    "m20_minutes": 146.63184833333332,
+    "m20_time": "2,44 \u0447",
+    "total_m20_minutes": 146.63184833333332,
+    "total_m20_time": "2,44 \u0447",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 54,
+    "fen": "3r1r2/pkp3p1/1qpb2Rp/8/3p1PP1/1P1Q3P/P1P5/R1B3K1 b - - 5 27",
+    "move": "d8e8",
+    "san": "Rde8",
+    "nodes": 26821,
+    "steps": 38278442,
+    "seconds": 0.531,
+    "depth": 3,
+    "word": "003600100056040",
+    "search_mode": "original_window",
+    "lambda_final_1706": 26821,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 38278442,
+        "nodes": 26821,
+        "depth": 3,
+        "seconds": 0.531,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 38278442,
+    "m20_minutes": 31.898701666666668,
+    "m20_time": "31,90 \u043c\u0438\u043d",
+    "total_m20_minutes": 31.898701666666668,
+    "total_m20_time": "31,90 \u043c\u0438\u043d",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 55,
+    "fen": "4rr2/pkp3p1/1qpb2Rp/8/3p1PP1/1P1Q3P/P1P5/R1B3K1 w - - 6 28",
+    "move": "f4f5",
+    "san": "f5",
+    "nodes": 270938,
+    "steps": 336236957,
+    "seconds": 4.787,
+    "depth": 3,
+    "word": "032600400346046",
+    "search_mode": "original_window",
+    "lambda_final_1706": 270938,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 336236957,
+        "nodes": 270938,
+        "depth": 3,
+        "seconds": 4.787,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 336236957,
+    "m20_minutes": 280.1974641666667,
+    "m20_time": "4,67 \u0447",
+    "total_m20_minutes": 280.1974641666667,
+    "total_m20_time": "4,67 \u0447",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 56,
+    "fen": "4rr2/pkp3p1/1qpb2Rp/5P2/3p2P1/1P1Q3P/P1P5/R1B3K1 b - - 0 28",
+    "move": "e8e1",
+    "san": "Re1+",
+    "nodes": 139846,
+    "steps": 182984444,
+    "seconds": 2.657,
+    "depth": 3,
+    "word": "073600700056046",
+    "search_mode": "original_window",
+    "lambda_final_1706": 139846,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 182984444,
+        "nodes": 139846,
+        "depth": 3,
+        "seconds": 2.657,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 182984444,
+    "m20_minutes": 152.48703666666665,
+    "m20_time": "2,54 \u0447",
+    "total_m20_minutes": 152.48703666666665,
+    "total_m20_time": "2,54 \u0447",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 57,
+    "fen": "5r2/pkp3p1/1qpb2Rp/5P2/3p2P1/1P1Q3P/P1P5/R1B1r1K1 w - - 1 29",
+    "move": "g1f2",
+    "san": "Kf2",
+    "nodes": 54079,
+    "steps": 69882407,
+    "seconds": 1.12,
+    "depth": 3,
+    "word": "062600100016050",
+    "search_mode": "original_window",
+    "lambda_final_1706": 54079,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 69882407,
+        "nodes": 54079,
+        "depth": 3,
+        "seconds": 1.12,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 69882407,
+    "m20_minutes": 58.23533916666667,
+    "m20_time": "58,24 \u043c\u0438\u043d",
+    "total_m20_minutes": 58.23533916666667,
+    "total_m20_time": "58,24 \u043c\u0438\u043d",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 58,
+    "fen": "5r2/pkp3p1/1qpb2Rp/5P2/3p2P1/1P1Q3P/P1P2K2/R1B1r3 b - - 2 29",
+    "move": "e1e7",
+    "san": "Re7",
+    "nodes": 1391605,
+    "steps": 1781909828,
+    "seconds": 24.865,
+    "depth": 3,
+    "word": "013600100056054",
+    "search_mode": "original_window",
+    "lambda_final_1706": 1391605,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 1781909828,
+        "nodes": 1391605,
+        "depth": 3,
+        "seconds": 24.865,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 1781909828,
+    "m20_minutes": 1484.9248566666668,
+    "m20_time": "24,75 \u0447",
+    "total_m20_minutes": 1484.9248566666668,
+    "total_m20_time": "24,75 \u0447",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 59,
+    "fen": "5r2/pkp1r1p1/1qpb2Rp/5P2/3p2P1/1P1Q3P/P1P2K2/R1B5 w - - 3 30",
+    "move": "c1b2",
+    "san": "Bb2",
+    "nodes": 167430,
+    "steps": 190008703,
+    "seconds": 2.458,
+    "depth": 3,
+    "word": "066600100066053",
+    "search_mode": "original_window",
+    "lambda_final_1706": 167430,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 190008703,
+        "nodes": 167430,
+        "depth": 3,
+        "seconds": 2.458,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 190008703,
+    "m20_minutes": 158.34058583333334,
+    "m20_time": "2,64 \u0447",
+    "total_m20_minutes": 158.34058583333334,
+    "total_m20_time": "2,64 \u0447",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 60,
+    "fen": "5r2/pkp1r1p1/1qpb2Rp/5P2/3p2P1/1P1Q3P/PBP2K2/R7 b - - 4 30",
+    "move": "c6c5",
+    "san": "c5",
+    "nodes": 422866,
+    "steps": 530741196,
+    "seconds": 7.313,
+    "depth": 3,
+    "word": "035600100346050",
+    "search_mode": "original_window",
+    "lambda_final_1706": 422866,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 530741196,
+        "nodes": 422866,
+        "depth": 3,
+        "seconds": 7.313,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 530741196,
+    "m20_minutes": 442.28433,
+    "m20_time": "7,37 \u0447",
+    "total_m20_minutes": 442.28433,
+    "total_m20_time": "7,37 \u0447",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 61,
+    "fen": "5r2/pkp1r1p1/1q1b2Rp/2p2P2/3p2P1/1P1Q3P/PBP2K2/R7 w - - 0 31",
+    "move": "d3d2",
+    "san": "Qd2",
+    "nodes": 871749,
+    "steps": 1136119505,
+    "seconds": 15.773,
+    "depth": 3,
+    "word": "064601400026056",
+    "search_mode": "original_window",
+    "lambda_final_1706": 871749,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 1136119505,
+        "nodes": 871749,
+        "depth": 3,
+        "seconds": 15.773,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 1136119505,
+    "m20_minutes": 946.7662541666666,
+    "m20_time": "15,78 \u0447",
+    "total_m20_minutes": 946.7662541666666,
+    "total_m20_time": "15,78 \u0447",
+    "fallback_depths": [],
+    "extensions": []
+  },
+  {
+    "ply": 62,
+    "fen": "5r2/pkp1r1p1/1q1b2Rp/2p2P2/3p2P1/1P5P/PBPQ1K2/R7 b - - 1 31",
+    "move": "b6a6",
+    "san": "Qa6",
+    "nodes": 450733,
+    "steps": 582068531,
+    "seconds": 8.031,
+    "depth": 3,
+    "word": "027600600026050",
+    "search_mode": "original_window",
+    "lambda_final_1706": 450733,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 582068531,
+        "nodes": 450733,
+        "depth": 3,
+        "seconds": 8.031,
+        "forced_play": {
+          "variant": "listing",
+          "checks_per_side": 2,
+          "label": "\u043f\u043e \u043b\u0438\u0441\u0442\u0438\u043d\u0433\u0443"
+        }
+      }
+    ],
+    "total_steps": 582068531,
+    "m20_minutes": 485.0571091666667,
+    "m20_time": "8,08 \u0447",
+    "total_m20_minutes": 485.0571091666667,
+    "total_m20_time": "8,08 \u0447",
+    "fallback_depths": [],
+    "extensions": []
+  }
+]

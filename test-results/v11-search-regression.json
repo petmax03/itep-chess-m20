@@ -1,0 +1,59 @@
+{
+  "bridge64": "passed",
+  "source_tail": "passed",
+  "steps_to_branch": 327792,
+  "cases": [
+    {
+      "branch": "depth_one",
+      "variants": {
+        "v10": {
+          "mode": "016000000030000",
+          "omega": 1,
+          "evaluation": "011200000000000",
+          "board_unchanged": true,
+          "steps": 4
+        },
+        "printed_tail": {
+          "mode": "016000000060000",
+          "omega": 0,
+          "evaluation": "011200000000000",
+          "board_unchanged": true,
+          "steps": 3
+        },
+        "v11": {
+          "mode": "016000000060000",
+          "omega": 0,
+          "evaluation": "011200000000000",
+          "board_unchanged": true,
+          "steps": 3
+        }
+      }
+    },
+    {
+      "branch": "depth_two",
+      "variants": {
+        "v10": {
+          "mode": "016000000030000",
+          "omega": 1,
+          "evaluation": "011200000000000",
+          "board_unchanged": true,
+          "steps": 6
+        },
+        "printed_tail": {
+          "mode": "016000000060000",
+          "omega": 0,
+          "evaluation": "011200000000000",
+          "board_unchanged": true,
+          "steps": 5
+        },
+        "v11": {
+          "mode": "016000000060000",
+          "omega": 0,
+          "evaluation": "011200000000000",
+          "board_unchanged": true,
+          "steps": 6
+        }
+      }
+    }
+  ]
+}

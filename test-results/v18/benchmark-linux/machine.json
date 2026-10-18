@@ -1,0 +1,23 @@
+{
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "system": "Linux",
+  "machine": "x86_64",
+  "processor": "x86_64",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "workers": 3,
+  "source": {
+    "engine/machine.py": "9b1ccb000fb51910e092c8b767b0698adb5f3dab427667e2e18a4c46fcc0d7c8",
+    "engine/bridge.c": "612c2889d9f785519e7d5dc01b8eb321615d66cc10d9bf8d94a48786a8100d4b",
+    "engine/forced_play.h": "4d1f919d4da1892b1a018301cd5c17e5429b4923221a12843798bfc57b18eb29",
+    "engine/forced_board.h": "d8c86891871ef45b82a141897c97d8aed384c8963e23a844aad29c287c0befc0",
+    "engine/terminal.h": "4e302acbdec07d7cf8a017abeed7f85e8342da22f7679a3b7142f284f462fc17",
+    "engine/search_profiles.py": "2072c3a0f72017e9c92d54ae3459667a74f8981c6a5615f546d17637ff6ea386",
+    "engine/native_rank_capacity.py": "389f5226bd711fed23a4e446d09234906f17cc396fc839f2fc327ed1f3a22f3b",
+    "m20/simh/m20_cpu.c": "a6787c5427693b268605febe3204fcf96e9c726493aa3843ee83b5c505305b8e",
+    "m20/kaissa/kaissa.m20": "b1c3b5d7667c4be49f5d540652c97bd19b3727702354569bf733fbb0386542d5",
+    "research/low-constants.m20": "bcf7126415f1db07a2ac222953060739a634b25ddffda73db2561d56856fffce",
+    "research/standard-cells-values.m20": "f7a6da67dad096f8466a64a3d0da7c6ddee4822977974cfca3f0e59fd07de0c0"
+  },
+  "corpus_sha256": "30122f2e13db5bbf242b80987bace6c82518a85d2e051ebb7e34e5f097ccc5f6",
+  "date_utc": "2026-10-04T11:51:42Z"
+}

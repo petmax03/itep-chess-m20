@@ -1,0 +1,2 @@
+PYTHON_CHESS d7d5 {'depth': 3, 'nodes': 4496, 'time': 0.102, 'pv': [Move.from_uci('d7d5')], 'string': 'M20 commands 10235276 minutes 8.529397 total_commands 10235276 total_minutes 8.529397 profile v11'}
+UCI_FALLBACK_HANDSHAKE_ISREADY_QUIT_OK

@@ -1,0 +1,112 @@
+{
+  "id": "game6-p21",
+  "group": "game6",
+  "ply": 21,
+  "initial_fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+  "moves": [
+    "e2e4",
+    "e7e5",
+    "f1c4",
+    "g8f6",
+    "g1f3",
+    "b8c6",
+    "b1c3",
+    "f6e4",
+    "c4f7",
+    "e8f7",
+    "c3e4",
+    "d7d5",
+    "e4g5",
+    "f7g8",
+    "h2h4",
+    "h7h6",
+    "d2d4",
+    "h6g5",
+    "c1g5",
+    "f8e7"
+  ],
+  "reference": "g5e7",
+  "budget": 20000000000,
+  "fen": "r1bq2kr/ppp1b1p1/2n5/3pp1B1/3P3P/5N2/PPP2PP1/R2QK2R w KQ - 1 11",
+  "before": {
+    "move": "g5e7",
+    "san": "Bxe7",
+    "nodes": 43971,
+    "steps": 62718727,
+    "seconds": 1.069,
+    "depth": 3,
+    "word": "013600100066044",
+    "search_mode": "original_window",
+    "lambda_final_1706": 43971,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "по листингу"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "terminal_stats": [
+      0,
+      0,
+      0
+    ]
+  },
+  "after": {
+    "move": "g5e7",
+    "san": "Bxe7",
+    "nodes": 43920,
+    "steps": 62683017,
+    "seconds": 0.786,
+    "depth": 3,
+    "word": "013600100066044",
+    "search_mode": "original_window",
+    "lambda_final_1706": 43920,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "по листингу"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "terminal_stats": [
+      41140,
+      39,
+      0
+    ]
+  },
+  "changed": false
+}

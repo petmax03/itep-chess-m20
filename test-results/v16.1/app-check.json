@@ -1,0 +1,9 @@
+{
+  "persistence": true,
+  "invalid_values_rejected": true,
+  "mixed_pgn_roundtrip": true,
+  "undo": true,
+  "legacy_defaults_to_listing": true,
+  "limit_reduce_preserves_modes": true,
+  "measured_moves": 2
+}

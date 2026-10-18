@@ -1,0 +1,61 @@
+{
+  "version": "v19.1",
+  "platform": "Linux; not Mac",
+  "historical": {
+    "decisions": 73,
+    "baseline": "v19",
+    "current": "v19.1",
+    "changed": {
+      "move": 0,
+      "nodes": 0,
+      "steps": 0,
+      "word": 0
+    }
+  },
+  "mates": {
+    "positions": 20,
+    "searches": 64,
+    "changed": {
+      "move": 0,
+      "nodes": 0,
+      "steps": 3,
+      "word": 0
+    },
+    "command_deltas": [
+      {
+        "case": 20,
+        "depth": 1,
+        "delta": -2574
+      },
+      {
+        "case": 20,
+        "depth": 2,
+        "delta": -2574
+      },
+      {
+        "case": 20,
+        "depth": 3,
+        "delta": -2574
+      }
+    ]
+  },
+  "promotion_searches": 12,
+  "terminal_exits": 60,
+  "protected_source_files": 44,
+  "acceptance": {
+    "generator_positions": 421,
+    "native_move_applications": 9322,
+    "special_positions": 10,
+    "selfplay_plies": 136,
+    "result": "0-1",
+    "extensions_at_plies": [
+      67,
+      127,
+      131,
+      137
+    ],
+    "fallback_at_plies": []
+  },
+  "runtime_change": "engine/terminal.h: clear terminal node candidate pointer before early return; wrapper version strings updated",
+  "search_weights_cpu_changed": false
+}

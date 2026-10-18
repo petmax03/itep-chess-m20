@@ -1,0 +1,55 @@
+--- v19/tests/verify.py
++++ v19.1/tests/verify.py
+@@ -2,6 +2,8 @@
+ import argparse, json, time
+ from pathlib import Path
+ from native import Machine, chess, generated
++from engine.depth_policy import calculate
++from engine.telemetry import pgn_comment
+ import chess.pgn
+ 
+ def compare(machine, board):
+@@ -16,8 +18,8 @@
+ 
+ def main():
+     p=argparse.ArgumentParser();p.add_argument('--plies',type=int,default=192)
+-    p.add_argument('--output',default='test-results');args=p.parse_args()
+-    output=Path(args.output);output.mkdir(exist_ok=True)
++    p.add_argument('--output',default='test-results/v19.1/verify');args=p.parse_args()
++    output=Path(args.output);output.mkdir(parents=True,exist_ok=True)
+     machine=Machine();start=time.monotonic();positions=moves=0
+     board=chess.Board();first=list(board.legal_moves)
+     moves+=compare(machine,board);positions+=1
+@@ -53,23 +55,26 @@
+     r=machine.think(regression);assert chess.Move.from_uci(r['move']) in regression.legal_moves,r
+     regression_result=r
+     print('PASS prior aspiration fixture',r,flush=True)
+-    b=chess.Board();game=chess.pgn.Game();game.headers.update(Event='ITEF reconstruction v11 acceptance',Date='2026.10.02',White='ITEF M-20',Black='ITEF M-20')
++    b=chess.Board();game=chess.pgn.Game();game.headers.update(Event='ITEF v19.1 acceptance / profile v11',Date='2026.10.13',White='ITEF M-20',Black='ITEF M-20',SearchDepth='3')
+     node=game;searches=[];resignation=None
+     for ply in range(args.plies):
+         if b.is_game_over():break
+-        r=machine.think(b)
++        # Exercise the existing game/UCI policy: one live extension, then
++        # depth fallback if needed. Native stops and illegal moves still fail;
++        # the fixed-position regressions above retain their strict 3B budget.
++        r=calculate(machine,b,3)
+         if r.get('resign'):
+             resignation={'fen':b.fen(),**r};game.headers['Result']='0-1' if b.turn else '1-0'
+-            node.comment='ITEF resigns: the original search returns the absolute lower score after a full-window retry.'
++            node.comment+=' ITEF resigns: the original search returns the absolute lower score after a full-window retry. '+pgn_comment(r)
+             print('PASS resignation',resignation,flush=True);break
+         move=chess.Move.from_uci(r['move'])
+-        searches.append({'ply':ply+1,'fen':b.fen(),**r});b.push(move);node=node.add_variation(move)
+-        print('PASS ply',ply+1,r,flush=True)
++        searches.append({'ply':ply+1,'fen':b.fen(),**r});b.push(move);node=node.add_variation(move);node.comment=pgn_comment(r)
++        print('PASS ply',ply+1,r['san'],'depth',r['depth'],'commands',r['total_steps'],flush=True)
+         (output/'selfplay.pgn').write_text(str(game)+'\n',encoding='utf-8')
+         (output/'selfplay.json').write_text(json.dumps(searches,indent=2),encoding='utf-8')
+     if resignation is None:game.headers['Result']=b.result()
+     (output/'selfplay.pgn').write_text(str(game)+'\n',encoding='utf-8')
+-    report={'generator_positions':positions,'native_move_applications':moves,'special_positions':special_results,'mate_tests':2,'prior_aspiration_fixture':regression_result,'selfplay_plies':len(searches),'selfplay_result':game.headers['Result'],'resignation':resignation,'final_fen':b.fen(),'seconds':round(time.monotonic()-start,3)}
++    report={'generator_positions':positions,'native_move_applications':moves,'special_positions':special_results,'mate_tests':2,'prior_aspiration_fixture':regression_result,'selfplay_plies':len(searches),'selfplay_max_plies':args.plies,'selfplay_budget_policy':'existing depth_policy.calculate; one extension then fallback; native stops remain errors','selfplay_result':game.headers['Result'],'resignation':resignation,'final_fen':b.fen(),'seconds':round(time.monotonic()-start,3)}
+     (output/'report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+     print('PASS all',report,flush=True)
+ 

@@ -1,0 +1,215 @@
+{
+  "supplied_pgn": {
+    "plies": 74,
+    "final_fen": "7k/7p/ppb1r3/3q4/3Pp2P/1NR3P1/PPR1Nr1K/3Q4 w - - 4 38",
+    "check": true,
+    "checkmate": false
+  },
+  "baseline": [
+    {
+      "position": "after-e4",
+      "equal": true,
+      "old": {
+        "move": "d7d5",
+        "nodes": 4496,
+        "steps": 10235276,
+        "word": "034600100356024",
+        "lambda_final_1706": 4496,
+        "search_mode": "original_window"
+      },
+      "new": {
+        "move": "d7d5",
+        "nodes": 4496,
+        "steps": 10235276,
+        "word": "034600100356024",
+        "lambda_final_1706": 4496,
+        "search_mode": "original_window"
+      }
+    },
+    {
+      "position": "before-37-Ne2",
+      "equal": true,
+      "old": {
+        "move": "c1e2",
+        "nodes": 72987,
+        "steps": 104604916,
+        "word": "063600100106042",
+        "lambda_final_1706": 72987,
+        "search_mode": "original_window"
+      },
+      "new": {
+        "move": "c1e2",
+        "nodes": 72987,
+        "steps": 104604916,
+        "word": "063600100106042",
+        "lambda_final_1706": 72987,
+        "search_mode": "original_window"
+      }
+    }
+  ],
+  "golden_v15": [
+    {
+      "variant": "narrow",
+      "N": 2,
+      "equal": true,
+      "reference": {
+        "move": "f4d5",
+        "nodes": 7036,
+        "steps": 16071836,
+        "word": "034600100106044",
+        "lambda_final_1706": 7036,
+        "search_mode": "original_window"
+      },
+      "answer": {
+        "move": "f4d5",
+        "nodes": 7036,
+        "steps": 16071836,
+        "word": "034600100106044",
+        "lambda_final_1706": 7036,
+        "search_mode": "original_window"
+      },
+      "stats": [
+        5447,
+        4136,
+        1311,
+        213
+      ]
+    },
+    {
+      "variant": "checks",
+      "N": 1,
+      "equal": true,
+      "reference": {
+        "move": "f4d5",
+        "nodes": 9905,
+        "steps": 20449803,
+        "word": "034600100106044",
+        "lambda_final_1706": 9905,
+        "search_mode": "original_window"
+      },
+      "answer": {
+        "move": "f4d5",
+        "nodes": 9905,
+        "steps": 20449803,
+        "word": "034600100106044",
+        "lambda_final_1706": 9905,
+        "search_mode": "original_window"
+      },
+      "stats": [
+        7945,
+        7192,
+        753,
+        1509
+      ]
+    },
+    {
+      "variant": "checks",
+      "N": 2,
+      "equal": true,
+      "reference": {
+        "move": "f4d5",
+        "nodes": 11483,
+        "steps": 22754897,
+        "word": "034600100106044",
+        "lambda_final_1706": 11483,
+        "search_mode": "original_window"
+      },
+      "answer": {
+        "move": "f4d5",
+        "nodes": 11483,
+        "steps": 22754897,
+        "word": "034600100106044",
+        "lambda_final_1706": 11483,
+        "search_mode": "original_window"
+      },
+      "stats": [
+        9173,
+        8782,
+        391,
+        2153
+      ]
+    }
+  ],
+  "modes": [
+    {
+      "variant": "narrow",
+      "N": 2,
+      "move": "c1e2",
+      "nodes": 15244,
+      "steps": 30372148,
+      "word": "063600100106042",
+      "lambda_final_1706": 15244,
+      "search_mode": "original_window",
+      "stats": [
+        8295,
+        5621,
+        2674,
+        306
+      ]
+    },
+    {
+      "variant": "checks",
+      "N": 0,
+      "move": "c1e2",
+      "nodes": 15244,
+      "steps": 30372148,
+      "word": "063600100106042",
+      "lambda_final_1706": 15244,
+      "search_mode": "original_window",
+      "stats": [
+        8295,
+        5621,
+        2674,
+        306
+      ]
+    },
+    {
+      "variant": "checks",
+      "N": 1,
+      "move": "c1e2",
+      "nodes": 23342,
+      "steps": 42802590,
+      "word": "063600100106042",
+      "lambda_final_1706": 23342,
+      "search_mode": "original_window",
+      "stats": [
+        18848,
+        14330,
+        4518,
+        3131
+      ]
+    },
+    {
+      "variant": "checks",
+      "N": 2,
+      "move": "c1e2",
+      "nodes": 37677,
+      "steps": 64373481,
+      "word": "063600100106042",
+      "lambda_final_1706": 37677,
+      "search_mode": "original_window",
+      "stats": [
+        34523,
+        28719,
+        5804,
+        8465
+      ]
+    },
+    {
+      "variant": "wide",
+      "N": 2,
+      "move": "c1e2",
+      "nodes": 72922,
+      "steps": 104527960,
+      "word": "063600100106042",
+      "lambda_final_1706": 72922,
+      "search_mode": "original_window",
+      "stats": [
+        64043,
+        64042,
+        1,
+        27366
+      ]
+    }
+  ]
+}

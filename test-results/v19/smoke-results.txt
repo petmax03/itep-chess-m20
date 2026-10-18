@@ -1,0 +1,5 @@
+PASS: UCI depths 3/4/5, mate, auto budget, real 5→4 fallback, PGN, forced modes
+PASS: exact live continuation; one extension; single-level fallback; complete ladder; PGN; restart accounting; settings; cancellation
+PASS: 64 searches; fixed corpus 20 x depths 1/2/3, both user Nb6# positions also at 4/5.
+PASS: 36 protected source files and BASE_PATCHES unchanged; archived v18 artifacts unchanged.
+PASS: fresh ZIP extraction compiled, promotion regression passed, CLI depth 5 returned Nb6#.

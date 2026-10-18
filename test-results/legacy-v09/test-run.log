@@ -1,0 +1,147 @@
+PASS generator: 421 positions, 9322 native applications
+PASS special r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1 h1h8
+PASS special r3k2r/8/8/8/8/8/8/R3K2R b KQkq - 0 1 h8h1
+PASS special r3k2r/8/8/8/8/8/8/R3K2R w Kq - 0 1 h1h8
+PASS special r3k2r/8/8/8/8/8/8/R3K2R b Qk - 0 1 h8h1
+PASS special 4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 1 e1f2
+PASS special 4k3/8/8/8/3Pp3/8/8/4K3 b - d3 0 1 e8f8
+PASS special 4k3/P7/8/8/8/8/8/4K3 w - - 0 1 a7a8q
+PASS special 4k3/8/8/8/8/8/p7/4K3 b - - 0 1 a2a1q
+PASS special 1r2k3/P7/8/8/8/8/8/3QK3 w - - 0 1 a7b8q
+PASS special 3qk3/8/8/8/8/8/p7/1R2K3 b - - 0 1 a2b1q
+PASS mate {'move': 'f7g7', 'san': 'Qg7#', 'nodes': 82, 'steps': 84129, 'seconds': 0.002, 'depth': 3, 'word': '011600200026034', 'search_mode': 'original_window'}
+PASS mate {'move': 'f2g2', 'san': 'Qg2#', 'nodes': 82, 'steps': 84132, 'seconds': 0.001, 'depth': 3, 'word': '061600200026034', 'search_mode': 'original_window'}
+PASS aspiration recovery {'move': 'd8e8', 'san': 'Re8', 'nodes': 25903, 'steps': 32000984, 'seconds': 0.568, 'depth': 3, 'word': '003600100046031', 'search_mode': 'wide_window_retry'}
+PASS ply 1 {'move': 'b1c3', 'san': 'Nc3', 'nodes': 4062, 'steps': 10238727, 'seconds': 0.198, 'depth': 3, 'word': '055600100106024', 'search_mode': 'original_window'}
+PASS ply 2 {'move': 'b8c6', 'san': 'Nc6', 'nodes': 3797, 'steps': 9276929, 'seconds': 0.154, 'depth': 3, 'word': '025600300106024', 'search_mode': 'original_window'}
+PASS ply 3 {'move': 'e2e4', 'san': 'e4', 'nodes': 4936, 'steps': 12062911, 'seconds': 0.228, 'depth': 3, 'word': '043600300356026', 'search_mode': 'original_window'}
+PASS ply 4 {'move': 'e7e5', 'san': 'e5', 'nodes': 3276, 'steps': 8005679, 'seconds': 0.15, 'depth': 3, 'word': '033600100356026', 'search_mode': 'original_window'}
+PASS ply 5 {'move': 'f1c4', 'san': 'Bc4', 'nodes': 4964, 'steps': 12093432, 'seconds': 0.214, 'depth': 3, 'word': '045600100076037', 'search_mode': 'original_window'}
+PASS ply 6 {'move': 'f8c5', 'san': 'Bc5', 'nodes': 9020, 'steps': 20990427, 'seconds': 0.37, 'depth': 3, 'word': '035600100076037', 'search_mode': 'original_window'}
+PASS ply 7 {'move': 'd2d3', 'san': 'd3', 'nodes': 12231, 'steps': 27417938, 'seconds': 0.498, 'depth': 3, 'word': '054600300346044', 'search_mode': 'original_window'}
+PASS ply 8 {'move': 'g8f6', 'san': 'Nf6', 'nodes': 23686, 'steps': 51468508, 'seconds': 0.959, 'depth': 3, 'word': '022600100116044', 'search_mode': 'original_window'}
+PASS ply 9 {'move': 'c1e3', 'san': 'Be3', 'nodes': 6468, 'steps': 14210096, 'seconds': 0.354, 'depth': 3, 'word': '053600100066047', 'search_mode': 'original_window'}
+PASS ply 10 {'move': 'd7d6', 'san': 'd6', 'nodes': 35070, 'steps': 74001642, 'seconds': 2.964, 'depth': 3, 'word': '024600300346043', 'search_mode': 'original_window'}
+PASS ply 11 {'move': 'e3c5', 'san': 'Bxc5', 'nodes': 9384, 'steps': 19410961, 'seconds': 0.387, 'depth': 3, 'word': '035600200066054', 'search_mode': 'original_window'}
+PASS ply 12 {'move': 'd6c5', 'san': 'dxc5', 'nodes': 3803, 'steps': 7321591, 'seconds': 0.17, 'depth': 3, 'word': '035600100326043', 'search_mode': 'original_window'}
+PASS ply 13 {'move': 'g1f3', 'san': 'Nf3', 'nodes': 22554, 'steps': 46426453, 'seconds': 0.883, 'depth': 3, 'word': '052600100106045', 'search_mode': 'original_window'}
+PASS ply 14 {'move': 'c8g4', 'san': 'Bg4', 'nodes': 11238, 'steps': 22216290, 'seconds': 0.409, 'depth': 3, 'word': '041600100066045', 'search_mode': 'original_window'}
+PASS ply 15 {'move': 'h2h3', 'san': 'h3', 'nodes': 33234, 'steps': 60497884, 'seconds': 1.084, 'depth': 3, 'word': '050600500346045', 'search_mode': 'original_window'}
+PASS ply 16 {'move': 'g4f3', 'san': 'Bxf3', 'nodes': 7482, 'steps': 13525309, 'seconds': 0.232, 'depth': 3, 'word': '052600100066051', 'search_mode': 'original_window'}
+PASS ply 17 {'move': 'g2f3', 'san': 'gxf3', 'nodes': 4139, 'steps': 7532278, 'seconds': 0.139, 'depth': 3, 'word': '052600200336042', 'search_mode': 'original_window'}
+PASS ply 18 {'move': 'g7g5', 'san': 'g5', 'nodes': 23360, 'steps': 46177884, 'seconds': 0.852, 'depth': 3, 'word': '031600100356043', 'search_mode': 'original_window'}
+PASS ply 19 {'move': 'h1g1', 'san': 'Rg1', 'nodes': 13300, 'steps': 25012915, 'seconds': 0.485, 'depth': 3, 'word': '071600100046037', 'search_mode': 'original_window'}
+PASS ply 20 {'move': 'h8g8', 'san': 'Rg8', 'nodes': 18594, 'steps': 33194120, 'seconds': 0.61, 'depth': 3, 'word': '001600100046042', 'search_mode': 'original_window'}
+PASS ply 21 {'move': 'c3a4', 'san': 'Na4', 'nodes': 24237, 'steps': 43562302, 'seconds': 0.827, 'depth': 3, 'word': '047602400106041', 'search_mode': 'original_window'}
+PASS ply 22 {'move': 'd8e7', 'san': 'Qe7', 'nodes': 13359, 'steps': 23514270, 'seconds': 0.531, 'depth': 3, 'word': '013600200026042', 'search_mode': 'original_window'}
+PASS ply 23 {'move': 'c4b5', 'san': 'Bb5', 'nodes': 21625, 'steps': 40548350, 'seconds': 1.211, 'depth': 3, 'word': '036602100066037', 'search_mode': 'original_window'}
+PASS ply 24 {'move': 'e7d6', 'san': 'Qd6', 'nodes': 15552, 'steps': 28728328, 'seconds': 1.188, 'depth': 3, 'word': '024600100026041', 'search_mode': 'original_window'}
+PASS ply 25 {'move': 'b5c6', 'san': 'Bxc6+', 'nodes': 6229, 'steps': 11670003, 'seconds': 0.291, 'depth': 3, 'word': '025600400066035', 'search_mode': 'original_window'}
+PASS ply 26 {'move': 'd6c6', 'san': 'Qxc6', 'nodes': 724, 'steps': 1251255, 'seconds': 0.025, 'depth': 3, 'word': '025600100026043', 'search_mode': 'original_window'}
+PASS ply 27 {'move': 'a4c3', 'san': 'Nc3', 'nodes': 18951, 'steps': 36234313, 'seconds': 0.964, 'depth': 3, 'word': '055600100106032', 'search_mode': 'original_window'}
+PASS ply 28 {'move': 'e8c8', 'san': 'O-O-O', 'nodes': 6961, 'steps': 12219317, 'seconds': 0.269, 'depth': 3, 'word': '000600100376042', 'search_mode': 'original_window'}
+PASS ply 29 {'move': 'd1d2', 'san': 'Qd2', 'nodes': 7140, 'steps': 12189830, 'seconds': 0.23, 'depth': 3, 'word': '064600400026033', 'search_mode': 'original_window'}
+PASS ply 30 {'move': 'h7h6', 'san': 'h6', 'nodes': 36151, 'steps': 54214843, 'seconds': 1.029, 'depth': 3, 'word': '020600100346046', 'search_mode': 'original_window'}
+PASS ply 31 {'move': 'e1c1', 'san': 'O-O-O', 'nodes': 21324, 'steps': 37816375, 'seconds': 0.702, 'depth': 3, 'word': '000600200376040', 'search_mode': 'original_window'}
+PASS ply 32 {'move': 'b7b5', 'san': 'b5', 'nodes': 3906, 'steps': 7129501, 'seconds': 0.159, 'depth': 3, 'word': '036600100356046', 'search_mode': 'original_window'}
+PASS ply 33 {'move': 'd2e2', 'san': 'Qe2', 'nodes': 12361, 'steps': 22747604, 'seconds': 0.468, 'depth': 3, 'word': '063600600026033', 'search_mode': 'original_window'}
+PASS ply 34 {'move': 'd8d4', 'san': 'Rd4', 'nodes': 8451, 'steps': 15470163, 'seconds': 0.3, 'depth': 3, 'word': '044600400056046', 'search_mode': 'original_window'}
+PASS ply 35 {'move': 'g1g3', 'san': 'Rg3', 'nodes': 21395, 'steps': 36950003, 'seconds': 0.843, 'depth': 3, 'word': '051600100046032', 'search_mode': 'original_window'}
+PASS ply 36 {'move': 'g8d8', 'san': 'Rgd8', 'nodes': 5127, 'steps': 9413782, 'seconds': 0.294, 'depth': 3, 'word': '004600100046052', 'search_mode': 'original_window'}
+PASS ply 37 {'move': 'd1g1', 'san': 'Rdg1', 'nodes': 15148, 'steps': 26196878, 'seconds': 1.221, 'depth': 3, 'word': '071600100056031', 'search_mode': 'original_window'}
+PASS ply 38 {'move': 'f6h5', 'san': 'Nh5', 'nodes': 7412, 'steps': 13314578, 'seconds': 0.258, 'depth': 3, 'word': '030601300106052', 'search_mode': 'original_window'}
+PASS ply 39 {'move': 'g3g4', 'san': 'Rg4', 'nodes': 17145, 'steps': 31104698, 'seconds': 0.876, 'depth': 3, 'word': '041600100046033', 'search_mode': 'original_window'}
+PASS ply 40 {'move': 'h5f4', 'san': 'Nf4', 'nodes': 4255, 'steps': 7610365, 'seconds': 0.166, 'depth': 3, 'word': '042600100106050', 'search_mode': 'original_window'}
+PASS ply 41 {'move': 'e2f1', 'san': 'Qf1', 'nodes': 12722, 'steps': 21911212, 'seconds': 1.828, 'depth': 3, 'word': '072600100026035', 'search_mode': 'original_window'}
+PASS ply 42 {'move': 'c6a6', 'san': 'Qa6', 'nodes': 23212, 'steps': 37935629, 'seconds': 1.328, 'depth': 3, 'word': '027600700026055', 'search_mode': 'original_window'}
+PASS ply 43 {'move': 'h3h4', 'san': 'h4', 'nodes': 12112, 'steps': 18795505, 'seconds': 0.717, 'depth': 3, 'word': '040600600346032', 'search_mode': 'original_window'}
+PASS ply 44 {'move': 'g5h4', 'san': 'gxh4', 'nodes': 10562, 'steps': 15258058, 'seconds': 0.448, 'depth': 3, 'word': '040600200336054', 'search_mode': 'original_window'}
+PASS ply 45 {'move': 'g4h4', 'san': 'Rxh4', 'nodes': 6697, 'steps': 9552695, 'seconds': 0.315, 'depth': 3, 'word': '040600100046035', 'search_mode': 'original_window'}
+PASS ply 46 {'move': 'h6h5', 'san': 'h5', 'nodes': 17366, 'steps': 27692064, 'seconds': 0.863, 'depth': 3, 'word': '030600100346053', 'search_mode': 'original_window'}
+PASS ply 47 {'move': 'c3e2', 'san': 'Ne2', 'nodes': 10859, 'steps': 15917675, 'seconds': 0.547, 'depth': 3, 'word': '063601600106040', 'search_mode': 'original_window'}
+PASS ply 48 {'move': 'f4e2', 'san': 'Nxe2+', 'nodes': 31673, 'steps': 42030918, 'seconds': 1.197, 'depth': 3, 'word': '063600100106052', 'search_mode': 'original_window'}
+PASS ply 49 {'move': 'f1e2', 'san': 'Qxe2', 'nodes': 5502, 'steps': 7030097, 'seconds': 0.187, 'depth': 3, 'word': '063600100026035', 'search_mode': 'original_window'}
+PASS ply 50 {'move': 'a6h6', 'san': 'Qh6+', 'nodes': 97277, 'steps': 137485746, 'seconds': 3.96, 'depth': 3, 'word': '020600100026043', 'search_mode': 'original_window'}
+PASS ply 51 {'move': 'f3f4', 'san': 'f4', 'nodes': 1968, 'steps': 2967753, 'seconds': 0.051, 'depth': 3, 'word': '042600100346040', 'search_mode': 'original_window'}
+PASS ply 52 {'move': 'e5f4', 'san': 'exf4', 'nodes': 193430, 'steps': 274545765, 'seconds': 5.38, 'depth': 3, 'word': '042600300336047', 'search_mode': 'original_window'}
+PASS ply 53 {'move': 'e2h5', 'san': 'Qxh5', 'nodes': 5662, 'steps': 8280272, 'seconds': 0.177, 'depth': 3, 'word': '030600200026044', 'search_mode': 'original_window'}
+PASS ply 54 {'move': 'h6h5', 'san': 'Qxh5', 'nodes': 64920, 'steps': 93988590, 'seconds': 1.717, 'depth': 3, 'word': '030600200026047', 'search_mode': 'original_window'}
+PASS ply 55 {'move': 'h4h5', 'san': 'Rxh5', 'nodes': 1803, 'steps': 2728689, 'seconds': 0.058, 'depth': 3, 'word': '030600100046034', 'search_mode': 'original_window'}
+PASS ply 56 {'move': 'c5c4', 'san': 'c4', 'nodes': 7461, 'steps': 11769434, 'seconds': 0.258, 'depth': 3, 'word': '045600100346032', 'search_mode': 'original_window'}
+PASS ply 57 {'move': 'h5f5', 'san': 'Rf5', 'nodes': 5624, 'steps': 8222224, 'seconds': 0.157, 'depth': 3, 'word': '032600400046043', 'search_mode': 'original_window'}
+PASS ply 58 {'move': 'c4d3', 'san': 'cxd3', 'nodes': 36351, 'steps': 51698998, 'seconds': 0.957, 'depth': 3, 'word': '054600100336030', 'search_mode': 'original_window'}
+PASS ply 59 {'move': 'c2d3', 'san': 'cxd3', 'nodes': 6730, 'steps': 8666538, 'seconds': 0.154, 'depth': 3, 'word': '054600100326040', 'search_mode': 'original_window'}
+PASS ply 60 {'move': 'd4d3', 'san': 'Rxd3', 'nodes': 4397, 'steps': 6180672, 'seconds': 0.106, 'depth': 3, 'word': '054600100056031', 'search_mode': 'original_window'}
+PASS ply 61 {'move': 'f5f7', 'san': 'Rxf7', 'nodes': 1578, 'steps': 2331915, 'seconds': 0.04, 'depth': 3, 'word': '012600100046036', 'search_mode': 'original_window'}
+PASS ply 62 {'move': 'f4f3', 'san': 'f3', 'nodes': 5657, 'steps': 7395287, 'seconds': 0.12, 'depth': 3, 'word': '052600100346036', 'search_mode': 'original_window'}
+PASS ply 63 {'move': 'e4e5', 'san': 'e5', 'nodes': 3322, 'steps': 4661561, 'seconds': 0.08, 'depth': 3, 'word': '033600100346036', 'search_mode': 'original_window'}
+PASS ply 64 {'move': 'a7a5', 'san': 'a5', 'nodes': 2269, 'steps': 3081587, 'seconds': 0.065, 'depth': 3, 'word': '037600100356032', 'search_mode': 'original_window'}
+PASS ply 65 {'move': 'e5e6', 'san': 'e6', 'nodes': 12159, 'steps': 16515328, 'seconds': 0.338, 'depth': 3, 'word': '023600100346036', 'search_mode': 'original_window'}
+PASS ply 66 {'move': 'c7c5', 'san': 'c5', 'nodes': 2601, 'steps': 3548637, 'seconds': 0.07, 'depth': 3, 'word': '035600100356031', 'search_mode': 'original_window'}
+PASS ply 67 {'move': 'e6e7', 'san': 'e7', 'nodes': 6629, 'steps': 8763716, 'seconds': 0.168, 'depth': 3, 'word': '013602000346040', 'search_mode': 'original_window'}
+PASS ply 68 {'move': 'd8e8', 'san': 'Re8', 'nodes': 25903, 'steps': 32000984, 'seconds': 0.696, 'depth': 3, 'word': '003600100046031', 'search_mode': 'wide_window_retry'}
+PASS ply 69 {'move': 'g1g5', 'san': 'Rg5', 'nodes': 1056, 'steps': 1425552, 'seconds': 0.062, 'depth': 3, 'word': '031600100056032', 'search_mode': 'original_window'}
+PASS ply 70 {'move': 'c8d7', 'san': 'Kd7', 'nodes': 10247, 'steps': 11931605, 'seconds': 0.308, 'depth': 3, 'word': '014601200016030', 'search_mode': 'original_window'}
+PASS ply 71 {'move': 'c1c2', 'san': 'Kc2', 'nodes': 2574, 'steps': 3011170, 'seconds': 0.053, 'depth': 3, 'word': '065601100016033', 'search_mode': 'original_window'}
+PASS ply 72 {'move': 'd3d4', 'san': 'Rd4', 'nodes': 13076, 'steps': 13819317, 'seconds': 0.235, 'depth': 3, 'word': '044600200056033', 'search_mode': 'original_window'}
+PASS ply 73 {'move': 'f7f3', 'san': 'Rxf3', 'nodes': 8164, 'steps': 9286992, 'seconds': 0.184, 'depth': 3, 'word': '052600100046036', 'search_mode': 'original_window'}
+PASS ply 74 {'move': 'e8e7', 'san': 'Rxe7', 'nodes': 5001, 'steps': 6408473, 'seconds': 0.134, 'depth': 3, 'word': '013600100046036', 'search_mode': 'original_window'}
+PASS ply 75 {'move': 'g5c5', 'san': 'Rxc5', 'nodes': 1959, 'steps': 2403517, 'seconds': 0.046, 'depth': 3, 'word': '035600100046043', 'search_mode': 'original_window'}
+PASS ply 76 {'move': 'e7e2', 'san': 'Re2+', 'nodes': 14325, 'steps': 16033989, 'seconds': 0.299, 'depth': 3, 'word': '063600100046037', 'search_mode': 'original_window'}
+PASS ply 77 {'move': 'c2c3', 'san': 'Kc3', 'nodes': 5092, 'steps': 6015492, 'seconds': 0.11, 'depth': 3, 'word': '055600400016042', 'search_mode': 'original_window'}
+PASS ply 78 {'move': 'd4b4', 'san': 'Rb4', 'nodes': 17432, 'steps': 18839376, 'seconds': 0.341, 'depth': 3, 'word': '046600100046041', 'search_mode': 'original_window'}
+PASS ply 79 {'move': 'f3d3', 'san': 'Rd3+', 'nodes': 7347, 'steps': 8211014, 'seconds': 0.19, 'depth': 3, 'word': '054600100056035', 'search_mode': 'original_window'}
+PASS ply 80 {'move': 'd7e6', 'san': 'Ke6', 'nodes': 3660, 'steps': 3893890, 'seconds': 0.101, 'depth': 3, 'word': '023600100016035', 'search_mode': 'original_window'}
+PASS ply 81 {'move': 'd3e3', 'san': 'Re3+', 'nodes': 8969, 'steps': 9963182, 'seconds': 0.168, 'depth': 3, 'word': '053600100056040', 'search_mode': 'original_window'}
+PASS ply 82 {'move': 'e6d6', 'san': 'Kd6', 'nodes': 3017, 'steps': 3249883, 'seconds': 0.056, 'depth': 3, 'word': '024600200016030', 'search_mode': 'original_window'}
+PASS ply 83 {'move': 'e3e2', 'san': 'Rxe2', 'nodes': 3375, 'steps': 3742155, 'seconds': 0.069, 'depth': 3, 'word': '063600100056040', 'search_mode': 'original_window'}
+PASS ply 84 {'move': 'd6c5', 'san': 'Kxc5', 'nodes': 849, 'steps': 908811, 'seconds': 0.018, 'depth': 3, 'word': '035600100016022', 'search_mode': 'original_window'}
+PASS ply 85 {'move': 'f2f3', 'san': 'f3', 'nodes': 1737, 'steps': 1996986, 'seconds': 0.033, 'depth': 3, 'word': '052600100346025', 'search_mode': 'original_window'}
+PASS ply 86 {'move': 'b4f4', 'san': 'Rf4', 'nodes': 1757, 'steps': 2026109, 'seconds': 0.034, 'depth': 3, 'word': '042600200046020', 'search_mode': 'original_window'}
+PASS ply 87 {'move': 'e2e5', 'san': 'Re5+', 'nodes': 4911, 'steps': 5042620, 'seconds': 0.079, 'depth': 3, 'word': '033600100046027', 'search_mode': 'original_window'}
+PASS ply 88 {'move': 'c5c6', 'san': 'Kc6', 'nodes': 1369, 'steps': 1505232, 'seconds': 0.025, 'depth': 3, 'word': '025600100016025', 'search_mode': 'original_window'}
+PASS ply 89 {'move': 'e5e3', 'san': 'Re3', 'nodes': 6015, 'steps': 6597190, 'seconds': 0.116, 'depth': 3, 'word': '053600200046030', 'search_mode': 'original_window'}
+PASS ply 90 {'move': 'f4c4', 'san': 'Rc4+', 'nodes': 1911, 'steps': 2258447, 'seconds': 0.039, 'depth': 3, 'word': '045600500046025', 'search_mode': 'original_window'}
+PASS ply 91 {'move': 'c3d2', 'san': 'Kd2', 'nodes': 851, 'steps': 1030654, 'seconds': 0.018, 'depth': 3, 'word': '064600200016024', 'search_mode': 'original_window'}
+PASS ply 92 {'move': 'c4a4', 'san': 'Ra4', 'nodes': 2973, 'steps': 3804510, 'seconds': 0.078, 'depth': 3, 'word': '047601700046024', 'search_mode': 'original_window'}
+PASS ply 93 {'move': 'a2a3', 'san': 'a3', 'nodes': 5512, 'steps': 6580097, 'seconds': 0.154, 'depth': 3, 'word': '057600300346026', 'search_mode': 'original_window'}
+PASS ply 94 {'move': 'a4d4', 'san': 'Rd4+', 'nodes': 1283, 'steps': 1646934, 'seconds': 0.039, 'depth': 3, 'word': '044600200046020', 'search_mode': 'original_window'}
+PASS ply 95 {'move': 'e3d3', 'san': 'Rd3', 'nodes': 1541, 'steps': 1985145, 'seconds': 0.044, 'depth': 3, 'word': '054600500046025', 'search_mode': 'original_window'}
+PASS ply 96 {'move': 'd4d3', 'san': 'Rxd3+', 'nodes': 1845, 'steps': 2464242, 'seconds': 0.045, 'depth': 3, 'word': '054600400046025', 'search_mode': 'original_window'}
+PASS ply 97 {'move': 'd2d3', 'san': 'Kxd3', 'nodes': 137, 'steps': 164018, 'seconds': 0.003, 'depth': 3, 'word': '054600100016014', 'search_mode': 'original_window'}
+PASS ply 98 {'move': 'c6d7', 'san': 'Kd7', 'nodes': 344, 'steps': 455933, 'seconds': 0.007, 'depth': 3, 'word': '014600100016011', 'search_mode': 'original_window'}
+PASS ply 99 {'move': 'f3f4', 'san': 'f4', 'nodes': 298, 'steps': 366768, 'seconds': 0.006, 'depth': 3, 'word': '042600100346014', 'search_mode': 'original_window'}
+PASS ply 100 {'move': 'd7e6', 'san': 'Ke6', 'nodes': 358, 'steps': 501145, 'seconds': 0.01, 'depth': 3, 'word': '023600600016012', 'search_mode': 'original_window'}
+PASS ply 101 {'move': 'd3e4', 'san': 'Ke4', 'nodes': 227, 'steps': 270780, 'seconds': 0.005, 'depth': 3, 'word': '043600100016014', 'search_mode': 'original_window'}
+PASS ply 102 {'move': 'a5a4', 'san': 'a4', 'nodes': 333, 'steps': 427548, 'seconds': 0.015, 'depth': 3, 'word': '047600600346012', 'search_mode': 'original_window'}
+PASS ply 103 {'move': 'f4f5', 'san': 'f5+', 'nodes': 127, 'steps': 150511, 'seconds': 0.007, 'depth': 3, 'word': '032600100346012', 'search_mode': 'original_window'}
+PASS ply 104 {'move': 'e6f7', 'san': 'Kf7', 'nodes': 147, 'steps': 169492, 'seconds': 0.003, 'depth': 3, 'word': '012600100016011', 'search_mode': 'original_window'}
+PASS ply 105 {'move': 'e4e5', 'san': 'Ke5', 'nodes': 246, 'steps': 304147, 'seconds': 0.011, 'depth': 3, 'word': '033600600016012', 'search_mode': 'original_window'}
+PASS ply 106 {'move': 'f7g7', 'san': 'Kg7', 'nodes': 196, 'steps': 232025, 'seconds': 0.01, 'depth': 3, 'word': '011600400016011', 'search_mode': 'original_window'}
+PASS ply 107 {'move': 'f5f6', 'san': 'f6+', 'nodes': 188, 'steps': 226025, 'seconds': 0.007, 'depth': 3, 'word': '022600100346012', 'search_mode': 'original_window'}
+PASS ply 108 {'move': 'g7g8', 'san': 'Kg8', 'nodes': 280, 'steps': 340874, 'seconds': 0.009, 'depth': 3, 'word': '001600200016011', 'search_mode': 'original_window'}
+PASS ply 109 {'move': 'e5e6', 'san': 'Ke6', 'nodes': 182, 'steps': 218686, 'seconds': 0.005, 'depth': 3, 'word': '023600400016012', 'search_mode': 'original_window'}
+PASS ply 110 {'move': 'g8h8', 'san': 'Kh8', 'nodes': 133, 'steps': 171143, 'seconds': 0.016, 'depth': 3, 'word': '000600100016006', 'search_mode': 'original_window'}
+PASS ply 111 {'move': 'f6f7', 'san': 'f7', 'nodes': 138, 'steps': 164215, 'seconds': 0.007, 'depth': 3, 'word': '012600100346012', 'search_mode': 'original_window'}
+PASS ply 112 {'move': 'h8h7', 'san': 'Kh7', 'nodes': 222, 'steps': 292367, 'seconds': 0.013, 'depth': 3, 'word': '010600300016004', 'search_mode': 'original_window'}
+PASS ply 113 {'move': 'f7f8q', 'san': 'f8=Q', 'nodes': 111, 'steps': 141866, 'seconds': 0.005, 'depth': 3, 'word': '002600100276012', 'search_mode': 'original_window'}
+PASS ply 114 {'move': 'h7g6', 'san': 'Kg6', 'nodes': 473, 'steps': 460429, 'seconds': 0.025, 'depth': 3, 'word': '021600100016006', 'search_mode': 'wide_window_retry'}
+PASS ply 115 {'move': 'f8e8', 'san': 'Qe8+', 'nodes': 494, 'steps': 445955, 'seconds': 0.02, 'depth': 3, 'word': '003601200026036', 'search_mode': 'original_window'}
+PASS ply 116 {'move': 'g6h7', 'san': 'Kh7', 'nodes': 1440, 'steps': 1130462, 'seconds': 0.025, 'depth': 3, 'word': '010600100016011', 'search_mode': 'wide_window_retry'}
+PASS ply 117 {'move': 'e8b5', 'san': 'Qxb5', 'nodes': 382, 'steps': 389079, 'seconds': 0.01, 'depth': 3, 'word': '036600100026030', 'search_mode': 'original_window'}
+PASS ply 118 {'move': 'h7h8', 'san': 'Kh8', 'nodes': 439, 'steps': 362571, 'seconds': 0.012, 'depth': 3, 'word': '000600100016005', 'search_mode': 'original_window'}
+PASS ply 119 {'move': 'b5a4', 'san': 'Qxa4', 'nodes': 341, 'steps': 351748, 'seconds': 0.016, 'depth': 3, 'word': '047600100026037', 'search_mode': 'original_window'}
+PASS ply 120 {'move': 'h8g8', 'san': 'Kg8', 'nodes': 600, 'steps': 775324, 'seconds': 0.024, 'depth': 3, 'word': '001600100016003', 'search_mode': 'original_window'}
+PASS ply 121 {'move': 'b2b4', 'san': 'b4', 'nodes': 974, 'steps': 1203835, 'seconds': 0.073, 'depth': 3, 'word': '046600200356034', 'search_mode': 'original_window'}
+PASS ply 122 {'move': 'g8h8', 'san': 'Kh8', 'nodes': 445, 'steps': 572904, 'seconds': 0.05, 'depth': 3, 'word': '000600100016005', 'search_mode': 'original_window'}
+PASS ply 123 {'move': 'b4b5', 'san': 'b5', 'nodes': 604, 'steps': 740885, 'seconds': 0.011, 'depth': 3, 'word': '036600100346024', 'search_mode': 'original_window'}
+PASS ply 124 {'move': 'h8g8', 'san': 'Kg8', 'nodes': 466, 'steps': 610034, 'seconds': 0.013, 'depth': 3, 'word': '001600100016003', 'search_mode': 'original_window'}
+PASS ply 125 {'move': 'b5b6', 'san': 'b6', 'nodes': 770, 'steps': 954229, 'seconds': 0.028, 'depth': 3, 'word': '026600100346027', 'search_mode': 'original_window'}
+PASS ply 126 {'move': 'g8h8', 'san': 'Kh8', 'nodes': 1415, 'steps': 1828211, 'seconds': 0.051, 'depth': 3, 'word': '000600100016005', 'search_mode': 'wide_window_retry'}
+PASS ply 127 {'move': 'b6b7', 'san': 'b7', 'nodes': 265, 'steps': 261435, 'seconds': 0.006, 'depth': 3, 'word': '016600100346033', 'search_mode': 'original_window'}
+PASS ply 128 {'move': 'h8g8', 'san': 'Kg8', 'nodes': 294, 'steps': 271955, 'seconds': 0.005, 'depth': 3, 'word': '001600100016003', 'search_mode': 'original_window'}
+PASS ply 129 {'move': 'b7b8q', 'san': 'b8=Q+', 'nodes': 305, 'steps': 324617, 'seconds': 0.008, 'depth': 3, 'word': '006600100276033', 'search_mode': 'original_window'}
+PASS ply 130 {'move': 'g8h7', 'san': 'Kh7', 'nodes': 633, 'steps': 840154, 'seconds': 0.016, 'depth': 3, 'word': '010600100016005', 'search_mode': 'original_window'}
+PASS ply 131 {'move': 'a4h4', 'san': 'Qh4+', 'nodes': 2345, 'steps': 3264839, 'seconds': 0.06, 'depth': 3, 'word': '040601100026057', 'search_mode': 'original_window'}
+PASS resignation {'fen': '1Q6/7k/4K3/8/7Q/P7/8/8 b - - 2 66', 'move': None, 'san': None, 'resign': True, 'reason': 'native_loss_score', 'nodes': 426, 'steps': 549901, 'seconds': 0.011, 'depth': 3, 'word': '000000000000000', 'search_mode': 'wide_window_retry'}
+PASS all {'generator_positions': 421, 'native_move_applications': 9322, 'special_positions': [{'fen': 'r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1', 'moves': 26, 'move': 'h1h8', 'san': 'Rxh8+', 'nodes': 606, 'steps': 789837, 'seconds': 0.014, 'depth': 3, 'word': '000600200046032', 'search_mode': 'original_window'}, {'fen': 'r3k2r/8/8/8/8/8/8/R3K2R b KQkq - 0 1', 'moves': 26, 'move': 'h8h1', 'san': 'Rxh1+', 'nodes': 605, 'steps': 789419, 'seconds': 0.016, 'depth': 3, 'word': '070600200046032', 'search_mode': 'original_window'}, {'fen': 'r3k2r/8/8/8/8/8/8/R3K2R w Kq - 0 1', 'moves': 25, 'move': 'h1h8', 'san': 'Rxh8+', 'nodes': 578, 'steps': 740529, 'seconds': 0.016, 'depth': 3, 'word': '000600200046031', 'search_mode': 'original_window'}, {'fen': 'r3k2r/8/8/8/8/8/8/R3K2R b Qk - 0 1', 'moves': 25, 'move': 'h8h1', 'san': 'Rxh1+', 'nodes': 583, 'steps': 745178, 'seconds': 0.015, 'depth': 3, 'word': '070600200046031', 'search_mode': 'original_window'}, {'fen': '4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 1', 'moves': 7, 'move': 'e1f2', 'san': 'Kf2', 'nodes': 149, 'steps': 196263, 'seconds': 0.003, 'depth': 3, 'word': '062600300016007', 'search_mode': 'original_window'}, {'fen': '4k3/8/8/8/3Pp3/8/8/4K3 b - d3 0 1', 'moves': 7, 'move': 'e8f8', 'san': 'Kf8', 'nodes': 181, 'steps': 236621, 'seconds': 0.004, 'depth': 3, 'word': '002600300016007', 'search_mode': 'original_window'}, {'fen': '4k3/P7/8/8/8/8/8/4K3 w - - 0 1', 'moves': 6, 'move': 'a7a8q', 'san': 'a8=Q+', 'nodes': 65, 'steps': 100013, 'seconds': 0.002, 'depth': 3, 'word': '007600100276006', 'search_mode': 'original_window'}, {'fen': '4k3/8/8/8/8/8/p7/4K3 b - - 0 1', 'moves': 6, 'move': 'a2a1q', 'san': 'a1=Q+', 'nodes': 65, 'steps': 99912, 'seconds': 0.002, 'depth': 3, 'word': '077600100276006', 'search_mode': 'original_window'}, {'fen': '1r2k3/P7/8/8/8/8/8/3QK3 w - - 0 1', 'moves': 23, 'move': 'a7b8q', 'san': 'axb8=Q+', 'nodes': 532, 'steps': 510338, 'seconds': 0.008, 'depth': 3, 'word': '006600100256027', 'search_mode': 'original_window'}, {'fen': '3qk3/8/8/8/8/8/p7/1R2K3 b - - 0 1', 'moves': 23, 'move': 'a2b1q', 'san': 'axb1=Q+', 'nodes': 520, 'steps': 499648, 'seconds': 0.007, 'depth': 3, 'word': '076600100266027', 'search_mode': 'original_window'}], 'mate_tests': 2, 'aspiration_regression': 'passed', 'selfplay_plies': 131, 'selfplay_result': '1-0', 'resignation': {'fen': '1Q6/7k/4K3/8/7Q/P7/8/8 b - - 2 66', 'move': None, 'san': None, 'resign': True, 'reason': 'native_loss_score', 'nodes': 426, 'steps': 549901, 'seconds': 0.011, 'depth': 3, 'word': '000000000000000', 'search_mode': 'wide_window_retry'}, 'final_fen': '1Q6/7k/4K3/8/7Q/P7/8/8 b - - 2 66', 'seconds': 51.42}

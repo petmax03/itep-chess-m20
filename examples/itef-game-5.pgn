@@ -1,0 +1,15 @@
+[Event "Партия с ИТЭФ / v12 исследовательская"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Игрок"]
+[Black "ИТЭФ М-20"]
+[Result "*"]
+[SearchProfile "v11"]
+[SearchChecks "0"]
+[SearchEvaluations "3"]
+[SearchRankCap "14"]
+[Search4344 "printed"]
+[SearchForcedScheme "native"]
+
+1. e4 d5 2. exd5 Qxd5 3. Nc3 Qe5+ 4. Be2 Qg5 5. d4 Qxg2 6. Bf3 Qg6 7. Nd5 Na6 8. Be3 Bf5 9. Be2 Bxc2 10. Qd2 Be4 11. Bb5+ c6 12. Bxa6 Bxh1 13. Bxb7 Qxg1+ 14. Ke2 Qg4+ 15. Ke1 Bxd5 16. Bxa8 Qg1+ *

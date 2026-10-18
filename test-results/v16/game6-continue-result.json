@@ -1,0 +1,933 @@
+{
+  "fen": "8/4nk1R/P7/r7/8/2K5/6p1/8 b - - 1 48",
+  "pieces": {
+    "h7": "R",
+    "f7": "k",
+    "e7": "n",
+    "a6": "P",
+    "a5": "r",
+    "c3": "K",
+    "g2": "p"
+  },
+  "legal": [
+    "f7g8",
+    "f7f8",
+    "f7e8",
+    "f7g6",
+    "f7f6",
+    "f7e6"
+  ],
+  "human": "black",
+  "turn": "black",
+  "busy": false,
+  "error": "",
+  "message": "Ваш ход. Шах!",
+  "history": [
+    "e4",
+    "e5",
+    "Bc4",
+    "Nf6",
+    "Nf3",
+    "Nc6",
+    "Nc3",
+    "Nxe4",
+    "Bxf7+",
+    "Kxf7",
+    "Nxe4",
+    "d5",
+    "Neg5+",
+    "Kg8",
+    "h4",
+    "h6",
+    "d4",
+    "hxg5",
+    "Bxg5",
+    "Be7",
+    "Bxe7",
+    "Qxe7",
+    "dxe5",
+    "d4",
+    "Qe2",
+    "Bg4",
+    "O-O-O",
+    "Bxf3",
+    "Qxf3",
+    "Qxe5",
+    "Qb3+",
+    "Kh7",
+    "Qxb7",
+    "Qd6",
+    "Rhe1",
+    "Rhb8",
+    "Qa6",
+    "Rb6",
+    "Qd3+",
+    "Kh8",
+    "Re4",
+    "Rf8",
+    "f3",
+    "Nb4",
+    "Qc4",
+    "Rc6",
+    "Qxd4",
+    "Qxd4",
+    "Rdxd4",
+    "Nxc2",
+    "Rc4",
+    "Rxc4",
+    "Rxc4",
+    "Ne3",
+    "Rxc7",
+    "a5",
+    "b3",
+    "Nxg2",
+    "Rc5",
+    "a4",
+    "bxa4",
+    "Rxf3",
+    "Rc8+",
+    "Kh7",
+    "Rc4",
+    "Rh3",
+    "a3",
+    "Rxa3",
+    "Rg4",
+    "Ne3",
+    "Re4",
+    "Nf5",
+    "Rf4",
+    "Kg6",
+    "Rg4+",
+    "Kf6",
+    "h5",
+    "Rh3",
+    "Rg6+",
+    "Kf7",
+    "a5",
+    "Rxh5",
+    "Rb6",
+    "Ne7",
+    "a6",
+    "Ra5",
+    "Rd6",
+    "g5",
+    "Kc2",
+    "g4",
+    "Kc3",
+    "g3",
+    "Rh6",
+    "g2",
+    "Rh7+"
+  ],
+  "history_entries": [
+    {
+      "san": "e4",
+      "move_number": 1,
+      "color": "white",
+      "engine": true,
+      "record": null
+    },
+    {
+      "san": "e5",
+      "move_number": 1,
+      "color": "black",
+      "engine": false,
+      "record": null
+    },
+    {
+      "san": "Bc4",
+      "move_number": 2,
+      "color": "white",
+      "engine": true,
+      "record": null
+    },
+    {
+      "san": "Nf6",
+      "move_number": 2,
+      "color": "black",
+      "engine": false,
+      "record": null
+    },
+    {
+      "san": "Nf3",
+      "move_number": 3,
+      "color": "white",
+      "engine": true,
+      "record": null
+    },
+    {
+      "san": "Nc6",
+      "move_number": 3,
+      "color": "black",
+      "engine": false,
+      "record": null
+    },
+    {
+      "san": "Nc3",
+      "move_number": 4,
+      "color": "white",
+      "engine": true,
+      "record": null
+    },
+    {
+      "san": "Nxe4",
+      "move_number": 4,
+      "color": "black",
+      "engine": false,
+      "record": null
+    },
+    {
+      "san": "Bxf7+",
+      "move_number": 5,
+      "color": "white",
+      "engine": true,
+      "record": null
+    },
+    {
+      "san": "Kxf7",
+      "move_number": 5,
+      "color": "black",
+      "engine": false,
+      "record": null
+    },
+    {
+      "san": "Nxe4",
+      "move_number": 6,
+      "color": "white",
+      "engine": true,
+      "record": null
+    },
+    {
+      "san": "d5",
+      "move_number": 6,
+      "color": "black",
+      "engine": false,
+      "record": null
+    },
+    {
+      "san": "Neg5+",
+      "move_number": 7,
+      "color": "white",
+      "engine": true,
+      "record": null
+    },
+    {
+      "san": "Kg8",
+      "move_number": 7,
+      "color": "black",
+      "engine": false,
+      "record": null
+    },
+    {
+      "san": "h4",
+      "move_number": 8,
+      "color": "white",
+      "engine": true,
+      "record": null
+    },
+    {
+      "san": "h6",
+      "move_number": 8,
+      "color": "black",
+      "engine": false,
+      "record": null
+    },
+    {
+      "san": "d4",
+      "move_number": 9,
+      "color": "white",
+      "engine": true,
+      "record": null
+    },
+    {
+      "san": "hxg5",
+      "move_number": 9,
+      "color": "black",
+      "engine": false,
+      "record": null
+    },
+    {
+      "san": "Bxg5",
+      "move_number": 10,
+      "color": "white",
+      "engine": true,
+      "record": null
+    },
+    {
+      "san": "Be7",
+      "move_number": 10,
+      "color": "black",
+      "engine": false,
+      "record": null
+    },
+    {
+      "san": "Bxe7",
+      "move_number": 11,
+      "color": "white",
+      "engine": true,
+      "record": null
+    },
+    {
+      "san": "Qxe7",
+      "move_number": 11,
+      "color": "black",
+      "engine": false,
+      "record": null
+    },
+    {
+      "san": "dxe5",
+      "move_number": 12,
+      "color": "white",
+      "engine": true,
+      "record": null
+    },
+    {
+      "san": "d4",
+      "move_number": 12,
+      "color": "black",
+      "engine": false,
+      "record": null
+    },
+    {
+      "san": "Qe2",
+      "move_number": 13,
+      "color": "white",
+      "engine": true,
+      "record": null
+    },
+    {
+      "san": "Bg4",
+      "move_number": 13,
+      "color": "black",
+      "engine": false,
+      "record": null
+    },
+    {
+      "san": "O-O-O",
+      "move_number": 14,
+      "color": "white",
+      "engine": true,
+      "record": null
+    },
+    {
+      "san": "Bxf3",
+      "move_number": 14,
+      "color": "black",
+      "engine": false,
+      "record": null
+    },
+    {
+      "san": "Qxf3",
+      "move_number": 15,
+      "color": "white",
+      "engine": true,
+      "record": null
+    },
+    {
+      "san": "Qxe5",
+      "move_number": 15,
+      "color": "black",
+      "engine": false,
+      "record": null
+    },
+    {
+      "san": "Qb3+",
+      "move_number": 16,
+      "color": "white",
+      "engine": true,
+      "record": null
+    },
+    {
+      "san": "Kh7",
+      "move_number": 16,
+      "color": "black",
+      "engine": false,
+      "record": null
+    },
+    {
+      "san": "Qxb7",
+      "move_number": 17,
+      "color": "white",
+      "engine": true,
+      "record": null
+    },
+    {
+      "san": "Qd6",
+      "move_number": 17,
+      "color": "black",
+      "engine": false,
+      "record": null
+    },
+    {
+      "san": "Rhe1",
+      "move_number": 18,
+      "color": "white",
+      "engine": true,
+      "record": null
+    },
+    {
+      "san": "Rhb8",
+      "move_number": 18,
+      "color": "black",
+      "engine": false,
+      "record": null
+    },
+    {
+      "san": "Qa6",
+      "move_number": 19,
+      "color": "white",
+      "engine": true,
+      "record": null
+    },
+    {
+      "san": "Rb6",
+      "move_number": 19,
+      "color": "black",
+      "engine": false,
+      "record": null
+    },
+    {
+      "san": "Qd3+",
+      "move_number": 20,
+      "color": "white",
+      "engine": true,
+      "record": null
+    },
+    {
+      "san": "Kh8",
+      "move_number": 20,
+      "color": "black",
+      "engine": false,
+      "record": null
+    },
+    {
+      "san": "Re4",
+      "move_number": 21,
+      "color": "white",
+      "engine": true,
+      "record": null
+    },
+    {
+      "san": "Rf8",
+      "move_number": 21,
+      "color": "black",
+      "engine": false,
+      "record": null
+    },
+    {
+      "san": "f3",
+      "move_number": 22,
+      "color": "white",
+      "engine": true,
+      "record": null
+    },
+    {
+      "san": "Nb4",
+      "move_number": 22,
+      "color": "black",
+      "engine": false,
+      "record": null
+    },
+    {
+      "san": "Qc4",
+      "move_number": 23,
+      "color": "white",
+      "engine": true,
+      "record": null
+    },
+    {
+      "san": "Rc6",
+      "move_number": 23,
+      "color": "black",
+      "engine": false,
+      "record": null
+    },
+    {
+      "san": "Qxd4",
+      "move_number": 24,
+      "color": "white",
+      "engine": true,
+      "record": null
+    },
+    {
+      "san": "Qxd4",
+      "move_number": 24,
+      "color": "black",
+      "engine": false,
+      "record": null
+    },
+    {
+      "san": "Rdxd4",
+      "move_number": 25,
+      "color": "white",
+      "engine": true,
+      "record": null
+    },
+    {
+      "san": "Nxc2",
+      "move_number": 25,
+      "color": "black",
+      "engine": false,
+      "record": null
+    },
+    {
+      "san": "Rc4",
+      "move_number": 26,
+      "color": "white",
+      "engine": true,
+      "record": null
+    },
+    {
+      "san": "Rxc4",
+      "move_number": 26,
+      "color": "black",
+      "engine": false,
+      "record": null
+    },
+    {
+      "san": "Rxc4",
+      "move_number": 27,
+      "color": "white",
+      "engine": true,
+      "record": null
+    },
+    {
+      "san": "Ne3",
+      "move_number": 27,
+      "color": "black",
+      "engine": false,
+      "record": null
+    },
+    {
+      "san": "Rxc7",
+      "move_number": 28,
+      "color": "white",
+      "engine": true,
+      "record": null
+    },
+    {
+      "san": "a5",
+      "move_number": 28,
+      "color": "black",
+      "engine": false,
+      "record": null
+    },
+    {
+      "san": "b3",
+      "move_number": 29,
+      "color": "white",
+      "engine": true,
+      "record": null
+    },
+    {
+      "san": "Nxg2",
+      "move_number": 29,
+      "color": "black",
+      "engine": false,
+      "record": null
+    },
+    {
+      "san": "Rc5",
+      "move_number": 30,
+      "color": "white",
+      "engine": true,
+      "record": null
+    },
+    {
+      "san": "a4",
+      "move_number": 30,
+      "color": "black",
+      "engine": false,
+      "record": null
+    },
+    {
+      "san": "bxa4",
+      "move_number": 31,
+      "color": "white",
+      "engine": true,
+      "record": null
+    },
+    {
+      "san": "Rxf3",
+      "move_number": 31,
+      "color": "black",
+      "engine": false,
+      "record": null
+    },
+    {
+      "san": "Rc8+",
+      "move_number": 32,
+      "color": "white",
+      "engine": true,
+      "record": null
+    },
+    {
+      "san": "Kh7",
+      "move_number": 32,
+      "color": "black",
+      "engine": false,
+      "record": null
+    },
+    {
+      "san": "Rc4",
+      "move_number": 33,
+      "color": "white",
+      "engine": true,
+      "record": null
+    },
+    {
+      "san": "Rh3",
+      "move_number": 33,
+      "color": "black",
+      "engine": false,
+      "record": null
+    },
+    {
+      "san": "a3",
+      "move_number": 34,
+      "color": "white",
+      "engine": true,
+      "record": null
+    },
+    {
+      "san": "Rxa3",
+      "move_number": 34,
+      "color": "black",
+      "engine": false,
+      "record": null
+    },
+    {
+      "san": "Rg4",
+      "move_number": 35,
+      "color": "white",
+      "engine": true,
+      "record": null
+    },
+    {
+      "san": "Ne3",
+      "move_number": 35,
+      "color": "black",
+      "engine": false,
+      "record": null
+    },
+    {
+      "san": "Re4",
+      "move_number": 36,
+      "color": "white",
+      "engine": true,
+      "record": null
+    },
+    {
+      "san": "Nf5",
+      "move_number": 36,
+      "color": "black",
+      "engine": false,
+      "record": null
+    },
+    {
+      "san": "Rf4",
+      "move_number": 37,
+      "color": "white",
+      "engine": true,
+      "record": null
+    },
+    {
+      "san": "Kg6",
+      "move_number": 37,
+      "color": "black",
+      "engine": false,
+      "record": null
+    },
+    {
+      "san": "Rg4+",
+      "move_number": 38,
+      "color": "white",
+      "engine": true,
+      "record": null
+    },
+    {
+      "san": "Kf6",
+      "move_number": 38,
+      "color": "black",
+      "engine": false,
+      "record": null
+    },
+    {
+      "san": "h5",
+      "move_number": 39,
+      "color": "white",
+      "engine": true,
+      "record": null
+    },
+    {
+      "san": "Rh3",
+      "move_number": 39,
+      "color": "black",
+      "engine": false,
+      "record": null
+    },
+    {
+      "san": "Rg6+",
+      "move_number": 40,
+      "color": "white",
+      "engine": true,
+      "record": null
+    },
+    {
+      "san": "Kf7",
+      "move_number": 40,
+      "color": "black",
+      "engine": false,
+      "record": null
+    },
+    {
+      "san": "a5",
+      "move_number": 41,
+      "color": "white",
+      "engine": true,
+      "record": null
+    },
+    {
+      "san": "Rxh5",
+      "move_number": 41,
+      "color": "black",
+      "engine": false,
+      "record": null
+    },
+    {
+      "san": "Rb6",
+      "move_number": 42,
+      "color": "white",
+      "engine": true,
+      "record": null
+    },
+    {
+      "san": "Ne7",
+      "move_number": 42,
+      "color": "black",
+      "engine": false,
+      "record": null
+    },
+    {
+      "san": "a6",
+      "move_number": 43,
+      "color": "white",
+      "engine": true,
+      "record": null
+    },
+    {
+      "san": "Ra5",
+      "move_number": 43,
+      "color": "black",
+      "engine": false,
+      "record": null
+    },
+    {
+      "san": "Rd6",
+      "move_number": 44,
+      "color": "white",
+      "engine": true,
+      "record": null
+    },
+    {
+      "san": "g5",
+      "move_number": 44,
+      "color": "black",
+      "engine": false,
+      "record": null
+    },
+    {
+      "san": "Kc2",
+      "move_number": 45,
+      "color": "white",
+      "engine": true,
+      "record": null
+    },
+    {
+      "san": "g4",
+      "move_number": 45,
+      "color": "black",
+      "engine": false,
+      "record": null
+    },
+    {
+      "san": "Kc3",
+      "move_number": 46,
+      "color": "white",
+      "engine": true,
+      "record": null
+    },
+    {
+      "san": "g3",
+      "move_number": 46,
+      "color": "black",
+      "engine": false,
+      "record": null
+    },
+    {
+      "san": "Rh6",
+      "move_number": 47,
+      "color": "white",
+      "engine": true,
+      "record": null
+    },
+    {
+      "san": "g2",
+      "move_number": 47,
+      "color": "black",
+      "engine": false,
+      "record": null
+    },
+    {
+      "san": "Rh7+",
+      "move_number": 48,
+      "color": "white",
+      "engine": true,
+      "record": {
+        "move": "h6h7",
+        "san": "Rh7+",
+        "nodes": 20566619,
+        "steps": 17452188776,
+        "seconds": 174.471,
+        "depth": 3,
+        "word": "010600100046026",
+        "search_mode": "wide_window_retry",
+        "lambda_final_1706": 10278677,
+        "search_profile": {
+          "name": "v11",
+          "checks": 0,
+          "evaluations": 3,
+          "rank_cap": 14,
+          "source_4344": false,
+          "forced_scheme": "native",
+          "rank_memory": "v11_original",
+          "check_limit_reachable": false,
+          "overrides": {},
+          "words": {
+            "4332": "016000343333636",
+            "4344": "033402410570000",
+            "4777": "000000000000000",
+            "1661": "003000000000000"
+          }
+        },
+        "castling_history_known": true,
+        "castling_history_unknown_colors": [],
+        "requested_depth": 3,
+        "depth_reduced": false,
+        "attempts": [
+          {
+            "status": "limit",
+            "budget": 3000000000,
+            "steps": 3000000000,
+            "nodes": 3574283,
+            "depth": 3,
+            "seconds": 29.954,
+            "pc": "1311"
+          },
+          {
+            "status": "answered",
+            "budget": 20000000000,
+            "steps": 17452188776,
+            "nodes": 20566619,
+            "depth": 3,
+            "seconds": 174.471
+          }
+        ],
+        "total_steps": 20452188776,
+        "m20_minutes": 14543.490646666667,
+        "m20_time": "242,39 ч",
+        "total_m20_minutes": 17043.490646666665,
+        "total_m20_time": "284,06 ч"
+      }
+    }
+  ],
+  "last": {
+    "move": "h6h7",
+    "san": "Rh7+",
+    "nodes": 20566619,
+    "steps": 17452188776,
+    "seconds": 174.471,
+    "depth": 3,
+    "word": "010600100046026",
+    "search_mode": "wide_window_retry",
+    "lambda_final_1706": 10278677,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": [],
+    "requested_depth": 3,
+    "depth_reduced": false,
+    "attempts": [
+      {
+        "status": "limit",
+        "budget": 3000000000,
+        "steps": 3000000000,
+        "nodes": 3574283,
+        "depth": 3,
+        "seconds": 29.954,
+        "pc": "1311"
+      },
+      {
+        "status": "answered",
+        "budget": 20000000000,
+        "steps": 17452188776,
+        "nodes": 20566619,
+        "depth": 3,
+        "seconds": 174.471
+      }
+    ],
+    "total_steps": 20452188776,
+    "m20_minutes": 14543.490646666667,
+    "m20_time": "242,39 ч",
+    "total_m20_minutes": 17043.490646666665,
+    "total_m20_time": "284,06 ч"
+  },
+  "depth": 3,
+  "budget": 3000000000,
+  "limit": null,
+  "pending": null,
+  "totals": {
+    "steps": 20452188776,
+    "minutes": 17043.490646666665,
+    "text": "284,06 ч",
+    "completed_steps": 17452188776,
+    "retry_steps": 3000000000,
+    "recorded_moves": 1
+  },
+  "can_continue": false,
+  "can_reduce": false,
+  "search_profile": {
+    "name": "v11",
+    "checks": 0,
+    "evaluations": 3,
+    "rank_cap": 14,
+    "source_4344": false,
+    "forced_scheme": "native",
+    "rank_memory": "v11_original",
+    "check_limit_reachable": false,
+    "overrides": {},
+    "words": {
+      "4332": "016000343333636",
+      "4344": "033402410570000",
+      "4777": "000000000000000",
+      "1661": "003000000000000"
+    }
+  },
+  "finished": false,
+  "last_move": "h6h7"
+}

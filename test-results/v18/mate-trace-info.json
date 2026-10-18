@@ -1,0 +1,10 @@
+{
+  "note": "See actual FEN below; every numeric CSV field is octal. Read-only bridge observation before the v18 terminal overlay.",
+  "fen": "1nk2b1r/rp4pp/p3Np2/2p4b/2N2B2/3P4/PPP2PPP/R4K1R w - - 4 20",
+  "depth": 1,
+  "profile": "v11",
+  "terminal_rules": false,
+  "truncated": false,
+  "rows": 28307,
+  "sha256": "294f2bcf2d5b6a721ef2738b3b8355176b233ea4c199004c877d5750feed6b10"
+}

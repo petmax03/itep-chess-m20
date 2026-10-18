@@ -1,0 +1,30 @@
+{
+  "move": "h6h7",
+  "san": "Rh7+",
+  "nodes": 450601,
+  "steps": 368000238,
+  "seconds": 3.725,
+  "depth": 2,
+  "word": "010600100046026",
+  "search_mode": "original_window",
+  "lambda_final_1706": 450601,
+  "search_profile": {
+    "name": "v11",
+    "checks": 0,
+    "evaluations": 3,
+    "rank_cap": 14,
+    "source_4344": false,
+    "forced_scheme": "native",
+    "rank_memory": "v11_original",
+    "check_limit_reachable": false,
+    "overrides": {},
+    "words": {
+      "4332": "016000343333636",
+      "4344": "033402410570000",
+      "4777": "000000000000000",
+      "1661": "003000000000000"
+    }
+  },
+  "castling_history_known": true,
+  "castling_history_unknown_colors": []
+}

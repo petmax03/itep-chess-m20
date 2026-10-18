@@ -1,0 +1,13 @@
+{
+  "variants": [
+    "narrow",
+    "checks",
+    "wide",
+    "listing"
+  ],
+  "N": 3,
+  "move": "d5",
+  "record_mode": "checks:3",
+  "errors": [],
+  "mobile_overflow": false
+}

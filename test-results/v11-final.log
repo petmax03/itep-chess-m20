@@ -1,0 +1,96 @@
+{"game": 1, "ply": 1, "historical_san": "e4", "san": "e4", "match": true, "error": null}
+{"game": 1, "ply": 3, "historical_san": "Nc3", "san": "Bc4", "match": false, "error": null}
+{"game": 1, "ply": 5, "historical_san": "Nf3", "san": "Bc4", "match": false, "error": null}
+{"game": 1, "ply": 7, "historical_san": "Bc4", "san": "Bb5", "match": false, "error": null}
+{"game": 1, "ply": 9, "historical_san": "O-O", "san": "d3", "match": false, "error": null}
+{"game": 1, "ply": 11, "historical_san": "d3", "san": "d3", "match": true, "error": null}
+{"game": 1, "ply": 13, "historical_san": "Be3", "san": "Be3", "match": true, "error": null}
+{"game": 1, "ply": 15, "historical_san": "h3", "san": "Bxc5", "match": false, "error": null}
+{"game": 1, "ply": 17, "historical_san": "Bd5", "san": "Bxc5", "match": false, "error": null}
+{"game": 1, "ply": 19, "historical_san": "g4", "san": "Re1", "match": false, "error": null}
+{"game": 1, "ply": 21, "historical_san": "bxc3", "san": "Bxc6", "match": false, "error": null}
+{"game": 1, "ply": 23, "historical_san": "Bg5", "san": "Bxc6", "match": false, "error": null}
+{"game": 1, "ply": 25, "historical_san": "Rb1", "san": "Rb1", "match": true, "error": null}
+{"game": 1, "ply": 27, "historical_san": "Qe2", "san": "Qe2", "match": true, "error": null}
+{"game": 1, "ply": 29, "historical_san": "d4", "san": "d4", "match": true, "error": null}
+{"game": 1, "ply": 31, "historical_san": "Qc4", "san": "Rb5", "match": false, "error": null}
+{"game": 1, "ply": 33, "historical_san": "Bxf6", "san": "Bxf6", "match": true, "error": null}
+{"game": 1, "ply": 35, "historical_san": "Qd3", "san": "Qd3", "match": true, "error": null}
+{"game": 1, "ply": 37, "historical_san": "dxe5", "san": "dxe5", "match": true, "error": null}
+{"game": 1, "ply": 39, "historical_san": "Bb3", "san": "Bb3", "match": true, "error": null}
+{"game": 1, "ply": 41, "historical_san": "Qe3", "san": "Qe3", "match": true, "error": null}
+{"game": 1, "ply": 43, "historical_san": "Rfd1", "san": "Rfd1", "match": true, "error": null}
+{"game": 1, "ply": 45, "historical_san": "g5", "san": "Rxd6", "match": false, "error": null}
+{"game": 1, "ply": 47, "historical_san": "Rd3", "san": "Rxd6", "match": false, "error": null}
+{"game": 1, "ply": 49, "historical_san": "cxd3", "san": "cxd3", "match": true, "error": null}
+{"game": 1, "ply": 51, "historical_san": "Ra1", "san": "Bd1", "match": false, "error": null}
+{"game": 1, "ply": 53, "historical_san": "d4", "san": "d4", "match": true, "error": null}
+{"game": 1, "ply": 55, "historical_san": "cxd4", "san": "cxd4", "match": true, "error": null}
+{"game": 1, "ply": 57, "historical_san": "axb3", "san": "axb3", "match": true, "error": null}
+{"game": 1, "ply": 59, "historical_san": "Ra4", "san": "Ra4", "match": true, "error": null}
+{"game": 1, "ply": 61, "historical_san": "Ne5", "san": "Ne5", "match": true, "error": null}
+{"game": 1, "ply": 63, "historical_san": "f4", "san": "f4", "match": true, "error": null}
+{"game": 1, "ply": 65, "historical_san": "f5", "san": "f5", "match": true, "error": null}
+{"game": 1, "ply": 67, "historical_san": "Nc4", "san": "Nc4", "match": true, "error": null}
+{"game": 1, "ply": 69, "historical_san": "Nxb6", "san": "Nxb6", "match": true, "error": null}
+{"game": 1, "ply": 71, "historical_san": "Nc4", "san": "Nc4", "match": true, "error": null}
+{"game": 1, "ply": 73, "historical_san": "Ra3", "san": "Ra3", "match": true, "error": null}
+{"game": 2, "ply": 2, "historical_san": "Nf6", "san": "d5", "match": false, "error": null}
+{"game": 2, "ply": 4, "historical_san": "Nd5", "san": "Nd5", "match": true, "error": null}
+{"game": 2, "ply": 6, "historical_san": "e6", "san": "Nc6", "match": false, "error": null}
+{"game": 2, "ply": 8, "historical_san": "a6", "san": "a6", "match": true, "error": null}
+{"game": 2, "ply": 10, "historical_san": "b5", "san": "b5", "match": true, "error": null}
+{"game": 2, "ply": 12, "historical_san": "Bb4", "san": "Nc6", "match": false, "error": null}
+{"game": 2, "ply": 14, "historical_san": "Nf4", "san": "Bb7", "match": false, "error": null}
+{"game": 2, "ply": 16, "historical_san": "Bb7", "san": "Bb7", "match": true, "error": null}
+{"game": 2, "ply": 18, "historical_san": "Bxc3", "san": "Bxc3", "match": true, "error": null}
+{"game": 2, "ply": 20, "historical_san": "Nd5", "san": "Nd5", "match": true, "error": null}
+{"game": 2, "ply": 22, "historical_san": "Bxd5", "san": "Bxd5", "match": true, "error": null}
+{"game": 2, "ply": 24, "historical_san": "d6", "san": "d6", "match": true, "error": null}
+{"game": 2, "ply": 26, "historical_san": "cxd6", "san": "cxd6", "match": true, "error": null}
+{"game": 2, "ply": 28, "historical_san": "Nc6", "san": "Nc6", "match": true, "error": null}
+{"game": 2, "ply": 30, "historical_san": "O-O", "san": "Rc8", "match": false, "error": null}
+{"game": 2, "ply": 32, "historical_san": "Bc4", "san": "Re8", "match": false, "error": null}
+{"game": 2, "ply": 34, "historical_san": "Qc7", "san": "Rc8", "match": false, "error": null}
+{"game": 2, "ply": 36, "historical_san": "a5", "san": "a5", "match": true, "error": null}
+{"game": 2, "ply": 38, "historical_san": "Kh8", "san": "Rfc8", "match": false, "error": null}
+{"game": 2, "ply": 40, "historical_san": "h6", "san": "h6", "match": true, "error": null}
+{"game": 2, "ply": 42, "historical_san": "Rfd8", "san": "Rfd8", "match": true, "error": null}
+{"game": 2, "ply": 44, "historical_san": "Rxd6", "san": "Rxd6", "match": true, "error": null}
+{"game": 2, "ply": 46, "historical_san": "Qxd6", "san": "Qxd6", "match": true, "error": null}
+{"game": 2, "ply": 48, "historical_san": "Ne7", "san": "Ne7", "match": true, "error": null}
+{"game": 2, "ply": 50, "historical_san": "Nc6", "san": "Nc6", "match": true, "error": null}
+{"game": 2, "ply": 52, "historical_san": "e5", "san": "e5", "match": true, "error": null}
+{"game": 2, "ply": 54, "historical_san": "Ra6", "san": "Ra6", "match": true, "error": null}
+{"game": 2, "ply": 56, "historical_san": "g6", "san": "g6", "match": true, "error": null}
+{"game": 2, "ply": 58, "historical_san": "g5", "san": "g5", "match": true, "error": null}
+{"game": 2, "ply": 60, "historical_san": "a4", "san": "a4", "match": true, "error": null}
+{"game": 2, "ply": 62, "historical_san": "f6", "san": "f6", "match": true, "error": null}
+{"game": 2, "ply": 64, "historical_san": "exd4", "san": "exd4", "match": true, "error": null}
+{"game": 2, "ply": 66, "historical_san": "Ne7", "san": "Ne7", "match": true, "error": null}
+{"game": 2, "ply": 68, "historical_san": "Qxg3", "san": "Qxg3", "match": true, "error": null}
+{"game": 2, "ply": 70, "historical_san": "Nd5", "san": "Nd5", "match": true, "error": null}
+{"game": 2, "ply": 72, "historical_san": "Kh7", "san": "Kh7", "match": true, "error": null}
+{"game": 2, "ply": 74, "historical_san": "b4", "san": "b4", "match": true, "error": null}
+{"game": 2, "ply": 76, "historical_san": "Nxb4", "san": "Nxb4", "match": true, "error": null}
+{"game": 2, "ply": 78, "historical_san": "Nd5", "san": "Nd5", "match": true, "error": null}
+[
+  {
+    "game": 1,
+    "tested": 37,
+    "answered": 37,
+    "matches": 24,
+    "different": 13,
+    "unanswered": 0,
+    "percent_of_all_positions": 64.86
+  },
+  {
+    "game": 2,
+    "tested": 39,
+    "answered": 39,
+    "matches": 31,
+    "different": 8,
+    "unanswered": 0,
+    "percent_of_all_positions": 79.49
+  }
+]

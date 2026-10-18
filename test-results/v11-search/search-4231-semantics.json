@@ -1,0 +1,65 @@
+{
+  "position": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+  "steps_to_first_real_check_branch": 327901,
+  "at_4226": {
+    "depth": "000000000010000",
+    "n": 4,
+    "ra": 4,
+    "omega": 0,
+    "generator_mode": "016000000030000"
+  },
+  "cases": [
+    {
+      "branch": "real_depth_one",
+      "results": {
+        "v10": {
+          "steps": 4,
+          "generator_mode": "016000000030000",
+          "omega_at_4337": 1,
+          "preliminary_eval": "011200000000000",
+          "board_unchanged": true
+        },
+        "printed_p34_tail": {
+          "steps": 3,
+          "generator_mode": "016000000060000",
+          "omega_at_4337": 0,
+          "preliminary_eval": "011200000000000",
+          "board_unchanged": true
+        },
+        "relocated_p34_tail": {
+          "steps": 3,
+          "generator_mode": "016000000060000",
+          "omega_at_4337": 0,
+          "preliminary_eval": "011200000000000",
+          "board_unchanged": true
+        }
+      }
+    },
+    {
+      "branch": "same_state_depth_two",
+      "results": {
+        "v10": {
+          "steps": 6,
+          "generator_mode": "016000000030000",
+          "omega_at_4337": 1,
+          "preliminary_eval": "011200000000000",
+          "board_unchanged": true
+        },
+        "printed_p34_tail": {
+          "steps": 5,
+          "generator_mode": "016000000060000",
+          "omega_at_4337": 0,
+          "preliminary_eval": "011200000000000",
+          "board_unchanged": true
+        },
+        "relocated_p34_tail": {
+          "steps": 6,
+          "generator_mode": "016000000060000",
+          "omega_at_4337": 0,
+          "preliminary_eval": "011200000000000",
+          "board_unchanged": true
+        }
+      }
+    }
+  ]
+}

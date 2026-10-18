@@ -1,0 +1,155 @@
+{
+  "default": {
+    "move": "d7d5",
+    "san": "d5",
+    "nodes": 4496,
+    "steps": 10235276,
+    "seconds": 0.129,
+    "depth": 3,
+    "word": "034600100356024",
+    "search_mode": "original_window",
+    "lambda_final_1706": 4496,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "по листингу"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": []
+  },
+  "resumed": {
+    "move": "d7d5",
+    "san": "d5",
+    "nodes": 4496,
+    "steps": 10235276,
+    "seconds": 0.133,
+    "depth": 3,
+    "word": "034600100356024",
+    "search_mode": "original_window",
+    "lambda_final_1706": 4496,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "по листингу"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": []
+  },
+  "checkpoints": [
+    {
+      "status": "limit",
+      "budget": 1000000,
+      "steps": 1000000,
+      "nodes": 413,
+      "depth": 3,
+      "seconds": 0.011,
+      "pc": "2070",
+      "forced_play": {
+        "variant": "listing",
+        "checks_per_side": 2,
+        "label": "по листингу"
+      }
+    }
+  ],
+  "ladder": {
+    "move": "a2a3",
+    "san": "a3",
+    "depth": 2,
+    "steps": 17,
+    "nodes": 3,
+    "seconds": 0,
+    "requested_depth": 5,
+    "depth_reduced": true,
+    "attempts": [
+      {
+        "status": "limit",
+        "budget": 40000000000,
+        "steps": 40000000000,
+        "nodes": 9,
+        "depth": 5,
+        "seconds": 0.0,
+        "pc": "0000",
+        "forced_play": null
+      },
+      {
+        "status": "limit",
+        "budget": 10000000000,
+        "steps": 10000000000,
+        "nodes": 9,
+        "depth": 4,
+        "seconds": 0.0,
+        "pc": "0000",
+        "forced_play": null
+      },
+      {
+        "status": "limit",
+        "budget": 3000000000,
+        "steps": 3000000000,
+        "nodes": 9,
+        "depth": 3,
+        "seconds": 0.0,
+        "pc": "0000",
+        "forced_play": null
+      },
+      {
+        "status": "answered",
+        "budget": 3000000000,
+        "steps": 17,
+        "nodes": 3,
+        "depth": 2,
+        "seconds": 0,
+        "forced_play": null
+      }
+    ],
+    "total_steps": 53000000017,
+    "m20_minutes": 1.4166666666666666e-05,
+    "m20_time": "0,00 мин",
+    "total_m20_minutes": 44166.66668083333,
+    "total_m20_time": "736,11 ч",
+    "fallback_depths": [
+      4,
+      3,
+      2
+    ],
+    "extensions": [
+      {
+        "depth": 5,
+        "extra": 20000000000
+      }
+    ]
+  }
+}

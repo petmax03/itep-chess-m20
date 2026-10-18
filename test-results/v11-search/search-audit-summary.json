@@ -1,0 +1,44 @@
+[
+  {
+    "variant": "full_window",
+    "tested": 76,
+    "matches": 52,
+    "errors": 0
+  },
+  {
+    "variant": "no_acceleration",
+    "tested": 76,
+    "matches": 53,
+    "errors": 0
+  },
+  {
+    "variant": "resolve_4231",
+    "tested": 76,
+    "matches": 55,
+    "errors": 0
+  },
+  {
+    "variant": "resolve_4231_original_clear",
+    "tested": 76,
+    "matches": 55,
+    "errors": 0
+  },
+  {
+    "variant": "fixed-source4344",
+    "tested": 76,
+    "matches": 55,
+    "errors": 0
+  },
+  {
+    "variant": "fixed-cap16",
+    "tested": 76,
+    "matches": 1,
+    "errors": 75
+  },
+  {
+    "variant": "fixed-source4344-cap16",
+    "tested": 76,
+    "matches": 31,
+    "errors": 37
+  }
+]

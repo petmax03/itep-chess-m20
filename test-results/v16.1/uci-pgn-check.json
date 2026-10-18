@@ -1,0 +1,18 @@
+{
+  "headers": {
+    "Event": "ITEF M-20 / UCI v16.1",
+    "Site": "?",
+    "Date": "????.??.??",
+    "Round": "?",
+    "White": "?",
+    "Black": "ITEF M-20",
+    "Result": "*",
+    "M20ForcedPlay": "wide",
+    "SearchProfile": "v11",
+    "M20ForcedPlayHistory": "checks:3, wide",
+    "M20TotalCommands": "28621496",
+    "M20TotalMinutes": "23.851247"
+  },
+  "plies": 4,
+  "success": true
+}

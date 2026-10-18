@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ru">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ИТЭФ — партия через шестьдесят лет</title>
+<style>
+:root{color-scheme:light;--paper:#f4f0e7;--ink:#26352f;--quiet:#68736a;--accent:#9b432e;--light:#e9dfc8;--dark:#789081;--line:#d3d3c7}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",sans-serif}main{max-width:1120px;margin:0 auto;padding:34px 26px}header{display:flex;align-items:baseline;justify-content:space-between;gap:20px;border-bottom:1px solid var(--line);padding-bottom:19px;margin-bottom:27px}.eyebrow{font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:var(--quiet)}h1{font-family:Georgia,serif;font-weight:400;font-size:42px;margin:6px 0 0}header p{font-size:14px;color:var(--quiet);text-align:right;max-width:255px;line-height:1.5}.layout{display:grid;grid-template-columns:minmax(300px,620px) minmax(250px,1fr);gap:38px;align-items:start}.board-wrap{position:relative;padding-left:22px;padding-bottom:23px}.ranks{position:absolute;left:0;top:0;bottom:23px;display:grid;grid-template-rows:repeat(8,1fr);width:17px}.files{position:absolute;left:22px;right:0;bottom:0;height:22px;display:grid;grid-template-columns:repeat(8,1fr)}.ranks span,.files span{display:grid;place-items:center;font-size:12px;color:var(--quiet)}#board{display:grid;grid-template-columns:repeat(8,1fr);aspect-ratio:1;box-shadow:0 5px 20px #26352f18;border:1px solid #5c7264}.sq{position:relative;border:0;border-radius:0;margin:0;padding:0;aspect-ratio:1;min-height:0;display:flex;justify-content:center;align-items:center;background:var(--light);cursor:pointer;touch-action:manipulation}.sq.dark{background:var(--dark)}.piece{font-size:clamp(28px,5.8vw,61px);font-family:"DejaVu Sans","Segoe UI Symbol","Arial Unicode MS",serif;line-height:1;z-index:2;pointer-events:none}.piece.white{color:#fffdf6;text-shadow:1px 0 #283a30,-1px 0 #283a30,0 1px #283a30,0 -1px #283a30,0 2px 2px #233b3866}.piece.black{color:#20372d;text-shadow:0 1px 1px #ffffff44}.sq.last{box-shadow:inset 0 0 0 5px #e5bf6ba8}.sq.selected{background:#dfb65d}.sq.target:after{content:"";position:absolute;width:22%;height:22%;border-radius:50%;background:#233b3855}.sq.target:has(.piece):after{width:88%;height:88%;background:transparent;border:5px solid #9b432eaa}.sq:focus-visible{outline:4px solid #9b432e;outline-offset:-4px;z-index:3}.status{font-family:Georgia,serif;font-size:27px;line-height:1.25;min-height:72px;margin:0 0 10px}.detail{font-size:13px;color:var(--quiet);min-height:20px;margin:0 0 22px}.hint{color:var(--quiet);font-size:14px;line-height:1.5;margin:4px 0 22px}button,input,select{font:inherit}button.primary{color:var(--paper);background:var(--ink);border:1px solid var(--ink)}.control{padding:12px 15px;min-height:48px;border:1px solid var(--line);border-radius:5px;background:#ffffff55;color:var(--ink);cursor:pointer}button.control:hover{border-color:var(--ink)}button:disabled{opacity:.5;cursor:wait}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--accent);outline-offset:3px}.move-entry{display:flex;gap:8px;margin-bottom:14px}.move-entry input{min-width:0;flex:1;border:1px solid var(--line);border-radius:5px;background:#fff9;padding:10px 12px}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}.actions .control{flex:1}details{border-top:1px solid var(--line);padding:15px 0}summary{cursor:pointer;min-height:30px;font-size:14px}label{display:block;margin:12px 0 6px;font-size:13px;color:var(--quiet)}select{width:100%;padding:10px;background:var(--paper);border:1px solid var(--line);border-radius:4px;margin-bottom:10px}.new-button{width:100%;margin-top:8px}#history{font-size:15px;font-family:ui-monospace,monospace;line-height:1.9;max-height:235px;overflow:auto;white-space:pre-wrap;margin:6px 0}.small-link{font-size:13px;color:var(--ink);text-underline-offset:4px;display:inline-block;margin-top:10px}footer{border-top:1px solid var(--line);margin-top:28px;padding-top:14px;display:flex;justify-content:space-between;gap:20px;font-size:12px;line-height:1.5;color:var(--quiet)}.error{color:var(--accent)}#promotion{padding:12px;border:1px solid var(--line);border-radius:5px;margin-bottom:15px}#promotion button{margin:4px}.hidden{display:none!important}@media(max-width:780px){main{padding:18px 14px}.layout{grid-template-columns:1fr;gap:22px}header{margin-bottom:20px}header p{display:none}h1{font-size:34px}.piece{font-size:clamp(28px,9vw,61px)}.status{min-height:0;margin-bottom:8px}.hint{margin-bottom:15px}.detail{margin-bottom:14px}#history{max-height:160px}footer{display:block}footer span{display:block;margin:5px 0}}
+
+.history-move{padding:5px 0;border-bottom:1px solid var(--line)}.move-metrics{display:block;font-family:system-ui,sans-serif;font-size:12px;line-height:1.45;color:var(--quiet);white-space:normal}.clock-total{font-size:14px;line-height:1.5;margin:12px 0}.limit-actions{display:grid;gap:8px;margin-bottom:20px}.limit-actions p{font-size:13px;color:var(--quiet);line-height:1.5;margin:0 0 3px}
+</style>
+<main>
+<header><div><div class="eyebrow">М-20 / реконструкция 1966 → 2026</div><h1>Партия с ИТЭФ</h1></div><p>Шахматная программа,<br>которая снова делает ход.</p></header>
+<div class="layout">
+  <section aria-label="Шахматная доска"><div class="board-wrap"><div class="ranks" id="ranks" aria-hidden="true"></div><div id="board" role="group" aria-label="Выберите фигуру, затем поле назначения"></div><div class="files" id="files" aria-hidden="true"></div></div><p class="hint">Нажмите на фигуру, затем на поле. Перетаскивать ничего не нужно.</p></section>
+  <section aria-label="Управление партией">
+    <p class="status" id="status" role="status" aria-live="polite">Подключаю доску…</p><p class="detail" id="detail"></p>
+    <div id="limit-actions" class="limit-actions hidden"><p id="limit-detail"></p><button class="control primary" id="continue">Продолжить счёт</button><button class="control" id="reduce">Снизить глубину</button><p>Продолжить — ещё один такой же лимит. Если его не хватит, глубина ответа автоматически снижается на один полуход, вплоть до 2. Все снижения записываются в PGN.</p></div>
+    <div id="promotion" class="hidden"><span>Превратить пешку в:</span><div id="promotion-buttons"></div></div>
+    <form id="move-form" class="move-entry"><input id="move-input" aria-label="Ход текстом" placeholder="Ход: e2e4 или Nf3" autocomplete="off" spellcheck="false"><button class="control primary" id="send" type="submit">Ход</button></form>
+    <div class="actions"><button class="control" id="undo">Вернуть ход</button><button class="control hidden" id="retry">Повторить ответ</button></div>
+    <details id="calculation-settings"><summary>Настройки расчёта</summary><label for="depth">Глубина поиска</label><select id="depth"><option value="3">3 полухода · 3 млрд команд</option><option value="4">4 полухода · 10 млрд команд</option><option value="5">5 полуходов · 20 млрд команд</option></select>
+      <p class="hint">Глубина 4 — документированный режим авторов: около 40 минут М-20 на ход. Глубина 5 применялась в матче 1966–1967 по абсолютной схеме (статья авторов, с. 251); здесь — реконструкция сохранившегося листинга, без гарантии совпадения с матчевой редакцией.</p>
+      <label for="forced-play">Форсированная игра</label><select id="forced-play"><option value="listing">По листингу — по умолчанию</option><option value="narrow">Узкий: только взятия</option><option value="checks">Лимит N шахов на сторону</option><option value="wide">Широкий: все шахи</option></select>
+      <div id="checks-setting" class="hidden"><label for="checks-per-side">Число шахов каждой стороны (N)</label><input id="checks-per-side" class="control" type="number" min="0" max="99" step="1" value="2" style="width:100%"></div>
+      <p class="hint" id="forced-help">Выбор действует со следующего расчёта и сохраняется в PGN. Широкий вариант сохраняет общий предел глубины.</p><button class="control new-button" id="apply-budget">Применить настройки</button><p class="detail" id="settings-result" role="status"></p></details>
+    <details id="settings"><summary>Новая партия</summary><label for="side">Я играю</label><select id="side"><option value="white">Белыми</option><option value="black">Чёрными</option></select><button class="control primary new-button" id="new">Начать новую партию</button></details>
+    <details open><summary>Запись партии</summary><p id="clock-total" class="clock-total"></p><div id="history">Ходов пока нет.</div><a class="small-link" href="/game.pgn" download="itef-game.pgn">Скачать партию · PGN</a></details>
+  </section>
+</div>
+<footer><span>ИТЭФ · М-20 · v19.1<br><span id="profile">Профиль поиска: v11</span><br><span id="forced-current">Форсированная игра: по листингу</span><br>Ход выбирает восстановленная программа на языке М-20.</span><span>Партия сохраняется автоматически. Время М-20 — оценка при 20 000 команд/с.<br>Доска работает на вашем компьютере.</span></footer>
+</main>
+<script>
+const token='__TOKEN__',el=id=>document.getElementById(id);
+let state=null,selected=null,waiting=false,promotionMoves=[];
+const glyph={k:'♚',q:'♛',r:'♜',b:'♝',n:'♞',p:'♟'},names={k:'король',q:'ферзь',r:'ладья',b:'слон',n:'конь',p:'пешка'};
+const white=p=>p===p.toUpperCase();
+const number=n=>new Intl.NumberFormat('ru-RU').format(n);
+const forcedLabel=tag=>tag?.startsWith('checks:')?'лимит '+tag.split(':')[1]+' шахов на сторону':({listing:'по листингу',narrow:'только взятия',wide:'все шахи'}[tag]||'по листингу');
+function showCheckSetting(){el('checks-setting').classList.toggle('hidden',el('forced-play').value!=='checks')}
+function display(s){
+ const previous=state;state=s;el('status').textContent=s.message;el('status').classList.toggle('error',!!s.error);
+ el('profile').textContent='Профиль поиска: '+s.search_profile.name+(Object.keys(s.search_profile.overrides).length?' (с настройками)':'');
+ el('forced-current').textContent='Форсированная игра: '+s.forced_play.label;
+ el('detail').textContent=s.last?(s.last.resign?'Программа оценила позицию как проигранную.':`Ответ: ${s.last.san} · ${number(s.last.nodes)} позиций · ${number(s.last.steps)} команд · ${s.last.m20_time} М-20 · ${s.last.seconds.toFixed(2)} с на компьютере`):(s.human==='white'?'Вы играете белыми.':'Вы играете чёрными.');
+ if(!previous||previous.depth!==s.depth)el('depth').value=String(s.depth);
+ if(!previous||JSON.stringify(previous.forced_play)!==JSON.stringify(s.forced_play)){
+  el('forced-play').value=s.forced_play.variant;el('checks-per-side').value=s.forced_play.checks_per_side;showCheckSetting();
+ }
+ const locked=s.busy||waiting;
+ for(const id of ['undo','new','retry','continue','reduce','apply-budget','depth','forced-play','checks-per-side'])el(id).disabled=locked;
+ for(const id of ['apply-budget','depth','forced-play','checks-per-side'])el(id).disabled=locked||!!s.limit;
+ el('send').disabled=locked||s.turn!==s.human||s.finished;
+ el('move-input').disabled=locked||s.turn!==s.human||s.finished;
+ el('retry').classList.toggle('hidden',!s.error||s.turn===s.human);
+ el('limit-actions').classList.toggle('hidden',!s.limit);
+ el('continue').classList.toggle('hidden',!s.can_continue);
+ el('reduce').classList.toggle('hidden',!s.can_reduce);
+ if(s.limit){el('continue').textContent='Продолжить · ещё '+number(s.continuation_extra)+' команд';el('reduce').textContent='Снизить глубину до '+(s.limit.depth-1);el('limit-detail').textContent=`В незавершённом расчёте: ${number(s.limit.nodes)} позиций · ${number(s.limit.steps)} команд. Глубина ${s.limit.depth}.`+(s.live_resume?' Продолжение с места остановки.':' После перезапуска приложения расчёт повторится от корня; затраты будут учтены.');}
+ el('clock-total').textContent=`Итого М-20: ${s.totals.text} · ${number(s.totals.steps)} команд`+(s.totals.retry_steps?' · включая прерванные расчёты':'')+`. Измерено ответов: ${s.totals.recorded_moves}.`;
+ const signature=JSON.stringify(s.history_entries);
+ if(el('history').dataset.signature!==signature){
+  const history=el('history');history.dataset.signature=signature;history.replaceChildren();
+  for(const item of s.history_entries){
+   const row=document.createElement('div');row.className='history-move';
+   row.textContent=`${item.move_number}${item.color==='white'?'.':'…'} ${item.san}`;
+   if(item.engine){const m=document.createElement('span');m.className='move-metrics';const r=item.record;
+    m.textContent=r?`${number(r.nodes)} позиций · ${number(r.steps)} команд · ${r.m20_time} М-20 · глубина ${r.depth}`:'До v16: измерений нет.';
+    if(r?.depth_reduced)m.textContent+=` · глубина снижена ${r.requested_depth} → ${r.depth}`;
+    if(r?.attempts?.length>1)m.textContent+=` · с повторами: ${r.total_m20_time}`;
+    m.textContent+=' · '+forcedLabel(item.forced_play);
+    row.append(m);
+   }
+   history.append(row);
+  }
+  if(!s.history_entries.length)history.textContent='Ходов пока нет.';
+  history.scrollTop=history.scrollHeight;
+ }
+ draw();
+}
+function draw(){
+ if(!state)return;
+ const s=state,flipped=s.human==='black',files=flipped?'hgfedcba':'abcdefgh',ranks=flipped?'12345678':'87654321';
+ el('files').replaceChildren(...[...files].map(x=>{const v=document.createElement('span');v.textContent=x;return v}));
+ el('ranks').replaceChildren(...[...ranks].map(x=>{const v=document.createElement('span');v.textContent=x;return v}));
+ const focus=document.activeElement?.dataset?.square;
+ const buttons=[];
+ for(const rank of ranks)for(const file of files){
+  const sq=file+rank,p=s.pieces[sq],b=document.createElement('button');b.type='button';b.dataset.square=sq;b.className='sq';
+  if((file.charCodeAt(0)-97+Number(rank)-1)%2===0)b.classList.add('dark');
+  if(s.last_move&&(sq===s.last_move.slice(0,2)||sq===s.last_move.slice(2,4)))b.classList.add('last');
+  if(sq===selected)b.classList.add('selected');
+  if(selected&&s.legal.some(m=>m.slice(0,2)===selected&&m.slice(2,4)===sq))b.classList.add('target');
+  b.setAttribute('aria-label',sq+(p?`, ${white(p)?'белые':'чёрные'}, ${names[p.toLowerCase()]}`:', пусто'));
+  b.setAttribute('aria-pressed',String(sq===selected));
+  if(p){const fig=document.createElement('span');fig.className='piece '+(white(p)?'white':'black');fig.textContent=glyph[p.toLowerCase()];fig.setAttribute('aria-hidden','true');b.append(fig)}
+  b.onclick=()=>pick(sq);buttons.push(b);
+ }
+ el('board').replaceChildren(...buttons);
+ if(focus)el('board').querySelector(`[data-square="${focus}"]`)?.focus({preventScroll:true});
+}
+function pick(sq){
+ if(!state||state.busy||waiting||state.turn!==state.human||state.finished)return;
+ const matches=selected?state.legal.filter(m=>m.slice(0,2)===selected&&m.slice(2,4)===sq):[];
+ if(matches.length===1){play(matches[0]);return}
+ if(matches.length>1){promotionMoves=matches;el('promotion').classList.remove('hidden');el('promotion-buttons').replaceChildren(...matches.map(m=>{const b=document.createElement('button');b.className='control';b.textContent=names[m[4]];b.onclick=()=>play(m);return b}));return}
+ const piece=state.pieces[sq];selected=piece&&white(piece)===(state.human==='white')&&selected!==sq?sq:null;draw();
+}
+async function action(data){
+ if(waiting)return;waiting=true;if(state)display(state);
+ try{const response=await fetch('/api/action',{method:'POST',headers:{'Content-Type':'application/json','X-Game-Token':token},body:JSON.stringify(data)});const s=await response.json();if(!response.ok)throw Error(s.error);selected=null;el('promotion').classList.add('hidden');waiting=false;display(s);return true}
+ catch(e){waiting=false;if(state)display(state);el('status').textContent=e.message;el('status').classList.add('error');return false}
+}
+async function play(move){if(await action({action:'move',move}))el('move-input').value=''}
+el('move-form').onsubmit=e=>{e.preventDefault();play(el('move-input').value.trim())};
+el('undo').onclick=()=>action({action:'undo'});
+el('retry').onclick=()=>action({action:'retry'});
+el('continue').onclick=()=>action({action:'continue'});
+el('reduce').onclick=()=>action({action:'reduce'});
+el('forced-play').onchange=()=>{showCheckSetting();el('settings-result').textContent=''};
+el('apply-budget').onclick=async()=>{
+ if(!el('checks-per-side').reportValidity())return;
+ const ok=await action({action:'settings',depth:Number(el('depth').value),forced_variant:el('forced-play').value,checks_per_side:Number(el('checks-per-side').value)});
+ if(ok)el('settings-result').textContent='Сохранено: глубина '+state.depth+', '+number(state.budget)+' команд; '+state.forced_play.label+'.';
+};
+el('new').onclick=async()=>{if(await action({action:'new',side:el('side').value,depth:Number(el('depth').value)}))el('settings').open=false};
+window.addEventListener('resize',()=>{el('history').scrollTop=el('history').scrollHeight});
+async function poll(){try{if(!waiting){const response=await fetch('/api/state');if(!response.ok)throw Error('connection');const s=await response.json();if(!state||JSON.stringify(s)!==JSON.stringify(state))display(s)}}catch(e){el('status').textContent='Нет связи с программой. Проверьте окно запуска.'}setTimeout(poll,500)}
+poll();
+</script>
+</html>

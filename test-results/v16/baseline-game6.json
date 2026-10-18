@@ -1,0 +1,85 @@
+[
+  {
+    "depth": 3,
+    "budget": 3000000000,
+    "fen": "8/4nk2/P6R/r7/8/2K5/6p1/8 w - - 0 48",
+    "status": "limited",
+    "error": "Превышен лимит команд М-20 (адрес 1311). Позиция сохранена.",
+    "partial_nodes": 3574283,
+    "wall_seconds": 29.664667363000262
+  },
+  {
+    "depth": 3,
+    "budget": 20000000000,
+    "fen": "8/4nk2/P6R/r7/8/2K5/6p1/8 w - - 0 48",
+    "status": "answered",
+    "answer": {
+      "move": "h6h7",
+      "san": "Rh7+",
+      "nodes": 20566619,
+      "steps": 17452188776,
+      "seconds": 172.156,
+      "depth": 3,
+      "word": "010600100046026",
+      "search_mode": "wide_window_retry",
+      "lambda_final_1706": 10278677,
+      "search_profile": {
+        "name": "v11",
+        "checks": 0,
+        "evaluations": 3,
+        "rank_cap": 14,
+        "source_4344": false,
+        "forced_scheme": "native",
+        "rank_memory": "v11_original",
+        "check_limit_reachable": false,
+        "overrides": {},
+        "words": {
+          "4332": "016000343333636",
+          "4344": "033402410570000",
+          "4777": "000000000000000",
+          "1661": "003000000000000"
+        }
+      },
+      "castling_history_known": true,
+      "castling_history_unknown_colors": []
+    },
+    "wall_seconds": 172.15698696599975
+  },
+  {
+    "depth": 2,
+    "budget": 3000000000,
+    "fen": "8/4nk2/P6R/r7/8/2K5/6p1/8 w - - 0 48",
+    "status": "answered",
+    "answer": {
+      "move": "h6h7",
+      "san": "Rh7+",
+      "nodes": 450601,
+      "steps": 368000238,
+      "seconds": 3.619,
+      "depth": 2,
+      "word": "010600100046026",
+      "search_mode": "original_window",
+      "lambda_final_1706": 450601,
+      "search_profile": {
+        "name": "v11",
+        "checks": 0,
+        "evaluations": 3,
+        "rank_cap": 14,
+        "source_4344": false,
+        "forced_scheme": "native",
+        "rank_memory": "v11_original",
+        "check_limit_reachable": false,
+        "overrides": {},
+        "words": {
+          "4332": "016000343333636",
+          "4344": "033402410570000",
+          "4777": "000000000000000",
+          "1661": "003000000000000"
+        }
+      },
+      "castling_history_known": true,
+      "castling_history_unknown_colors": []
+    },
+    "wall_seconds": 3.6192820830001438
+  }
+]

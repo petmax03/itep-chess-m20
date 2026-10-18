@@ -1,0 +1,482 @@
+[
+  {
+    "profile": "v11",
+    "kind": "mate",
+    "rank": 1,
+    "entry": "4042",
+    "pointer": "6521",
+    "score": "000000000000000"
+  },
+  {
+    "profile": "v11",
+    "kind": "mate",
+    "rank": 1,
+    "entry": "4111",
+    "pointer": "6521",
+    "score": "000000000000000"
+  },
+  {
+    "profile": "v11",
+    "kind": "mate",
+    "rank": 13,
+    "entry": "4042",
+    "pointer": "6535",
+    "score": "000000000000000"
+  },
+  {
+    "profile": "v11",
+    "kind": "mate",
+    "rank": 13,
+    "entry": "4111",
+    "pointer": "6535",
+    "score": "000000000000000"
+  },
+  {
+    "profile": "v11",
+    "kind": "mate",
+    "rank": 0,
+    "entry": "4042",
+    "pointer": "6520",
+    "score": "000000000000000"
+  },
+  {
+    "profile": "v11",
+    "kind": "mate",
+    "rank": 0,
+    "entry": "4111",
+    "pointer": "6520",
+    "score": "000000000000000"
+  },
+  {
+    "profile": "v11",
+    "kind": "mate",
+    "rank": 12,
+    "entry": "4042",
+    "pointer": "6534",
+    "score": "000000000000000"
+  },
+  {
+    "profile": "v11",
+    "kind": "mate",
+    "rank": 12,
+    "entry": "4111",
+    "pointer": "6534",
+    "score": "000000000000000"
+  },
+  {
+    "profile": "v11",
+    "kind": "mate",
+    "rank": 16,
+    "entry": "4042",
+    "pointer": "6540",
+    "score": "000000000000000"
+  },
+  {
+    "profile": "v11",
+    "kind": "mate",
+    "rank": 16,
+    "entry": "4111",
+    "pointer": "6540",
+    "score": "000000000000000"
+  },
+  {
+    "profile": "v11",
+    "kind": "stalemate",
+    "rank": 1,
+    "entry": "4042",
+    "pointer": "6521",
+    "score": "000200000002000"
+  },
+  {
+    "profile": "v11",
+    "kind": "stalemate",
+    "rank": 1,
+    "entry": "4111",
+    "pointer": "6521",
+    "score": "000200000002000"
+  },
+  {
+    "profile": "v11",
+    "kind": "stalemate",
+    "rank": 13,
+    "entry": "4042",
+    "pointer": "6535",
+    "score": "000200000002000"
+  },
+  {
+    "profile": "v11",
+    "kind": "stalemate",
+    "rank": 13,
+    "entry": "4111",
+    "pointer": "6535",
+    "score": "000200000002000"
+  },
+  {
+    "profile": "v11",
+    "kind": "stalemate",
+    "rank": 0,
+    "entry": "4042",
+    "pointer": "6520",
+    "score": "000200000002000"
+  },
+  {
+    "profile": "v11",
+    "kind": "stalemate",
+    "rank": 0,
+    "entry": "4111",
+    "pointer": "6520",
+    "score": "000200000002000"
+  },
+  {
+    "profile": "v11",
+    "kind": "stalemate",
+    "rank": 12,
+    "entry": "4042",
+    "pointer": "6534",
+    "score": "000200000002000"
+  },
+  {
+    "profile": "v11",
+    "kind": "stalemate",
+    "rank": 12,
+    "entry": "4111",
+    "pointer": "6534",
+    "score": "000200000002000"
+  },
+  {
+    "profile": "v11",
+    "kind": "stalemate",
+    "rank": 16,
+    "entry": "4042",
+    "pointer": "6540",
+    "score": "000200000002000"
+  },
+  {
+    "profile": "v11",
+    "kind": "stalemate",
+    "rank": 16,
+    "entry": "4111",
+    "pointer": "6540",
+    "score": "000200000002000"
+  },
+  {
+    "profile": "v12-source",
+    "kind": "mate",
+    "rank": 1,
+    "entry": "4042",
+    "pointer": "4711",
+    "score": "000000000000000"
+  },
+  {
+    "profile": "v12-source",
+    "kind": "mate",
+    "rank": 1,
+    "entry": "4111",
+    "pointer": "4711",
+    "score": "000000000000000"
+  },
+  {
+    "profile": "v12-source",
+    "kind": "mate",
+    "rank": 13,
+    "entry": "4042",
+    "pointer": "4725",
+    "score": "000000000000000"
+  },
+  {
+    "profile": "v12-source",
+    "kind": "mate",
+    "rank": 13,
+    "entry": "4111",
+    "pointer": "4725",
+    "score": "000000000000000"
+  },
+  {
+    "profile": "v12-source",
+    "kind": "mate",
+    "rank": 0,
+    "entry": "4042",
+    "pointer": "4710",
+    "score": "000000000000000"
+  },
+  {
+    "profile": "v12-source",
+    "kind": "mate",
+    "rank": 0,
+    "entry": "4111",
+    "pointer": "4710",
+    "score": "000000000000000"
+  },
+  {
+    "profile": "v12-source",
+    "kind": "mate",
+    "rank": 12,
+    "entry": "4042",
+    "pointer": "4724",
+    "score": "000000000000000"
+  },
+  {
+    "profile": "v12-source",
+    "kind": "mate",
+    "rank": 12,
+    "entry": "4111",
+    "pointer": "4724",
+    "score": "000000000000000"
+  },
+  {
+    "profile": "v12-source",
+    "kind": "mate",
+    "rank": 16,
+    "entry": "4042",
+    "pointer": "4730",
+    "score": "000000000000000"
+  },
+  {
+    "profile": "v12-source",
+    "kind": "mate",
+    "rank": 16,
+    "entry": "4111",
+    "pointer": "4730",
+    "score": "000000000000000"
+  },
+  {
+    "profile": "v12-source",
+    "kind": "stalemate",
+    "rank": 1,
+    "entry": "4042",
+    "pointer": "4711",
+    "score": "000200000002000"
+  },
+  {
+    "profile": "v12-source",
+    "kind": "stalemate",
+    "rank": 1,
+    "entry": "4111",
+    "pointer": "4711",
+    "score": "000200000002000"
+  },
+  {
+    "profile": "v12-source",
+    "kind": "stalemate",
+    "rank": 13,
+    "entry": "4042",
+    "pointer": "4725",
+    "score": "000200000002000"
+  },
+  {
+    "profile": "v12-source",
+    "kind": "stalemate",
+    "rank": 13,
+    "entry": "4111",
+    "pointer": "4725",
+    "score": "000200000002000"
+  },
+  {
+    "profile": "v12-source",
+    "kind": "stalemate",
+    "rank": 0,
+    "entry": "4042",
+    "pointer": "4710",
+    "score": "000200000002000"
+  },
+  {
+    "profile": "v12-source",
+    "kind": "stalemate",
+    "rank": 0,
+    "entry": "4111",
+    "pointer": "4710",
+    "score": "000200000002000"
+  },
+  {
+    "profile": "v12-source",
+    "kind": "stalemate",
+    "rank": 12,
+    "entry": "4042",
+    "pointer": "4724",
+    "score": "000200000002000"
+  },
+  {
+    "profile": "v12-source",
+    "kind": "stalemate",
+    "rank": 12,
+    "entry": "4111",
+    "pointer": "4724",
+    "score": "000200000002000"
+  },
+  {
+    "profile": "v12-source",
+    "kind": "stalemate",
+    "rank": 16,
+    "entry": "4042",
+    "pointer": "4730",
+    "score": "000200000002000"
+  },
+  {
+    "profile": "v12-source",
+    "kind": "stalemate",
+    "rank": 16,
+    "entry": "4111",
+    "pointer": "4730",
+    "score": "000200000002000"
+  },
+  {
+    "profile": "v12-narrow",
+    "kind": "mate",
+    "rank": 1,
+    "entry": "4042",
+    "pointer": "6521",
+    "score": "000000000000000"
+  },
+  {
+    "profile": "v12-narrow",
+    "kind": "mate",
+    "rank": 1,
+    "entry": "4111",
+    "pointer": "6521",
+    "score": "000000000000000"
+  },
+  {
+    "profile": "v12-narrow",
+    "kind": "mate",
+    "rank": 13,
+    "entry": "4042",
+    "pointer": "6535",
+    "score": "000000000000000"
+  },
+  {
+    "profile": "v12-narrow",
+    "kind": "mate",
+    "rank": 13,
+    "entry": "4111",
+    "pointer": "6535",
+    "score": "000000000000000"
+  },
+  {
+    "profile": "v12-narrow",
+    "kind": "mate",
+    "rank": 0,
+    "entry": "4042",
+    "pointer": "6520",
+    "score": "000000000000000"
+  },
+  {
+    "profile": "v12-narrow",
+    "kind": "mate",
+    "rank": 0,
+    "entry": "4111",
+    "pointer": "6520",
+    "score": "000000000000000"
+  },
+  {
+    "profile": "v12-narrow",
+    "kind": "mate",
+    "rank": 12,
+    "entry": "4042",
+    "pointer": "6534",
+    "score": "000000000000000"
+  },
+  {
+    "profile": "v12-narrow",
+    "kind": "mate",
+    "rank": 12,
+    "entry": "4111",
+    "pointer": "6534",
+    "score": "000000000000000"
+  },
+  {
+    "profile": "v12-narrow",
+    "kind": "mate",
+    "rank": 16,
+    "entry": "4042",
+    "pointer": "6540",
+    "score": "000000000000000"
+  },
+  {
+    "profile": "v12-narrow",
+    "kind": "mate",
+    "rank": 16,
+    "entry": "4111",
+    "pointer": "6540",
+    "score": "000000000000000"
+  },
+  {
+    "profile": "v12-narrow",
+    "kind": "stalemate",
+    "rank": 1,
+    "entry": "4042",
+    "pointer": "6521",
+    "score": "000200000002000"
+  },
+  {
+    "profile": "v12-narrow",
+    "kind": "stalemate",
+    "rank": 1,
+    "entry": "4111",
+    "pointer": "6521",
+    "score": "000200000002000"
+  },
+  {
+    "profile": "v12-narrow",
+    "kind": "stalemate",
+    "rank": 13,
+    "entry": "4042",
+    "pointer": "6535",
+    "score": "000200000002000"
+  },
+  {
+    "profile": "v12-narrow",
+    "kind": "stalemate",
+    "rank": 13,
+    "entry": "4111",
+    "pointer": "6535",
+    "score": "000200000002000"
+  },
+  {
+    "profile": "v12-narrow",
+    "kind": "stalemate",
+    "rank": 0,
+    "entry": "4042",
+    "pointer": "6520",
+    "score": "000200000002000"
+  },
+  {
+    "profile": "v12-narrow",
+    "kind": "stalemate",
+    "rank": 0,
+    "entry": "4111",
+    "pointer": "6520",
+    "score": "000200000002000"
+  },
+  {
+    "profile": "v12-narrow",
+    "kind": "stalemate",
+    "rank": 12,
+    "entry": "4042",
+    "pointer": "6534",
+    "score": "000200000002000"
+  },
+  {
+    "profile": "v12-narrow",
+    "kind": "stalemate",
+    "rank": 12,
+    "entry": "4111",
+    "pointer": "6534",
+    "score": "000200000002000"
+  },
+  {
+    "profile": "v12-narrow",
+    "kind": "stalemate",
+    "rank": 16,
+    "entry": "4042",
+    "pointer": "6540",
+    "score": "000200000002000"
+  },
+  {
+    "profile": "v12-narrow",
+    "kind": "stalemate",
+    "rank": 16,
+    "entry": "4111",
+    "pointer": "6540",
+    "score": "000200000002000"
+  }
+]

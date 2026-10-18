@@ -1,0 +1,15 @@
+# сборка эмулятора
+engine/*.so
+engine/*.dylib
+engine/*.tmp
+__pycache__/
+*.pyc
+
+# сохранения партий и результаты замеров на машине пользователя
+game.json
+game-before-import-*.json
+benchmark-results/
+
+# служебное
+.DS_Store
+/tmp/

@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this reconstruction, please cite it as below and credit the original authors of the 1966 ITEP chess program."
+title: "ITEP Chess Program (M-20, 1966): a working reconstruction"
+authors:
+  - family-names: Petrov
+    given-names: Maksim
+    city: Moscow
+date-released: 2026-10-18
+version: "1.0"
+url: "https://github.com/petmax03/itep-chess-m20"
+license: GPL-3.0-or-later
+keywords:
+  - chess
+  - computer chess history
+  - ITEP
+  - M-20
+  - Kaissa
+  - SIMH
+references:
+  - type: article
+    title: "О программировании игры вычислительной машины в шахматы"
+    authors:
+      - family-names: Адельсон-Вельский
+      - family-names: Арлазаров
+      - family-names: Битман
+      - family-names: Животовский
+      - family-names: Усков
+    journal: "Успехи математических наук"
+    volume: 25
+    issue: 2
+    year: 1970
+    start: 221
+    end: 260

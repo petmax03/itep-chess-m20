@@ -1,0 +1,135 @@
+{
+  "original_game_files_unchanged": true,
+  "critical_files_count": 30,
+  "critical_files": [
+    {
+      "file": "m20/simh/sim_tape.c",
+      "sha256": "7f440ab1956a5a80f9d610e56abc6bfe68a5ee1c8faa8319345d7416eb3e8628"
+    },
+    {
+      "file": "m20/simh/scp.c",
+      "sha256": "cf6f723bf489470606333acd73861b0ba2f86ee97cb462c503dc5df76213ed0b"
+    },
+    {
+      "file": "m20/simh/sim_timer.c",
+      "sha256": "a83dd72f307b1cea19b475adcdca253993f21838925dacd3fe904b0fcc06afbb"
+    },
+    {
+      "file": "m20/simh/m20_sys.c",
+      "sha256": "d39ade7625df9c7f2c9dbcb63177ca63f8a7dd4b11adfb2a50b8880ab6a65336"
+    },
+    {
+      "file": "m20/simh/m20_drum.c",
+      "sha256": "c5ccb17f01dad88464644e8c23828ac6ad2eb6bf32a0ad15817b8f535966c12f"
+    },
+    {
+      "file": "m20/simh/sim_tmxr.c",
+      "sha256": "40cae9060baedb9182fc3a68cef0eca01d6b7ef7ca1514d1388d025c7844a75a"
+    },
+    {
+      "file": "m20/simh/m20_cpu.c",
+      "sha256": "a6787c5427693b268605febe3204fcf96e9c726493aa3843ee83b5c505305b8e"
+    },
+    {
+      "file": "m20/simh/sim_ether.c",
+      "sha256": "5229a7be3e16472715d163e99238386e582753f070b96e715070c7ca52942506"
+    },
+    {
+      "file": "m20/simh/sim_sock.c",
+      "sha256": "8e5f4bfbd98c3fa28b384b86d2c4b57f61728526a002973afc3cac8c02932fa8"
+    },
+    {
+      "file": "m20/simh/sim_fio.c",
+      "sha256": "bea5fd69ffb72ca6a570d5c5ee22ebd406057525d1316f375b7eec7af0fcd4ae"
+    },
+    {
+      "file": "m20/simh/sim_console.c",
+      "sha256": "1a46390b8f1e300fe544024188fdd13d6c164d2c0976eecd0678b2b0aa197709"
+    },
+    {
+      "file": "m20/simh/m20_defs.h",
+      "sha256": "fbdda58f01e8e2894f5eb4e75735564fbc1774f131de77e44620a9f4fd66dcd0"
+    },
+    {
+      "file": "m20/simh/sim_console.h",
+      "sha256": "4abb2cbd3f4b9497562434915030abdf46786901c6bc036d28e8b0de985c91cc"
+    },
+    {
+      "file": "m20/simh/sim_tape.h",
+      "sha256": "f5ba6cf725680eb6177fe265b58e14cf28bef03a135152f075f7fdc221eb0b78"
+    },
+    {
+      "file": "m20/simh/scp.h",
+      "sha256": "ea78b3b11cd2c8f6e2fc75cb188ab2e5f1f91fd0e1502e4e0e848b522f3d74b9"
+    },
+    {
+      "file": "m20/simh/sim_defs.h",
+      "sha256": "5fd327213c0537f494181c80b1e0c0d09b24418079472e1483af1ec87f015dd9"
+    },
+    {
+      "file": "m20/simh/sim_rev.h",
+      "sha256": "f331fc14a3f47ab444dea380f35080a9c4d0eb15b166f3660a6e5dbec8d5a851"
+    },
+    {
+      "file": "m20/simh/sim_sock.h",
+      "sha256": "7fbdcf37c628360cb6ade1ce73ac8a790f02bf7c33138d527dc3f755cd523ce0"
+    },
+    {
+      "file": "m20/simh/sim_fio.h",
+      "sha256": "99059c6aa6863cd445b44d1c9efcd30fbfb1a3f82bcb4e2ada1ee7b5b9a75f03"
+    },
+    {
+      "file": "m20/simh/sim_timer.h",
+      "sha256": "138c1f1a494bd24663aea29f0b7ad17241f1a3ee17fc1ed4d7c937789f75bc79"
+    },
+    {
+      "file": "m20/simh/sim_ether.h",
+      "sha256": "6f0a4698fccd7680278bc435df9523f612438dec8b629899c8e3a1552f2771d6"
+    },
+    {
+      "file": "m20/simh/sim_tmxr.h",
+      "sha256": "e42c48457ba166a3347f5c14c642a20734d62baee066e7241add89630479f0cf"
+    },
+    {
+      "file": "m20/kaissa/kaissa.m20",
+      "sha256": "b1c3b5d7667c4be49f5d540652c97bd19b3727702354569bf733fbb0386542d5"
+    },
+    {
+      "file": "m20/as/is2.m20",
+      "sha256": "da4a79e331e4ababc2f22fe1093f332964d0b71f98afc8f26cbdfe7fe09e78d9"
+    },
+    {
+      "file": "research/standard-cells-values.m20",
+      "sha256": "f7a6da67dad096f8466a64a3d0da7c6ddee4822977974cfca3f0e59fd07de0c0"
+    },
+    {
+      "file": "research/low-constants.m20",
+      "sha256": "bcf7126415f1db07a2ac222953060739a634b25ddffda73db2561d56856fffce"
+    },
+    {
+      "file": "engine/bridge.c",
+      "sha256": "9310a86edf5447b590972e6ce271731190878c5db1ea2e1302af761630c0a5e6"
+    },
+    {
+      "file": "engine/search_profiles.py",
+      "sha256": "2072c3a0f72017e9c92d54ae3459667a74f8981c6a5615f546d17637ff6ea386"
+    },
+    {
+      "file": "engine/castling.py",
+      "sha256": "2906b5d4711d2d5933432b61c0ec078d879022c870bf0cb16abffb87b6487189"
+    },
+    {
+      "file": "engine/native_rank_capacity.py",
+      "sha256": "389f5226bd711fed23a4e446d09234906f17cc396fc839f2fc327ed1f3a22f3b"
+    }
+  ],
+  "unchanged_machine_methods": [
+    "__init__",
+    "reset",
+    "encode",
+    "decode",
+    "prepare",
+    "subroutine"
+  ],
+  "base_patches_unchanged": true
+}

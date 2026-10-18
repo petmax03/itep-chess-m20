@@ -1,0 +1,31 @@
+[
+  {
+    "depth": 3,
+    "move": "c4b6",
+    "nodes": 879
+  },
+  {
+    "depth": 4,
+    "move": "c4b6",
+    "nodes": 879
+  },
+  {
+    "depth": 5,
+    "move": "c4b6",
+    "nodes": 879
+  },
+  {
+    "requested": 5,
+    "fallback": 4,
+    "move": "g8f6",
+    "info": {
+      "string": "M20 commands 110033375 minutes 91.694479 total_commands 112033375 total_minutes 93.361146 profile v11 forced_play listing",
+      "depth": 4,
+      "nodes": 51909,
+      "time": 1.343,
+      "pv": [
+        "g8f6"
+      ]
+    }
+  }
+]

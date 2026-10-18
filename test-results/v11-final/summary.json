@@ -1,0 +1,20 @@
+[
+  {
+    "game": 1,
+    "tested": 37,
+    "answered": 37,
+    "matches": 24,
+    "different": 13,
+    "unanswered": 0,
+    "percent_of_all_positions": 64.86
+  },
+  {
+    "game": 2,
+    "tested": 39,
+    "answered": 39,
+    "matches": 31,
+    "different": 8,
+    "unanswered": 0,
+    "percent_of_all_positions": 79.49
+  }
+]

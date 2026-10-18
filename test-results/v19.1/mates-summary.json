@@ -1,0 +1,27 @@
+{
+  "positions": 20,
+  "searches": 64,
+  "changed": {
+    "move": 0,
+    "nodes": 0,
+    "steps": 3,
+    "word": 0
+  },
+  "command_deltas": [
+    {
+      "case": 20,
+      "depth": 1,
+      "delta": -2574
+    },
+    {
+      "case": 20,
+      "depth": 2,
+      "delta": -2574
+    },
+    {
+      "case": 20,
+      "depth": 3,
+      "delta": -2574
+    }
+  ]
+}

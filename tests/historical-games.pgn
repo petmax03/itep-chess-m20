@@ -1,0 +1,75 @@
+[Event "Stanford-ITEP Match"]
+[Site "Stanford / Moscow"]
+[Date "1966.??.??"]
+[Round "1"]
+[White "ITEP Program"]
+[Black "Kotok-McCarthy Program"]
+[Result "1/2-1/2"]
+[PlyDepth "3"]
+[Source "https://www.chessprogramming.org/Stanford-ITEP_Match"]
+
+{3-ply per move. Draw agreed.}
+1. e4 e5 2. Nc3 Nc6 3. Nf3 Bc5 4. Bc4 Nf6 5. O-O O-O
+6. d3 d6 7. Be3 Bg4 8. h3 Bh5 9. Bd5 Bd4 10. g4 Bxc3
+11. bxc3 Bg6 12. Bg5 Re8 13. Rb1 Rb8 14. Qe2 Kh8 15. d4 Kg8
+16. Qc4 Na5 17. Bxf6 Qxf6 18. Qd3 c6 19. dxe5 dxe5 20. Bb3 Rbd8
+21. Qe3 b6 22. Rfd1 Rd6 23. g5 Qe7 24. Rd3 Rxd3 25. cxd3 Rd8
+26. Ra1 Qd6 27. d4 exd4 28. cxd4 Nxb3 29. axb3 a5 30. Ra4 Qe6
+31. Ne5 Qe8 32. f4 Rd6 33. f5 Bh5 34. Nc4 Rd8 35. Nxb6 Rb8
+36. Nc4 Bd1 37. Ra3 Bc2 1/2-1/2
+
+[Event "Stanford-ITEP Match"]
+[Site "Stanford / Moscow"]
+[Date "1967.??.??"]
+[Round "2"]
+[White "Kotok-McCarthy Program"]
+[Black "ITEP Program"]
+[Result "1/2-1/2"]
+[PlyDepth "3"]
+[Source "https://www.chessprogramming.org/Stanford-ITEP_Match"]
+
+{3-ply per move. Draw by the pre-match 40-move rule.}
+1. e4 Nf6 2. e5 Nd5 3. Nf3 e6 4. Bb5 a6 5. Ba4 b5 6. Bb3 Bb4
+7. Nc3 Nf4 8. O-O Bb7 9. d4 Bxc3 10. bxc3 Nd5 11. Bxd5 Bxd5
+12. Ba3 d6 13. exd6 cxd6 14. Re1 Nc6 15. Re3 O-O 16. Qe2 Bc4
+17. Qe1 Qc7 18. Bb4 a5 19. Ba3 Kh8 20. Ng5 h6 21. Ne4 Rfd8
+22. Nxd6 Rxd6 23. Bxd6 Qxd6 24. a3 Ne7 25. Re5 Nc6 26. Rc5 e5
+27. Qe4 Ra6 28. Rd1 g6 29. Rd2 g5 30. Rd1 a4 31. Rd2 f6
+32. Qe3 exd4 33. cxd4 Ne7 34. Qg3 Qxg3 35. hxg3 Nd5 36. Rc8+ Kh7
+37. Rf8 b4 38. axb4 Nxb4 39. c3 Nd5 40. Rc8 1/2-1/2
+
+[Event "Stanford-ITEP Match"]
+[Site "Stanford / Moscow"]
+[Date "1967.??.??"]
+[Round "3"]
+[White "ITEP Program"]
+[Black "Kotok-McCarthy Program"]
+[Result "1-0"]
+[PlyDepth "5"]
+[Source "https://www.chessprogramming.org/Stanford-ITEP_Match"]
+
+{5-ply per move.}
+1. e4 e5 2. Nf3 Nc6 3. Nc3 Bc5 4. Nxe5 Nxe5 5. d4 Bd6
+6. dxe5 Bxe5 7. f4 Bxc3+ 8. bxc3 Nf6 9. e5 Ne4 10. Qd3 Nc5
+11. Qd5 Ne6 12. f5 Ng5 13. h4 f6 14. hxg5 fxg5 15. Rxh7 Rf8
+16. Rxg7 c6 17. Qd6 Rxf5 18. Rg8+ Rf8 19. Qxf8# 1-0
+
+[Event "Stanford-ITEP Match"]
+[Site "Stanford / Moscow"]
+[Date "1967.??.??"]
+[Round "4"]
+[White "Kotok-McCarthy Program"]
+[Black "ITEP Program"]
+[Result "0-1"]
+[PlyDepth "5"]
+[Source "https://www.chessprogramming.org/Stanford-ITEP_Match"]
+
+{5-ply per move.}
+1. e4 Nf6 2. e5 Nd5 3. Nf3 Nb4 4. Bb5 c6 5. Ba4 d6 6. d4 Qa5
+7. c4 Nc2+ 8. Kf1 Nxa1 9. Nc3 Qb4 10. Qe2 dxe5 11. dxe5 Be6
+12. Qd1 Bxc4+ 13. Ne2 b5 14. Bc2 Nxc2 15. Qxc2 Bxa2 16. Ned4 Qc4+
+17. Kg1 c5 18. Qd2 cxd4 19. Nxd4 e6 20. Nf3 Nc6 21. Qg5 Rd8
+22. Bd2 Qc1+ 23. Be1 Qxb2 24. Qf4 Bd5 25. Qg3 Qe2 26. Bc3 b4
+27. Be1 Bxf3 28. gxf3 Qxe1+ 29. Kg2 Qxe5 30. Qh4 a5 31. Rc1 Nd4
+32. Rf1 Nxf3 33. Qh3 Rd3 34. Qg3 Ne1+ 35. Rxe1 Rxg3+ 36. Kf1 Qb5+
+37. Re2 Ra3 38. Ke1 Ra1+ 39. Kd2 Qd5+ 40. Ke3 Ra3+ 41. Kf4 Qf5# 0-1

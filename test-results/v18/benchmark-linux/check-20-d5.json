@@ -1,0 +1,13 @@
+{
+  "position": "check-20",
+  "category": "check",
+  "depth": 5,
+  "budget": 20000000000,
+  "status": "answered",
+  "move": "e1f1",
+  "nodes": 910492,
+  "steps": 1376212551,
+  "engine_seconds": 18.468,
+  "seconds": 18.468398277000233,
+  "cpu_seconds": 18.46813337200001
+}

@@ -1,0 +1,40 @@
+{
+  "fen": "7k/7p/ppb1r3/3q4/3Pp2P/1NR3P1/PPR1Nr1K/3Q4 w - - 4 38",
+  "answer": {
+    "move": null,
+    "san": null,
+    "resign": true,
+    "reason": "native_loss_score",
+    "nodes": 313300,
+    "steps": 362644611,
+    "seconds": 4.188,
+    "depth": 3,
+    "word": "000000000000000",
+    "search_mode": "wide_window_retry",
+    "lambda_final_1706": 237817,
+    "search_profile": {
+      "name": "v11",
+      "checks": 0,
+      "evaluations": 3,
+      "rank_cap": 14,
+      "source_4344": false,
+      "forced_scheme": "native",
+      "rank_memory": "v11_original",
+      "check_limit_reachable": false,
+      "overrides": {},
+      "words": {
+        "4332": "016000343333636",
+        "4344": "033402410570000",
+        "4777": "000000000000000",
+        "1661": "003000000000000"
+      }
+    },
+    "forced_play": {
+      "variant": "listing",
+      "checks_per_side": 2,
+      "label": "по листингу"
+    },
+    "castling_history_known": true,
+    "castling_history_unknown_colors": []
+  }
+}

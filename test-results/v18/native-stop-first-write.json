@@ -1,0 +1,86 @@
+{
+  "error": "Останов М-20: код -9998, адрес 0007.",
+  "rank": 2886218076160,
+  "depth": 20480,
+  "RA": 2292,
+  "RVK": 7,
+  "RK": 7626821762574,
+  "RK_inject": 3148726402334,
+  "injected": 0,
+  "watch_write": [
+    6523502170,
+    7626821762574,
+    2292,
+    899,
+    2886218076160,
+    30606555669452,
+    8796093022207,
+    16106128217,
+    3361,
+    0,
+    0,
+    0
+  ],
+  "changed_code": {
+    "3402": [
+      "675304470161714",
+      "177777777777777"
+    ],
+    "3430": [
+      "700777777767777",
+      "052000040000000"
+    ]
+  },
+  "position": {
+    "game": "itef-machack.pgn",
+    "ply": 25,
+    "turn": "white",
+    "fullmove": 13,
+    "fen": "rnbq1r1k/ppp4p/3P2n1/5p2/1bBPN3/2N5/PP3PPP/R1BQK2R w KQ - 1 13",
+    "moves": [
+      "e2e4",
+      "g8f6",
+      "e4e5",
+      "f6d5",
+      "c2c4",
+      "d5f4",
+      "d2d4",
+      "g7g5",
+      "g1f3",
+      "f7f6",
+      "f3g5",
+      "f4g6",
+      "e5f6",
+      "e7f6",
+      "g5e4",
+      "d7d5",
+      "c4d5",
+      "f8b4",
+      "b1c3",
+      "e8g8",
+      "f1c4",
+      "f6f5",
+      "d5d6",
+      "g8h8"
+    ],
+    "initial_fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+    "category": "quiet",
+    "legal_moves": 48,
+    "pieces": 28,
+    "id": "quiet-08"
+  },
+  "watch_fields": [
+    "command_index",
+    "rk",
+    "ra",
+    "next_pc",
+    "rank",
+    "old_3402",
+    "new_3402",
+    "score_7461",
+    "pointer_1704",
+    "reserved",
+    "reserved",
+    "reserved"
+  ]
+}

@@ -1,0 +1,182 @@
+[
+  {
+    "terminal": true,
+    "depth": 1,
+    "answer": {
+      "error": "Останов М-20: код -6, адрес 1231.",
+      "pc": "1231",
+      "ra": "0000",
+      "words": {
+        "1004": "177740000000000",
+        "1036": "141000000000000",
+        "1700": "052000000140000",
+        "7460": "000000000000000",
+        "7461": "000056000003777",
+        "3020": "045300000000000",
+        "3022": "177740000000000"
+      }
+    }
+  },
+  {
+    "terminal": true,
+    "depth": 2,
+    "answer": {
+      "error": "Останов М-20: код -6, адрес 1231.",
+      "pc": "1231",
+      "ra": "0000",
+      "words": {
+        "1004": "177740000000000",
+        "1036": "141000000000000",
+        "1700": "052000000140000",
+        "7460": "000000000000000",
+        "7461": "000056000003777",
+        "3020": "045300000000000",
+        "3022": "177740000000000"
+      }
+    }
+  },
+  {
+    "terminal": true,
+    "depth": 3,
+    "answer": {
+      "error": "Останов М-20: код -6, адрес 1231.",
+      "pc": "1231",
+      "ra": "0000",
+      "words": {
+        "1004": "177740000000000",
+        "1036": "141000000000000",
+        "1700": "052000000120000",
+        "7460": "000000000000000",
+        "7461": "000056000003777",
+        "3020": "045300000000000",
+        "3022": "177740000000000"
+      }
+    }
+  },
+  {
+    "terminal": false,
+    "depth": 1,
+    "answer": {
+      "move": "d1a4",
+      "san": "Qa4+",
+      "nodes": 1106937,
+      "steps": 1152812121,
+      "seconds": 15.116,
+      "depth": 1,
+      "word": "047600100026027",
+      "search_mode": "original_window",
+      "lambda_final_1706": 1106937,
+      "search_profile": {
+        "name": "v11",
+        "checks": 0,
+        "evaluations": 3,
+        "rank_cap": 14,
+        "source_4344": false,
+        "forced_scheme": "native",
+        "rank_memory": "v11_original",
+        "check_limit_reachable": false,
+        "overrides": {},
+        "words": {
+          "4332": "016000343333636",
+          "4344": "033402410570000",
+          "4777": "000000000000000",
+          "1661": "003000000000000"
+        }
+      },
+      "forced_play": {
+        "variant": "listing",
+        "checks_per_side": 2,
+        "label": "по листингу"
+      },
+      "castling_history_known": false,
+      "castling_history_unknown_colors": [
+        "white",
+        "black"
+      ]
+    }
+  },
+  {
+    "terminal": false,
+    "depth": 2,
+    "answer": {
+      "move": "a7b8q",
+      "san": "axb8=Q+",
+      "nodes": 1555436,
+      "steps": 1585746586,
+      "seconds": 20.419,
+      "depth": 2,
+      "word": "006600400256027",
+      "search_mode": "original_window",
+      "lambda_final_1706": 1555436,
+      "search_profile": {
+        "name": "v11",
+        "checks": 0,
+        "evaluations": 3,
+        "rank_cap": 14,
+        "source_4344": false,
+        "forced_scheme": "native",
+        "rank_memory": "v11_original",
+        "check_limit_reachable": false,
+        "overrides": {},
+        "words": {
+          "4332": "016000343333636",
+          "4344": "033402410570000",
+          "4777": "000000000000000",
+          "1661": "003000000000000"
+        }
+      },
+      "forced_play": {
+        "variant": "listing",
+        "checks_per_side": 2,
+        "label": "по листингу"
+      },
+      "castling_history_known": false,
+      "castling_history_unknown_colors": [
+        "white",
+        "black"
+      ]
+    }
+  },
+  {
+    "terminal": false,
+    "depth": 3,
+    "answer": {
+      "move": "a7b8q",
+      "san": "axb8=Q+",
+      "nodes": 1780418,
+      "steps": 1827912467,
+      "seconds": 23.409,
+      "depth": 3,
+      "word": "006600400256027",
+      "search_mode": "original_window",
+      "lambda_final_1706": 1780418,
+      "search_profile": {
+        "name": "v11",
+        "checks": 0,
+        "evaluations": 3,
+        "rank_cap": 14,
+        "source_4344": false,
+        "forced_scheme": "native",
+        "rank_memory": "v11_original",
+        "check_limit_reachable": false,
+        "overrides": {},
+        "words": {
+          "4332": "016000343333636",
+          "4344": "033402410570000",
+          "4777": "000000000000000",
+          "1661": "003000000000000"
+        }
+      },
+      "forced_play": {
+        "variant": "listing",
+        "checks_per_side": 2,
+        "label": "по листингу"
+      },
+      "castling_history_known": false,
+      "castling_history_unknown_colors": [
+        "white",
+        "black"
+      ]
+    }
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "ready_latency_s": 0.003081487999224919,
+  "quit_latency_s": 0.015468920000785147,
+  "fallback_move": "h6h7",
+  "ordinary_reply": "d7d5",
+  "info": {
+    "depth": 3,
+    "nodes": 4496,
+    "time": 0.102,
+    "pv": [
+      "d7d5"
+    ],
+    "string": "M20 commands 10235276 minutes 8.529397 total_commands 10235276 total_minutes 8.529397 profile v11"
+  }
+}

@@ -1,0 +1,409 @@
+--- v08/m20/simh/m20_cpu.c
++++ v09/m20/simh/m20_cpu.c
+@@ -36,7 +36,6 @@
+ #include <fcntl.h>
+ #include <sys/stat.h>
+ 
+-static long g_slog = 0; /* ИТЭФ-отладка: степ-лог по триггеру клада */
+ t_value M [MEMSIZE];
+ uint32 RVK, RA, OMEGA;
+ t_value RK_inject; int RK_inject_flag = 0; /* ИТЭФ: 7777 = РК (исполнить немедленно) */
+@@ -181,105 +180,24 @@
+  */
+ t_value load (int addr)
+ {
+-	/* ИТЭФ (бланк ПУП, стр.51): чтение 7777 отдаёт регистр команд РК —
+-	   программа читает РК в рабочую ячейку и исполняет её («7777* = δ0»). */
+-	if ((addr & 07777) == 07777)
+-		return RK;
+-	if ((addr & 07777) == 07776)
+-		return ((t_value) RA) << 12;	/* ИТЭФ: РА живёт в поле A2 */
+-
+-	{ int A = addr & 07777;
+-	  if ((A==0100||A==0105||A==0107||A==0110) && M[A]==0)
+-		if (0) fprintf (stderr, "[ZRD] PC=%04o read0 %04o\n", RVK, A); }
+-
+-	t_value val;
+-
+-	addr &= 07777;
+-	if (addr == 0)
+-		return 0;
+-	if (addr == 07776)
+-		return (t_value) RA; /* ИТЭФ: ячейка 7776 = теневой РА (бланки: «n = РА») */
+-
+-	val = M [addr];
+-	return val;
+-}
+-
+-/*
+- * Запись слова в памяти.
+- */
++    addr &= 07777;
++    if (addr == 0) return 0;
++    if (addr == 07776) return ((t_value) RA) << 12;
++    if (addr == 07777) return RK;
++    return M[addr];
++}
++
+ void store (int addr, t_value val)
+ {
+-	addr &= 07777;
+-	if (addr == 0)
+-		return;
+-	if (addr == 07776) {
+-		RA = (uint32) ((val >> 12) & 07777); /* ИТЭФ: РА в поле A2 */
+-		return;
+-	}
+-	/* ИТЭФ-компромисс: запись в 7777 исполняется как впрыск в РК ТОЛЬКО для
+-	   слов-переходов (КОП 16/36/56/76 — диспетчи Каиссы: 1365 и родня);
+-	   прочее — обычная запись (7777 — рабочая ячейка ИС-2, её арифметика
+-	   не должна исполняться). */
+-	if (addr == 07777) {
+-		{ /* ИТЭФ: полный впрыск — ИС-2 больше не резидентна в ОЗУ */
+-			if (0) fprintf (stderr, "[INJ] PC=%04o -> %015llo\n", RVK, (unsigned long long) val);
+-			RK_inject = val;
+-			RK_inject_flag = 1;
+-			return;
+-		}
+-	}
+-	if (addr == 07777 || addr == 00122) {
+-		if (0) fprintf (stderr, "[IND] PC=%04o %04o := %015llo\n", RVK, addr, (unsigned long long) val);
+-	}
+-	{ static int regn = 0; static int regon = -1; if (regon < 0) regon = getenv ("M20_REG") != 0;
+-	  if (regon && addr >= 06100 && addr < 07700 && regn < 220) { regn++;
+-		fprintf (stderr, "[REG] PC=%04o %04o := %015llo\n", RVK, addr, (unsigned long long) val);
+-	  }
+-	}
+-	if (addr == 01704) {
+-		{ /* ОПЫТ-«указатель» (07.09): конец списка a_n.A3 должен возвращать ПУП (бриф №4); с заглушкой ПУП
+-		     его не пишет никто → у дочернего узла клад := 0 и регистрация сносит вектор 0003.
+-		     Имитация: каждая запись клада (1704) зеркалится в A3 указателя a_n = M[6520+n], n = A2(M[1700]). */
+-		  static int ptr = -1; int lvl = (int) ((M[01700] >> 12) & 07777);
+-		  if (ptr < 0) ptr = getenv ("M20_NO_PTR") == 0; /* M20_NO_PTR=1 — выключить опыт (для пары с живым ПУП) */
+-		  if (ptr && lvl < 020) M[06520 + lvl] = (M[06520 + lvl] & ~((t_value) 07777)) | (val & 07777);
+-		}
+-		if (0) fprintf (stderr, "[KLAD] PC=%04o 1704 := %015llo\n", RVK, (unsigned long long) val);
+-		if (0) if (val == 06107) { g_slog = 1400; fprintf (stderr, "[KLAD] порог 6107\n"); }
+-	}
+-	if (addr >= 07700 && addr <= 07717) {
+-		fprintf (stderr, "[VEC] PC=%04o %04o := %015llo\n", RVK, addr, (unsigned long long) val);
+-	}
+-	if (addr >= 07520 && addr <= 07537) {
+-		if (0) fprintf (stderr, "[LST] PC=%04o %04o := %015llo\n", RVK, addr, (unsigned long long) val);
+-	}
+-	if (addr == 06520 || addr == 06521 || addr == 01677) {
+-		if (0) fprintf (stderr, "[A0] PC=%04o %04o := %015llo\n", RVK, addr, (unsigned long long) val);
+-	}
+-	if (addr == 01526 || addr == 01527) {
+-		if (0) fprintf (stderr, "[SLT] PC=%04o %04o := %015llo\n", RVK, addr, (unsigned long long) val);
+-	}
+-	if (addr == 03016 || addr == 06520) {
+-		if (0) fprintf (stderr, "[BRD] PC=%04o %04o := %015llo n=%015llo\n", RVK, addr,
+-			(unsigned long long) val, (unsigned long long) M[01700]);
+-	}
+-	if (addr == 01006 || addr == 01007) {
+-		if (0) fprintf (stderr, "[P0] PC=%04o %04o := %015llo\n", RVK, addr, (unsigned long long) val);
+-	}
+-	if (addr == 05211) {
+-		if (0) fprintf (stderr, "[XI1] PC=%04o := %015llo\n", RVK, (unsigned long long) val);
+-	}
+-	if (0) {
+-		if (0) fprintf (stderr, "[W7766] РВК=%04o -> %04o := %015llo\n",
+-			RVK > 0 ? RVK-1 : 0, addr, (unsigned long long) val); /* диагностика Соли */
+-	}
+-
+-	M [addr] = val;
+-}
+-
+-/*
+- * Проверка числа на равенство нулю.
+- */
++    addr &= 07777;
++    val &= WORD;
++    if (addr == 0) return;
++    if (addr == 07776) { RA = (val >> 12) & 07777; return; }
++    if (addr == 07777) { RK_inject = val; RK_inject_flag = 1; return; }
++    M[addr] = val;
++}
++
++/* Test for zero, ignoring tag and sign. */
+ static inline int is_zero (t_value x)
+ {
+ 	x &= ~(TAG | SIGN);
+@@ -917,7 +835,7 @@
+ 		y = (x & ~MANTISSA) + (load (a2) & ~MANTISSA);
+ addop:		RR = (x & MANTISSA) | (y & ~MANTISSA & WORD);
+ 		store (a3, RR);
+-		OMEGA = (y & BIT46) != 0;
++		OMEGA = (y & SIGN) != 0;
+ 		delay += 24;
+ 		break;
+ 	case 073: /* вычитание кодов операций */
+@@ -929,9 +847,10 @@
+ 		delay += 61.5 + 1.5 * (n>0 ? n : -n);
+ shm:		y = load (a2);
+ 		RR = (y & ~MANTISSA);
+-		if (n > 0)
++		if (n == 0) RR = y;
++		if (n > 0 && n < 36)
+ 			RR |= ((y & MANTISSA) << n) & MANTISSA; /* ИТЭФ патч №7 (Соля): без обрезки биты лезут в порядок и портят указатель списка (2205) */
+-		else if (n < 0)
++		else if (n < 0 && n > -36)
+ 			RR |= (y & MANTISSA) >> -n;
+ 		store (a3, RR);
+ 		OMEGA = ((RR & MANTISSA) == 0);
+@@ -944,9 +863,10 @@
+ 		n = (a1 & 0177) - 64;
+ 		delay += 61.5 + 1.5 * (n>0 ? n : -n);
+ shift:		RR = load (a2);
+-		if (n > 0)
++		if (n >= 45 || n <= -45) RR = 0;
++		if (n > 0 && n < 45)
+ 			RR = (RR << n) & WORD;
+-		else if (n < 0)
++		else if (n < 0 && n > -45)
+ 			RR >>= -n;
+ 		store (a3, RR);
+ 		OMEGA = (RR == 0);
+@@ -1002,59 +922,53 @@
+ 		break;
+ 	case 056: /* передача управления */
+ 		RR = load (a1);
+-		RMR = RR; /* ИТЭФ: пересылка проходит через МУ — 047 "мл.р" читает переданное слово */
++		RMR = (016000000000000LL | ((t_value)RVK<<12)); /* Reconstructed ITEF return link; 047 retrieves it. */
+ 		store (a3, RR);
+ 		RVK = a2;
+ 		delay += 24;
+ 		break;
+ 	case 076: /* передача управления по условию Ω=0 */
+ 		RR = load (a1);
+-		RMR = RR; /* ИТЭФ: см. case 056 */
++		RMR = (016000000000000LL | ((t_value)RVK<<12)); /* Same link convention as 056. */
+ 		store (a3, RR);
+ 		if (! OMEGA)
+ 			RVK = a2;
+ 		delay += 24;
+ 		break;
+-	case 040: /* «пмс» — ИТЭФ-реконструкция по употреблению (ξ2: 2534/2535):
+-	             номер младшего единичного разряда M[A1] → M[A3];
+-	             Ω=1 при пустом слове. Превращает растр в номер клетки. */
+-		x = load (a1);
+-		n = 0;
+-		if (x & MANTISSA) {
+-			t_value b = x & MANTISSA;
+-			while (! (b & 1)) { b >>= 1; n++; }
+-		}
+-		RR = (t_value) n;	/* номер младшей единицы (проверено на ξ2) */
+-		store (a3, RR);
+-		OMEGA = ((x & MANTISSA) == 0);
+-		delay += 24;
+-		break;
+-	case 057: /* ИТЭФ (бланк ПУП, стр.51): «ФК» — формирование команды:
+-	             П+КОП берётся из A1 (сдвиг на 36), мантисса — из M[A2]. */
+-		RR = (((t_value) a1) << 36 | (load (a2) & MANTISSA)) & WORD;
+-		store (a3, RR);
+-		delay += 24;
+-		break;
+-	case 017: /* операторский останов М-20 */
+-	case 037: /* операторский останов М-20 */
+-		/*
+-		 * В исходном SIMH-варианте были реализованы только 077 и
+-		 * более поздние значения операций машин семейства М-220.
+-		 * На М-20 все четыре кода 017/037/057/077 останавливают
+-		 * машину. После пуска выполнение продолжается со следующего
+-		 * слова; нулевая команда засылается по третьему адресу.
+-		 * ИТЭФ: пультовый режим "БО" (блокировка останова) — при
+-		 * M[07775] != 0 операторские остановы пролетаются (ночной
+-		 * автономный счёт 1966 г.).
+-		 */
+-		RR = 0;
+-		store (a3, RR);
+-		if (M [07775] != 0) {
+-			delay += 24;
+-			break; /* БО включена: продолжаем без останова */
+-		}
+-		delay += 24;
+-		return STOP_STOP;
++	case 040: /* ITEF bit count. The listing shifts A3 to A2 at 2537. */
++        x = load(a1); n = 0;
++        while (x) { x &= x-1; ++n; }
++        RR = n; store(a3, RR); OMEGA = (n == 0); delay += 24;
++        break;
++	case 057: /* ITEF FK, Kronrod pp. 61-62 and 73. */
++		{
++		  t_value tpl=M[RVK & 07777], basis=load(a2), formed=tpl & ~MANTISSA;
++		  int j;
++		  for(j=0;j<3;j++) {
++		    int shift=24-12*j, digit=(a1>>(6-3*j))&7;
++		    int src=(tpl>>shift)&07777, v=src;
++		    int base=((a1>>9)&(4>>j)) ? 0 : (basis>>shift)&07777;
++		    if(digit&3) v=(load(src)>>(36-12*(digit&3)))&07777;
++		    v=(digit&4) ? base-v : base+v;
++		    formed|=(t_value)(v&07777)<<shift;
++		  }
++		  RVK=(RVK+1)&07777;
++		  if(a3) store(a3,formed); else {RK_inject=formed;RK_inject_flag=1;}
++		  delay+=48; break;
++		}
++	case 037: /* ITEF FA: indexed execution of the next word. */
++		{
++		  t_value tpl=M[RVK&07777], formed=tpl&~MANTISSA;
++		  formed|=(t_value)(((tpl>>24)+(load(a1)>>12))&07777)<<24;
++		  formed|=(t_value)(((tpl>>12)+(load(a2)>>12))&07777)<<12;
++		  formed|=(tpl+(load(a3)>>12))&07777;
++		  RVK=(RVK+1)&07777; RK_inject=formed;RK_inject_flag=1;
++		  delay+=48;break;
++		}
++	case 017: /* Operator stop. BO is the reconstructed console switch. */
++        RR = 0; store(a3, RR); delay += 24;
++        if (M[07775]) break;
++        return STOP_STOP;
+ 	case 077: /* останов машины */
+ 		RR = 0;
+ 		store (a3, RR);
+@@ -1241,127 +1155,21 @@
+  */
+ t_stat sim_instr (void)
+ {
+-	t_stat r;
+-	int ticks;
+-
+-	/* Restore register state */
+-	RVK = RVK & 07777;				/* mask RVK */
+-	sim_cancel_step ();				/* defang SCP step */
+-	delay = 0;
+-
+-	/* Main instruction fetch/decode loop */
+-	for (;;) {
+-		if (sim_interval <= 0) {		/* check clock queue */
+-			r = sim_process_event ();
+-			if (r)
+-				return r;
+-		}
+-
+-		if (RVK >= MEMSIZE) {			/* выход за пределы памяти */
+-			return STOP_RUNOUT;		/* stop simulation */
+-		}
+-
+-		if (sim_brk_summ &&			/* breakpoint? */
+-		    sim_brk_test (RVK, SWMASK ('E'))) {
+-			return STOP_IBKPT;		/* stop simulation */
+-		}
+-
+-		if (RVK == 02151) M[03636] = 040000; /* режим (0,4,0): регистрация ходов */
+-		if (RVK == 03656) M[03636] |= 010000; /* ОПЫТ: цепь видит бит регистрации */
+-		if (0) if (RVK == 05510) OMEGA = 0; /* ОПЫТ ВЫКЛ НАВСЕГДА: доказан как вечная петля ФВ0 (окно v31) */
+-		if (RVK == 02067 && (M[01704] & 07777) >= 06517) RVK = 02071;
+-		if (RVK == 02010 && (RA & 03777) < 060) RVK = 01755; /* ОПЫТ-{6}: f-цикл = шесть растров 3000-3012 (РА 72..60; у чёрных со смещением 4072..4060), пометка бланка стр.55; дальше — выход У.Ф. */
+-		{ /* ОПЫТ-«позиции по уровням» (ВЫКЛ по умолчанию; M20_LEVELS=1 — вкл.). СОМНИТЕЛЕН, см. ПЕРЕДАЧА_v08 §7б:
+-		     теневые копии свёртки 6540+n..6551+n по уровням, возврат перед распаковкой. */
+-		  static t_value shadow[16][10]; static int shv[16]; static int reentry = 0; static int lv = -1;
+-		  int L = (int) (RA & 017), k;
+-		  if (lv < 0) lv = getenv ("M20_LEVELS") != 0;
+-		  if (lv && RVK == 02154 && (RA & 07777) < 16) { for (k = 0; k < 10; k++) shadow[L][k] = M[06540 + L + k]; shv[L] = 1; }
+-		  if (lv && RVK == 02301 && (RA & 07777) < 16 && shv[L]) { for (k = 0; k < 10; k++) M[06540 + L + k] = shadow[L][k]; }
+-		  if (lv && RVK == 02147 && (RA & 07777) < 16) {
+-			if (reentry) reentry = 0;
+-			else if (shv[L]) { for (k = 0; k < 10; k++) M[06540 + L + k] = shadow[L][k];
+-				M[07] = ((t_value) 016 << 36) | ((t_value) 02147 << 12); reentry = 1; RVK = 02301; }
+-		  }
+-		}
+-		if (RVK == 05023) { /* ОПЫТ-«такт» (v06, узел 2): Λx хранит указатель «на такт позже» → 1x := адрес записи A1(Λx)−1, формат [0|адрес|0] */
+-			int idx = (int) ((M[07520 + RA] >> 24) & 07777) - 1;
+-			M[01677] = ((t_value) (idx & 07777)) << 12; RVK = 05024;
+-			fprintf (stderr, "[TAKT] Lx=%015llo -> 1x=%015llo\n", (unsigned long long) M[07520 + RA], (unsigned long long) M[01677]);
+-		}
+-		if (RVK == 04643) OMEGA = 0; /* ОПЫТ-Ветка: операторский дисплей варианта (дпб-остановы 4635/4640) — в БО показать и выйти, не крутить 4643 */
+-		{ static long hb = 0; if (++hb % 200000000 == 0)
+-			fprintf (stderr, "[HB] %ldM: PC=%04o lam=%015llo klad=%04o n=%015llo\n", hb/1000000, RVK,
+-				(unsigned long long) M[01706], (unsigned int)(M[01704] & 07777), (unsigned long long) M[01700]); }
+-		 /* ОПЫТ-граница: кап списка на 6154 — пропуск впрыска и клад++ (истинные 0017/0107 ищем на бланках) */
+-		if (RVK == 01710) RVK = (uint32) (M[01710] & 07777); /* ОПЫТ-1710 (ВКЛ): ПУП 2105 «пв 2106,1710,0007» зовёт δ₀=M[1710] как команду — подменяем переходом на A3 параметра («цена»). Подозрение: это должна делать ФК на 2104 */
+-		{ static int wpc = -1; static long wk = 1, wn = 200, wc = 0; /* окно: M20_WIN_PC (восьм.), M20_WIN_K (№ попадания), M20_WIN_N (шагов) */
+-		  if (wpc < 0) { wpc = getenv ("M20_WIN_PC") ? (int) strtol (getenv ("M20_WIN_PC"), 0, 8) : 0;
+-			if (getenv ("M20_WIN_K")) wk = atol (getenv ("M20_WIN_K")); if (getenv ("M20_WIN_N")) wn = atol (getenv ("M20_WIN_N")); }
+-		  if (wpc && RVK == (uint32) wpc && ++wc == wk) { g_slog = wn; fprintf (stderr, "[WIN] PC=%04o попадание %ld, окно %ld шагов\n", RVK, wc, wn); } }
+-		{ static long slog = -1; static int sfrom = -1;
+-		  if (slog < 0) slog = getenv("M20_STEPLOG") ? atol (getenv("M20_STEPLOG")) : 0;
+-		  if (sfrom < 0) sfrom = getenv("M20_STEPLOG_FROM") ? (int) strtol (getenv("M20_STEPLOG_FROM"), 0, 8) : 0;
+-		  if (sfrom > 0 && RVK == (uint32) sfrom) sfrom = 0;
+-		  { static int pn = 0;
+-		    if (0 && RVK >= 01443 && RVK <= 01476 && pn < 500) { pn++;
+-			fprintf (stderr, "[P] %04o RA=%04o W=%d\n", RVK, RA, (int) OMEGA);
+-		    } }
+-		  if ((sfrom == 0 && slog > 0) || g_slog > 0) { if (g_slog > 0) { g_slog--;
+-			fprintf (stderr, "[S] %04o: %015llo RA=%04o W=%d |n=%015llo klad=%015llo a0=%015llo\n", RVK,
+-				(unsigned long long) M[RVK], RA, (int) OMEGA,
+-				(unsigned long long) M[01700], (unsigned long long) M[01704], (unsigned long long) M[06520]);
+-		  } else { slog--;
+-			fprintf (stderr, "[S] %04o: %015llo RA=%04o W=%d\n", RVK,
+-				(unsigned long long) M[RVK], RA, (int) OMEGA);
+-		  } }
+-		}
+-		{ static uint32 prev_pc = 0; static int trj = -1; static long trj_n = 0;
+-		  if (trj < 0) trj = getenv("M20_TRJ") ? (int) strtol (getenv("M20_TRJ"), 0, 8) : 0;
+-		  if (trj && RVK == (uint32) trj) { trj = -2; fprintf (stderr, "[TRJ] старт с %04o\n", RVK); }
+-		  if (trj == -2 && RVK != prev_pc + 1 && trj_n < 400000) {
+-			fprintf (stderr, "[J] %04o>%04o\n", prev_pc, RVK); trj_n++;
+-			if (trj_n == 400000) fprintf (stderr, "[TRJ] лимит\n");
+-		  }
+-		  prev_pc = RVK; }
+-		if (RK_inject_flag) {
+-			RK_inject_flag = 0;
+-			RK = RK_inject;		/* ИТЭФ: исполняем впрыск из 7777 */
+-			RVK -= 1;		/* компенсация общего RVK += 1 ниже */
+-		}
+-		else {
+-		static uint32 prev_rvk = 0;
+-		static uint32 ring[64]; static int rp = 0;
+-		if (RVK == 02205 && prev_rvk == 013) {
+-			int i; if (0) { fprintf (stderr, "[RING] ");
+-			for (i = 0; i < 64; i++) fprintf (stderr, "%04o ", ring[(rp+i)&63]);
+-			fprintf (stderr, "\n"); }
+-		}
+-		ring[rp++ & 63] = RVK; rp &= 63;
+-		if (RVK == 02205)
+-			if (0) fprintf (stderr, "[V1531] пришли из %04o\n", prev_rvk);
+-		prev_rvk = RVK;
+-		RK = M [RVK];				/* get instruction */
+-		}
+-		if (sim_deb && cpu_dev.dctrl) {
+-			/*fprintf (sim_deb, "*** (%.0f) %04o: ", sim_gtime(), RVK);*/
+-			fprintf (sim_deb, "*** %04o: ", RVK);
+-			fprint_sym (sim_deb, RVK, &RK, 0, SWMASK ('M'));
+-			fprintf (sim_deb, "\n");
+-		}
+-		RVK += 1;				/* increment RVK */
+-
+-		r = cpu_one_inst ();
+-		if (r)					/* one instr; error? */
+-			return r;
+-
+-		ticks = 1;
+-		if (delay > 0)				/* delay to next instr */
+-			ticks += delay - DBL_EPSILON;
+-		delay -= ticks;				/* count down delay */
+-		sim_interval -= ticks;
+-
+-		if (sim_step && (--sim_step <= 0))	/* do step count */
+-			return SCPE_STOP;
+-	}
+-}
++    t_stat status;
++    unsigned long long steps=0, limit=0;
++    const char *setting=getenv("M20_MAX_STEPS");
++    if(setting) limit=strtoull(setting,0,10);
++    for(;;) {
++        if(sim_interval<=0) { status=sim_process_event(); if(status) return status; }
++        if(!RK_inject_flag) {
++            if(RVK>=MEMSIZE) return STOP_RUNOUT;
++            if(sim_brk_summ && sim_brk_test(RVK,SWMASK('E'))) return STOP_IBKPT;
++            RK=M[RVK++];
++        } else { RK=RK_inject; RK_inject_flag=0; }
++        status=cpu_one_inst();
++        if(status) return status;
++        if(limit && ++steps>=limit) return STOP_STOP;
++        sim_interval--;
++        if(sim_step && --sim_step<=0) return SCPE_STOP;
++    }
++}

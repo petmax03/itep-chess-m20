@@ -1,0 +1,13 @@
+{
+  "position": "quiet-03",
+  "category": "quiet",
+  "depth": 3,
+  "budget": 3000000000,
+  "status": "answered",
+  "move": "c3d4",
+  "nodes": 14443,
+  "steps": 19739520,
+  "engine_seconds": 0.268,
+  "seconds": 0.26847232000000076,
+  "cpu_seconds": 0.26831505
+}

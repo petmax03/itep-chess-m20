@@ -1,0 +1,161 @@
+{
+  "v11_base_words_identical": true,
+  "cli_runs": [
+    {
+      "game": 1,
+      "move_number": 16,
+      "profile": "v11",
+      "result": {
+        "move": "b1b5",
+        "san": "Rb5",
+        "nodes": 67218,
+        "steps": 114339878,
+        "seconds": 1.666,
+        "depth": 3,
+        "word": "036600100056056",
+        "search_mode": "original_window",
+        "lambda_final_1706": 67218,
+        "search_profile": {
+          "name": "v11",
+          "checks": 0,
+          "evaluations": 3,
+          "rank_cap": 14,
+          "source_4344": false,
+          "rank_memory": "v11_original",
+          "check_limit_reachable": false,
+          "overrides": {},
+          "words": {
+            "4344": "033402410570000",
+            "4777": "000000000000000",
+            "1661": "003000000000000"
+          }
+        },
+        "castling_history_known": false,
+        "castling_history_unknown_colors": [
+          "white",
+          "black"
+        ]
+      },
+      "lambda_final": 67218,
+      "nodes_host_aggregate": 67218
+    },
+    {
+      "game": 1,
+      "move_number": 16,
+      "profile": "v12-source",
+      "result": {
+        "move": "b1b5",
+        "san": "Rb5",
+        "nodes": 40549,
+        "steps": 64616692,
+        "seconds": 0.776,
+        "depth": 3,
+        "word": "036600100056056",
+        "search_mode": "original_window",
+        "lambda_final_1706": 40549,
+        "search_profile": {
+          "name": "v12-source",
+          "checks": 0,
+          "evaluations": 3,
+          "rank_cap": 16,
+          "source_4344": true,
+          "rank_memory": "relocated_five_arrays",
+          "check_limit_reachable": true,
+          "overrides": {},
+          "words": {
+            "4344": "033402410540000",
+            "4777": "000000000000000",
+            "1661": "003000000000000"
+          }
+        },
+        "castling_history_known": false,
+        "castling_history_unknown_colors": [
+          "white",
+          "black"
+        ]
+      },
+      "lambda_final": 40549,
+      "nodes_host_aggregate": 40549
+    },
+    {
+      "game": 2,
+      "move_number": 22,
+      "profile": "v11",
+      "result": {
+        "move": "d8d6",
+        "san": "Rxd6",
+        "nodes": 2931,
+        "steps": 5374807,
+        "seconds": 0.084,
+        "depth": 3,
+        "word": "024600100046051",
+        "search_mode": "original_window",
+        "lambda_final_1706": 2931,
+        "search_profile": {
+          "name": "v11",
+          "checks": 0,
+          "evaluations": 3,
+          "rank_cap": 14,
+          "source_4344": false,
+          "rank_memory": "v11_original",
+          "check_limit_reachable": false,
+          "overrides": {},
+          "words": {
+            "4344": "033402410570000",
+            "4777": "000000000000000",
+            "1661": "003000000000000"
+          }
+        },
+        "castling_history_known": false,
+        "castling_history_unknown_colors": [
+          "white",
+          "black"
+        ]
+      },
+      "lambda_final": 2931,
+      "nodes_host_aggregate": 2931
+    },
+    {
+      "game": 2,
+      "move_number": 22,
+      "profile": "v12-source",
+      "result": {
+        "move": "d8d6",
+        "san": "Rxd6",
+        "nodes": 2062,
+        "steps": 3927545,
+        "seconds": 0.071,
+        "depth": 3,
+        "word": "024600100046051",
+        "search_mode": "original_window",
+        "lambda_final_1706": 2062,
+        "search_profile": {
+          "name": "v12-source",
+          "checks": 0,
+          "evaluations": 3,
+          "rank_cap": 16,
+          "source_4344": true,
+          "rank_memory": "relocated_five_arrays",
+          "check_limit_reachable": true,
+          "overrides": {},
+          "words": {
+            "4344": "033402410540000",
+            "4777": "000000000000000",
+            "1661": "003000000000000"
+          }
+        },
+        "castling_history_known": false,
+        "castling_history_unknown_colors": [
+          "white",
+          "black"
+        ]
+      },
+      "lambda_final": 2062,
+      "nodes_host_aggregate": 2062
+    }
+  ],
+  "counter_contract": {
+    "historical_lambda": "result.lambda_final_1706",
+    "host_aggregate": "result.nodes; includes retries"
+  }
+}

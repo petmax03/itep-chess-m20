@@ -1,0 +1,38 @@
+{
+  "move": "c4b6",
+  "san": "Nb6#",
+  "nodes": 879,
+  "steps": 1315289,
+  "seconds": 0.024,
+  "depth": 5,
+  "word": "026600100106053",
+  "search_mode": "original_window",
+  "lambda_final_1706": 879,
+  "search_profile": {
+    "name": "v11",
+    "checks": 0,
+    "evaluations": 3,
+    "rank_cap": 14,
+    "source_4344": false,
+    "forced_scheme": "native",
+    "rank_memory": "v11_original",
+    "check_limit_reachable": false,
+    "overrides": {},
+    "words": {
+      "4332": "016000343333636",
+      "4344": "033402410570000",
+      "4777": "000000000000000",
+      "1661": "003000000000000"
+    }
+  },
+  "forced_play": {
+    "variant": "listing",
+    "checks_per_side": 2,
+    "label": "по листингу"
+  },
+  "castling_history_known": false,
+  "castling_history_unknown_colors": [
+    "white",
+    "black"
+  ]
+}

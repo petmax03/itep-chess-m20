@@ -1,0 +1,12 @@
+{
+  "ok": true,
+  "depths": [
+    3,
+    4,
+    5
+  ],
+  "html": true,
+  "pgn_header": true,
+  "js_syntax": true,
+  "browser_visual": false
+}

@@ -1,0 +1,3 @@
+LIMIT_AND_RESTORE_OK {"status": "limit", "budget": 3000000000, "steps": 3000000000, "nodes": 3574283, "depth": 3, "seconds": 29.954, "pc": "1311"}
+CONTINUE_OK Rh7+ 17452188776 20566619 242,39 ч {'steps': 20452188776, 'minutes': 17043.490646666665, 'text': '284,06 ч', 'completed_steps': 17452188776, 'retry_steps': 3000000000, 'recorded_moves': 1}
+REDUCE_PGN_SETTINGS_UNDO_OK Rh7+ 368000238 450601 5,11 ч

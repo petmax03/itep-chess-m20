@@ -1,0 +1,13 @@
+{
+  "fen": "8/pkp5/3b4/P7/3p4/2pP4/2K3r1/R7 w - - 2 48",
+  "move": "c2b3",
+  "san": "Kb3",
+  "nodes": 7753,
+  "steps": 8042152,
+  "seconds": 0.079,
+  "depth": 3,
+  "word": "056600100016022",
+  "search_mode": "original_window",
+  "castling_history_known": true,
+  "castling_history_unknown_colors": []
+}

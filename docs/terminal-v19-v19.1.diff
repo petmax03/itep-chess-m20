@@ -1,0 +1,16 @@
+--- v19/engine/terminal.h
++++ v19.1/engine/terminal.h
+@@ -86,6 +86,13 @@
+     int kind=itef_terminal_kind(rank&1);
+     if(!kind)return;
+     itef_terminal_stats[kind]++;
++    /* A terminal node has no candidate list. The early return bypasses
++     * native cleanup 4675; stale entries otherwise reach 4231/4255 and
++     * request line attacks for a figure absent from this position.
++     * Read the array base from the loaded instruction so rank-cap 16's
++     * relocation (6520 -> 4710) remains authoritative. */
++    unsigned pointer_base=M[04675]&07777;
++    M[(pointer_base+rank)&07777]=0;
+     M[07460+rank]=kind==1?0:M[01102];
+     RVK=pc==04042?04063:04135;
+ }

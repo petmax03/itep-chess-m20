@@ -1,0 +1,34 @@
+{
+  "version": "v19.1",
+  "kind": "functional-restoration-from-report",
+  "source": "Programme Playing Chess, printed p.9 / PDF p.10, formulas (2prime), (5)",
+  "not_claimed": "literal recovered M-20 instruction sequence",
+  "constants_unchanged": {
+    "1074": "000400000004000",
+    "1102": "000200000002000",
+    "1104": "000200000000000"
+  },
+  "entry_points_octal": {
+    "4042": "general search node",
+    "4111": "forced search node"
+  },
+  "live_node": "no memory or control-flow change",
+  "checkmate": "M[07460+rank] := 0",
+  "stalemate": "M[07460+rank] := M[01102]",
+  "returns_octal": {
+    "4042": "4063",
+    "4111": "4135"
+  },
+  "native_parent_rule_octal": "4100: M[01074] minus child score",
+  "weights_changed": false,
+  "low_constants_changed": false,
+  "native_commands_for_host_predicate": "not counted; source machine-code body is not recovered",
+  "score_rule_version": "v18",
+  "terminal_cleanup": {
+    "native_instruction_octal": "4675: 156000000106520",
+    "action": "M[((M[04675] & 07777) + rank) & 07777] := 0 before assigning terminal score and returning",
+    "reason": "Early terminal return bypasses the native candidate-list cleanup. A stale child entry can cause a parent to request line attacks for an absent piece.",
+    "rank_16_relocation_octal": "Instruction 4675 supplies 4710 instead of 6520 when the existing rank-cap relocation is enabled.",
+    "search_weights_cpu_changed": false
+  }
+}

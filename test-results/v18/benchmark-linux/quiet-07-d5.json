@@ -1,0 +1,13 @@
+{
+  "position": "quiet-07",
+  "category": "quiet",
+  "depth": 5,
+  "budget": 20000000000,
+  "status": "answered",
+  "move": "f8f5",
+  "nodes": 149294,
+  "steps": 182879007,
+  "engine_seconds": 2.089,
+  "seconds": 2.089838800000507,
+  "cpu_seconds": 2.0897937320000324
+}

@@ -1,0 +1,20 @@
+{
+  "source": {
+    "engine/machine.py": "9fa2b41513039e41d407fa8408bdcc72c50bd649e665f83331984347d3807954",
+    "engine/bridge.c": "612c2889d9f785519e7d5dc01b8eb321615d66cc10d9bf8d94a48786a8100d4b",
+    "engine/forced_play.h": "4d1f919d4da1892b1a018301cd5c17e5429b4923221a12843798bfc57b18eb29",
+    "engine/forced_board.h": "d8c86891871ef45b82a141897c97d8aed384c8963e23a844aad29c287c0befc0",
+    "engine/terminal.h": "3946d1690a0c87e7427f55678111dbd196045119d17569afaa920667c75c0e96",
+    "engine/search_profiles.py": "2072c3a0f72017e9c92d54ae3459667a74f8981c6a5615f546d17637ff6ea386",
+    "engine/native_rank_capacity.py": "389f5226bd711fed23a4e446d09234906f17cc396fc839f2fc327ed1f3a22f3b",
+    "engine/promotion_slots.py": "9621f2296eec7b3f6148ab3d75836abbe56ae22f70e98c881658bde1152dab25",
+    "m20/simh/m20_cpu.c": "a6787c5427693b268605febe3204fcf96e9c726493aa3843ee83b5c505305b8e",
+    "m20/kaissa/kaissa.m20": "b1c3b5d7667c4be49f5d540652c97bd19b3727702354569bf733fbb0386542d5",
+    "research/low-constants.m20": "bcf7126415f1db07a2ac222953060739a634b25ddffda73db2561d56856fffce",
+    "research/standard-cells-values.m20": "f7a6da67dad096f8466a64a3d0da7c6ddee4822977974cfca3f0e59fd07de0c0"
+  },
+  "inputs": {
+    "tests/historical-games.pgn": "c1a4efd5b387518642f483e586720b481eaafca381ab04f3d4af905c331eff09",
+    "tests/historical-position-counts.json": "809e47d193495d2429fbbc3442edb72bfc6ef6f8275f9e69327d6e723cb2b965"
+  }
+}

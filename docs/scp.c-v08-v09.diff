@@ -1,0 +1,13 @@
+--- v08/m20/simh/scp.c
++++ v09/m20/simh/scp.c
+@@ -675,8 +675,8 @@
+     else if (sim_vm_read != NULL)                       /* sim routine? */
+         cptr = (*sim_vm_read) (cbuf, CBUFSIZE, stdin);
+     else cptr = read_line (cbuf, CBUFSIZE, stdin);      /* read command line */
+-    if (cptr == NULL)                                   /* ignore EOF */
+-        continue;
++    if (cptr == NULL)                                   /* closed input: exit */
++        break;
+     if (*cptr == 0)                                     /* ignore blank */
+         continue;
+     if (sim_log)                                        /* log cmd */

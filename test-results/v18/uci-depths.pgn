@@ -1,0 +1,15 @@
+[Event "ITEF M-20 / UCI v18"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "ITEF M-20"]
+[Result "*"]
+[M20TerminalRule "Stanford-2prime-v18"]
+[M20ForcedPlay "wide"]
+[SearchProfile "v11"]
+[SearchDepth "3"]
+[M20TotalCommands "10235276"]
+[M20TotalMinutes "8.529397"]
+
+1. e4 d5 { М-20: 4496 позиций; 10235276 команд; 8,53 мин. [%m20_nodes 4496] [%m20_commands 10235276] [%m20_minutes 8.529397] [%m20_depth 3] [%m20_requested_depth 3] [%m20_forced wide] } *

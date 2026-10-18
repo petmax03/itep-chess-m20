@@ -1,0 +1,36 @@
+[
+  {
+    "mode": "listing",
+    "N": 2,
+    "move": "d7d5",
+    "nodes": 4496,
+    "info": "M20 commands 10235276 minutes 8.529397 total_commands 10235276 total_minutes 8.529397 profile v11 forced_play listing"
+  },
+  {
+    "mode": "narrow",
+    "N": 2,
+    "move": "d7d5",
+    "nodes": 3064,
+    "info": "M20 commands 7744662 minutes 6.453885 total_commands 7744662 total_minutes 6.453885 profile v11 forced_play narrow"
+  },
+  {
+    "mode": "checks",
+    "N": 3,
+    "move": "d7d5",
+    "nodes": 4434,
+    "info": "M20 commands 10161205 minutes 8.467671 total_commands 10161205 total_minutes 8.467671 profile v11 forced_play checks:3"
+  },
+  {
+    "mode": "wide",
+    "N": 2,
+    "move": "d7d5",
+    "nodes": 4496,
+    "info": "M20 commands 10235276 minutes 8.529397 total_commands 10235276 total_minutes 8.529397 profile v11 forced_play wide"
+  },
+  {
+    "fallback_depth": 2,
+    "mode": "wide",
+    "move": "c1e2",
+    "info": "M20 commands 9223028 minutes 7.685857 total_commands 59223028 total_minutes 49.352523 profile v11 forced_play wide"
+  }
+]

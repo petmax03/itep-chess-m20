@@ -1,0 +1,42 @@
+{
+  "unchanged_files": [
+    "m20/simh/m20_defs.h",
+    "m20/simh/sim_console.h",
+    "m20/simh/sim_tape.h",
+    "m20/simh/scp.h",
+    "m20/simh/sim_defs.h",
+    "m20/simh/sim_tape.c",
+    "m20/simh/sim_rev.h",
+    "m20/simh/scp.c",
+    "m20/simh/sim_timer.c",
+    "m20/simh/makefile",
+    "m20/simh/m20_sys.c",
+    "m20/simh/m20_drum.c",
+    "m20/simh/README",
+    "m20/simh/sim_sock.h",
+    "m20/simh/sim_tmxr.c",
+    "m20/simh/sim_fio.h",
+    "m20/simh/m20_cpu.c",
+    "m20/simh/sim_timer.h",
+    "m20/simh/sim_ether.c",
+    "m20/simh/sim_ether.h",
+    "m20/simh/sim_tmxr.h",
+    "m20/simh/sim_sock.c",
+    "m20/simh/sim_fio.c",
+    "m20/simh/sim_console.c",
+    "m20/kaissa/kaissa.m20",
+    "m20/as/is2.m20",
+    "research/standard-cells-values.m20",
+    "research/low-constants.m20",
+    "engine/search_profiles.py",
+    "engine/native_rank_capacity.py"
+  ],
+  "unchanged_python": [
+    "BASE_PATCHES",
+    "encode",
+    "decode",
+    "prepare",
+    "read_listing",
+    "subroutine"
+  ]
+}
