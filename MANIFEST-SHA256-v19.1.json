@@ -1,9 +1,9 @@
 {
- ".gitignore": "f95aa12d39ad936b5fd4f218554a8addb0d1817255af325ddafd3e5f17019b7b",
+ ".gitignore": "ccfc9b6dacd46cb403b5c46b30bbdff64b06783cf36bb3b467bedd458afa1d36",
  "CHANGELOG.md": "dc3a12829cdb1ca25b4f0dabc7f49bb6d4c54b809b3b6e0932edc1fd67603180",
- "CITATION.cff": "ddd14fcb0958fb19eb589cfd38d2ff2a516f23ab69f1cfdd7f637698b36eb9ba",
+ "CITATION.cff": "b69b85d533ff96ebbd481db2b3f7c93f417a97a367516ca77597d3ff2a7dd2f2",
  "LICENSE": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
- "README.md": "6da7c437b5d9e5192366a41bb50913dbefd3cef3a2b115d843611752920d503f",
+ "README.md": "74cedeaed183c5c7c1af18e4ccdb2821c597f896c9d7fa3a5c1ba8e3f05f6a9c",
  "RELEASE_NOTES.md": "a3f92c4d24413d30455584accacf3dd16162d412c97ed56ca381b816f8785ac8",
  "VERSION": "4685d526ee0b407f7b7a7130a7bbf03440f2c91c44a04834e1dab1b97e950936",
  "benchmarks/depth_benchmark.py": "a61b6d8ab1fc7904265516f5019a2d16e16d710c69d3de3db784c4d5e32580b2",
@@ -16,7 +16,7 @@
  "docs/README_BEFORE_V19_1.md": "c11a2c0e072586e61617968215979f57c1d14efa1eb986d44dbc9df8c24b573b",
  "docs/RECONSTRUCTION.md": "943d5d0c9e55b9744e3af0ed10c64316aee81ea075f8131d3ae14288d7ba1c77",
  "docs/SOURCE_SHA256.txt": "afe1ed5acdc91009cb5342da6f37d80340965b0db429113a8c2c29b13e3158fa",
- "docs/TECHNICAL_RU.md": "38fd4ea4ee6dfca9f1bb83d6ac60d4f8747a8c6064082369d8a1b7f6406f0a34",
+ "docs/TECHNICAL_RU.md": "8e970cad879879bbaefbd97b81d40d9231b77b9430cef6d29c69885a4771cad4",
  "docs/V10_CHANGES_RU.md": "353f40badf9ba3c096971a1eef012641279cc63703aa6552c29b315cc879420b",
  "docs/V11_SEARCH_RU.md": "eb7676f33e2aa30598eea2712f813a7dddbe99e3d8e8d11b686b057f6fd5e391",
  "docs/V12_PROFILES_RU.md": "a98ffcb4b68988e7d4f2e0e2d7c389f6a12a21160e7ef74bc25db6454b807ecf",
@@ -696,11 +696,5 @@
  "vendor/chess/py.typed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
  "vendor/chess/svg.py": "32840c66e33bf55ea2de49eadc856d45dc3cd661b87a0a1ea99d8b6c3b143b99",
  "vendor/chess/syzygy.py": "e10e74b0b8174e85428945a975dfc2d67f521c6c5d941e998bdfca26f9ebf754",
- "vendor/chess/variant.py": "fc0b384707fc9ffb9348c4683fc430ee4ed5b601d9cc40cf7fc5ecda2d9cc431",
- "Выложить-на-GitHub.command": "b00ce0936cf7161b3ed276749234c1d4d1e79cde1000026bbacf766dd4505035",
- "Выпустить-релиз-v1.0.command": "ef13ae2c9757c9fb8c31cc47ae4f5203f976b7c0e917803b30449c12ff754e9d",
- "Замер-на-Маке.command": "c54d2c232aa08f86339ad23b65be78f73b9c6888d14ed48ee0aa77d4d7499782",
- "Запустить.command": "96f17994093b5df6e1d08902f9016514780f0dce227a5ccac734c5ae76aa30c6",
- "НАЧАТЬ_ЗДЕСЬ.txt": "15fd9b9fc8a2076cd3c14a19af2fe557d3bf2602362fc9f21336580491c0474c",
- "Продолжить-партию-6.command": "37f2137e756ff375f1b9f7e4032547b9ed38d076569a30330baae0a7c7f9ecea"
+ "vendor/chess/variant.py": "fc0b384707fc9ffb9348c4683fc430ee4ed5b601d9cc40cf7fc5ecda2d9cc431"
 }

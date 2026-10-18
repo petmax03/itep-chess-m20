@@ -38,7 +38,7 @@ Run: `./run.sh` (needs Python 3 and a C compiler; python-chess is bundled). Tech
 
 ## Запуск
 
-На Mac — двойной щелчок по **Запустить.command**. В терминале:
+В терминале:
 
 ```sh
 ./run.sh                                   # игра в браузере, профиль v11, глубина 3
@@ -47,7 +47,7 @@ Run: `./run.sh` (needs Python 3 and a C compiler; python-chess is bundled). Tech
 ./run.sh --benchmark --workers 1           # замер 20 контрольных позиций
 ```
 
-Нужны Python 3 и компилятор C (на Mac — Command Line Tools). Первый запуск собирает эмулятор (секунды). Сеть не используется. Подробности, глубины, лимиты команд, варианты форсированной игры, формат PGN с часами М-20 — в `docs/TECHNICAL_RU.md`; короткая памятка — `НАЧАТЬ_ЗДЕСЬ.txt`.
+Нужны Python 3 и компилятор C (на Mac — Command Line Tools). Первый запуск собирает эмулятор (секунды). Сеть не используется. Подробности, глубины, лимиты команд, варианты форсированной игры, формат PGN с часами М-20 — в `docs/TECHNICAL_RU.md`.
 
 Проверки: `python3 tests/verify.py` (приёмка: генератор, рокировки, превращения, самоигра), `tests/v19_mates.py`, `tests/terminal_cleanup.py`, `tests/terminal_scores.py`, `tests/promotion_regression.py`, `tests/depth_policy_smoke.py`, `tests/v19_uci_smoke.py`, `tests/history_compare.py` (73 исторических решения).
 
